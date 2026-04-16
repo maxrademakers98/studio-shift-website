@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="160">
-  <rect width="400" height="160" fill="#FBFBFF"/>
-  <line x1="36" y1="80" x2="364" y2="80" stroke="#0B4F6C" stroke-width="1" opacity="0.1"/>
-  <text x="36" y="72" font-family="'Space Grotesk', sans-serif" font-weight="300" font-size="22" letter-spacing="10" fill="#0B4F6C" opacity="0.45">STUDIO</text>
-  <text x="36" y="124" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="52" letter-spacing="-1" fill="#0B4F6C">SHIFT</text>
-  <rect x="36" y="132" width="52" height="4" rx="2" fill="#20BF55"/>
-</svg>

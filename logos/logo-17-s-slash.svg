@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <rect width="200" height="200" rx="44" fill="#FBFBFF"/>
-  <text x="72" y="148" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="140" letter-spacing="-8" fill="#0B4F6C" text-anchor="middle">S</text>
-  <!-- Forward slash — like a shift/escape marker -->
-  <line x1="102" y1="30" x2="148" y2="170" stroke="#01BAEF" stroke-width="12" stroke-linecap="round"/>
-</svg>

@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <rect width="200" height="200" rx="44" fill="#0d1117"/>
-  <!-- Shift key arrow: upward chevron + vertical bar -->
-  <polygon points="100,46 148,100 124,100 124,130 76,130 76,100 52,100" fill="#ffffff"/>
-  <rect x="76" y="136" width="48" height="18" rx="4" fill="#ffffff"/>
-</svg>

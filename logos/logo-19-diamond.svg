@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <rect width="200" height="200" fill="#FBFBFF"/>
-  <!-- Diamond / rotated square -->
-  <rect x="44" y="44" width="112" height="112" rx="16" fill="#0B4F6C" transform="rotate(45 100 100)"/>
-  <text x="100" y="118" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="72" letter-spacing="-3" fill="#ffffff" text-anchor="middle">S</text>
-</svg>
