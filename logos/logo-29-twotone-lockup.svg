@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" width="420" height="100">
+  <rect width="420" height="100" fill="#FBFBFF"/>
+  <!-- Icon: two-tone split S -->
+  <rect x="0" y="0" width="100" height="100" rx="22" fill="#0B4F6C"/>
+  <clipPath id="bl"><rect x="0" y="50" width="50" height="50" rx="0"/></clipPath>
+  <rect x="0" y="0" width="100" height="100" rx="22" fill="#01BAEF" clip-path="url(#bl)"/>
+  <text x="50" y="74" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="70" fill="#ffffff" text-anchor="middle">S</text>
+  <!-- Wordmark: STUDIO navy, SHIFT sky -->
+  <text x="124" y="42" font-family="'Space Grotesk', sans-serif" font-weight="300" font-size="18" letter-spacing="6" fill="#0B4F6C" opacity="0.5">STUDIO</text>
+  <text x="120" y="78" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="42" letter-spacing="-1.5" fill="#01BAEF">SHIFT</text>
+</svg>

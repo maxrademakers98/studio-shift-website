@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" rx="44" fill="#0B4F6C"/>
+  <!-- Bottom-right sky quadrant -->
+  <clipPath id="br"><rect x="100" y="100" width="100" height="100" rx="0"/></clipPath>
+  <rect width="200" height="200" rx="44" fill="#01BAEF" clip-path="url(#br)"/>
+  <text x="100" y="148" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="140" letter-spacing="-6" fill="#ffffff" text-anchor="middle">S</text>
+</svg>

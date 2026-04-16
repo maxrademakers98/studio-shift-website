@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <circle cx="100" cy="100" r="100" fill="#0B4F6C"/>
+  <!-- Two forward chevrons — speed, progress, shift -->
+  <polyline points="60,56 112,100 60,144" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="92,56 144,100 92,144" fill="none" stroke="#01BAEF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

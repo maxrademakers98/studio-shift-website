@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freelancers — Studio SHIFT</title>
+<meta name="description" content="Join the Studio SHIFT freelance pool. Sustainability specialists working on real projects that create measurable impact.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:    #0B4F6C;
+  --navy-dk: #083d54;
+  --sky:     #01BAEF;
+  --green:   #20BF55;
+  --white:   #FBFBFF;
+  --grey:    #757575;
+  --ink:     #0d1117;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--white); color: var(--ink); font-family: 'Outfit', sans-serif; font-weight: 300; overflow-x: hidden; }
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 22px 56px;
+  display: flex; justify-content: space-between; align-items: center;
+  transition: background .3s, box-shadow .3s;
+  background: rgba(251,251,255,.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 1px 0 rgba(11,79,108,.06);
+}
+.logo { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; letter-spacing: -.02em; text-decoration: none; color: var(--navy); }
+.logo span { color: var(--sky); }
+nav ul { display: flex; gap: 36px; list-style: none; }
+nav a { text-decoration: none; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; font-weight: 500; color: var(--grey); transition: color .2s; }
+nav a:hover { color: var(--navy); }
+.nav-cta { background: var(--navy) !important; color: #fff !important; padding: 10px 24px; border-radius: 100px; font-weight: 600 !important; letter-spacing: .06em !important; border: 1.5px solid transparent !important; transition: background .2s, transform .2s !important; }
+.nav-cta:hover { background: var(--navy-dk) !important; transform: translateY(-1px); }
+.nav-burger { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 36px; height: 36px; background: none; border: none; position: relative; z-index: 200; padding: 0; cursor: pointer; }
+.nav-burger span { display: block; width: 22px; height: 1.5px; background: var(--navy); border-radius: 2px; transition: transform .35s cubic-bezier(.77,0,.18,1), opacity .25s ease; transform-origin: center; }
+.nav-burger.active span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-burger.active span:nth-child(2) { opacity: 0; }
+.nav-burger.active span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.nav-mobile { position: fixed; inset: 0; z-index: 90; background: var(--navy); display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: opacity .4s cubic-bezier(.77,0,.18,1), visibility 0s .4s; }
+.nav-mobile.open { opacity: 1; visibility: visible; transition: opacity .4s cubic-bezier(.77,0,.18,1), visibility 0s 0s; }
+.nav-mobile-inner { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.nav-mobile-link { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px,8vw,56px); line-height: 1.2; letter-spacing: -.02em; color: rgba(255,255,255,.7); text-decoration: none; opacity: 0; transform: translateY(24px); transition: opacity .35s ease, transform .45s cubic-bezier(.77,0,.18,1), color .2s; }
+.nav-mobile.open .nav-mobile-link { opacity: 1; transform: translateY(0); }
+.nav-mobile.open .nav-mobile-link:nth-child(1) { transition-delay: .06s; }
+.nav-mobile.open .nav-mobile-link:nth-child(2) { transition-delay: .10s; }
+.nav-mobile.open .nav-mobile-link:nth-child(3) { transition-delay: .14s; }
+.nav-mobile-link:hover { color: #fff; }
+.nav-mobile-cta { margin-top: 24px; font-family: 'Space Grotesk', sans-serif; font-size: clamp(18px,4vw,24px); font-weight: 600; letter-spacing: .06em; text-transform: uppercase; background: var(--sky); color: var(--navy) !important; padding: 14px 40px; border-radius: 100px; }
+
+/* ── HERO ── */
+.hero {
+  min-height: 80vh; background: var(--navy); display: flex; align-items: center;
+  position: relative; overflow: hidden; padding-top: 88px;
+}
+.hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px); background-size: 60px 60px; pointer-events: none; }
+.hero-glow { position: absolute; top: -200px; right: -200px; width: 700px; height: 700px; background: radial-gradient(circle, rgba(32,191,85,.08) 0%, transparent 65%); pointer-events: none; }
+.hero-glow-2 { position: absolute; bottom: -100px; left: -100px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(1,186,239,.04) 0%, transparent 65%); pointer-events: none; }
+.hero-inner { position: relative; z-index: 1; max-width: 1100px; width: 100%; margin: 0 auto; padding: 80px 56px 100px; }
+.hero-badge { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.55); padding: 8px 18px; border-radius: 100px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 40px; }
+.hero-badge-dot { width: 5px; height: 5px; background: var(--green); border-radius: 50%; animation: pulse 2.5s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(.7)} }
+.hero h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(44px,6vw,80px); line-height: .98; letter-spacing: -.03em; color: #fff; margin-bottom: 28px; max-width: 700px; }
+.hero h1 em { font-style: normal; color: rgba(255,255,255,.5); font-weight: 300; }
+.hero-sub { font-size: 17px; line-height: 1.8; color: rgba(255,255,255,.42); max-width: 500px; font-weight: 300; }
+
+/* ── SECTION UTILS ── */
+.section-pad { padding: 100px 56px; }
+.section-eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: var(--grey); margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
+.section-eyebrow::before { content: ''; width: 20px; height: 1px; background: var(--grey); opacity: .5; border-radius: 2px; }
+h2.section-h { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(34px,4vw,52px); letter-spacing: -.03em; line-height: 1.05; color: var(--navy); }
+
+/* ── WHY JOIN ── */
+.why { background: var(--white); }
+.why-header { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; margin-bottom: 60px; }
+.why-header p { font-size: 15px; line-height: 1.8; color: var(--grey); padding-bottom: 6px; }
+.pro-items { display: flex; flex-direction: column; }
+.pro-item { display: grid; grid-template-columns: 48px 1fr; gap: 20px; align-items: start; padding: 28px 0; border-top: 1px solid rgba(11,79,108,.08); transition: padding-left .2s; }
+.pro-item:last-child { border-bottom: 1px solid rgba(11,79,108,.08); }
+.pro-item:hover { padding-left: 6px; }
+.pro-item-icon { width: 44px; height: 44px; background: rgba(11,79,108,.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--navy); opacity: .6; }
+.pro-item-icon svg { width: 22px; height: 22px; }
+.pro-item h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 17px; margin-bottom: 5px; color: var(--navy); }
+.pro-item p { font-size: 13.5px; line-height: 1.75; color: var(--grey); }
+
+/* ── PROFILES WE LOOK FOR ── */
+.profiles { background: #f0f7fc; border-top: 1px solid rgba(11,79,108,.07); border-bottom: 1px solid rgba(11,79,108,.07); }
+.profiles-header { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; margin-bottom: 52px; }
+.profiles-header p { font-size: 15px; line-height: 1.8; color: var(--grey); padding-bottom: 6px; }
+.profiles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.profile-card { background: #fff; border-radius: 20px; padding: 32px 28px; border: 1px solid rgba(11,79,108,.1); transition: transform .2s, box-shadow .2s; }
+.profile-card:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(11,79,108,.08); }
+.profile-tag { display: inline-flex; align-items: center; gap: 6px; background: rgba(11,79,108,.06); border: 1px solid rgba(11,79,108,.1); border-radius: 100px; padding: 5px 14px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--navy); margin-bottom: 18px; }
+.profile-card h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 18px; color: var(--navy); margin-bottom: 10px; letter-spacing: -.02em; }
+.profile-card p { font-size: 13px; line-height: 1.75; color: var(--grey); }
+
+/* ── APPLY FORM ── */
+.apply { background: var(--navy); color: #fff; }
+.apply-grid { display: grid; grid-template-columns: 5fr 7fr; gap: 80px; align-items: start; }
+.apply-left .section-eyebrow { color: rgba(255,255,255,.35); }
+.apply-left .section-eyebrow::before { background: rgba(255,255,255,.2); }
+.apply-left h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(30px,3.5vw,46px); letter-spacing: -.03em; line-height: 1.06; margin-bottom: 20px; color: #fff; }
+.apply-left h2 em { font-style: normal; color: rgba(255,255,255,.5); font-weight: 300; }
+.apply-left > p { font-size: 15px; line-height: 1.85; color: rgba(255,255,255,.5); max-width: 380px; }
+.apply-detail { margin-top: 36px; }
+.apply-detail-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 4px; }
+.apply-detail-val { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 16px; color: rgba(255,255,255,.8); }
+.form-label { display: block; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 8px; }
+.fg { margin-bottom: 24px; }
+.fg input, .fg select, .fg textarea {
+  width: 100%; background: transparent; border: none;
+  border-bottom: 1.5px solid rgba(255,255,255,.15);
+  padding: 12px 0; font-family: 'Outfit', sans-serif; font-size: 15px;
+  color: rgba(255,255,255,.85); outline: none; transition: border-color .2s; appearance: none;
+}
+.fg input::placeholder, .fg textarea::placeholder { color: rgba(255,255,255,.25); }
+.fg select { color: rgba(255,255,255,.85); }
+.fg select option { background: var(--navy-dk); color: #fff; }
+.fg input:focus, .fg select:focus, .fg textarea:focus { border-color: var(--sky); }
+.fg textarea { resize: none; height: 80px; }
+.fg-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.btn-submit { background: var(--sky); color: var(--navy); font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 13px; padding: 17px 48px; border: none; letter-spacing: .06em; text-transform: uppercase; display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 8px; transition: opacity .2s, transform .2s; width: 100%; border-radius: 100px; cursor: pointer; }
+.btn-submit:hover { opacity: .88; transform: translateY(-1px); }
+#formSuccess { display: none; margin-top: 16px; text-align: center; font-size: 14px; color: var(--green); font-family: 'IBM Plex Mono', monospace; letter-spacing: .08em; }
+
+/* ── FOOTER ── */
+footer { background: var(--navy-dk); padding: 48px 56px; display: flex; justify-content: space-between; align-items: center; }
+.footer-logo { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; color: #fff; text-decoration: none; }
+.footer-logo span { color: var(--sky); }
+.footer-links { display: flex; gap: 24px; }
+footer a { color: rgba(255,255,255,.35); text-decoration: none; font-size: 12px; transition: color .2s; }
+footer a:hover { color: var(--sky); }
+footer p { font-size: 12px; color: rgba(255,255,255,.3); font-family: 'IBM Plex Mono', monospace; letter-spacing: .06em; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1100px) {
+  nav { padding: 18px 24px; }
+  nav ul { display: none; }
+  .nav-burger { display: flex; }
+  .hero-inner, .section-pad { padding-left: 28px; padding-right: 28px; }
+  .why-header, .profiles-header, .apply-grid { grid-template-columns: 1fr; }
+  .apply-grid { gap: 40px; }
+  .profiles-grid { grid-template-columns: 1fr 1fr; }
+  footer { padding: 36px 28px; }
+}
+@media (max-width: 640px) {
+  .hero-inner { padding-top: 60px; padding-bottom: 72px; }
+  .profiles-grid { grid-template-columns: 1fr; }
+  .fg-row { grid-template-columns: 1fr; }
+  footer { flex-direction: column; gap: 16px; text-align: center; }
+  .footer-links { flex-wrap: wrap; justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav id="mainNav">
+  <a href="index-v6.html" class="logo">Studio <span>SHIFT</span></a>
+  <ul>
+    <li><a href="index-v6.html#intro">What we do</a></li>
+    <li><a href="index-v6.html#approach">How we work</a></li>
+    <li><a href="#apply" class="nav-cta">Apply now</a></li>
+  </ul>
+  <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <div class="nav-mobile-inner">
+    <a href="index-v6.html#intro" class="nav-mobile-link">What we do</a>
+    <a href="index-v6.html#approach" class="nav-mobile-link">How we work</a>
+    <a href="#apply" class="nav-mobile-link nav-mobile-cta">Apply now</a>
+  </div>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <div class="hero-badge-dot"></div>
+      <span data-content="fl_hero_badge">Freelance with Studio SHIFT</span>
+    </div>
+    <h1 data-content="fl_hero_h1">Join a team that<br>does <em>real</em> work.</h1>
+    <p class="hero-sub" data-content="fl_hero_sub">We're always looking for sustainability specialists to join our pool of collaborators. Hands-on expertise, meaningful projects, fair rates.</p>
+  </div>
+</section>
+
+<!-- Why join -->
+<section class="why section-pad">
+  <div class="why-header">
+    <div>
+      <div class="section-eyebrow" data-content="fl_why_eyebrow">Why freelance with us</div>
+      <h2 class="section-h" data-content="fl_why_h2">Built for specialists,<br>not generalists.</h2>
+    </div>
+    <p data-content="fl_why_sub">We believe great work happens when the right expert is paired with the right project. No junior hand-offs, no bloated teams — just people who know their craft.</p>
+  </div>
+  <div class="pro-items">
+    <div class="pro-item">
+      <div class="pro-item-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div>
+        <h4 data-content="fl_pro1_title">Specialists, not generalists</h4>
+        <p data-content="fl_pro1_desc">We work with people who have a proven track record in their field — not generalists. If you know your craft and love real-world impact, we want to know you.</p>
+      </div>
+    </div>
+    <div class="pro-item">
+      <div class="pro-item-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div>
+        <h4 data-content="fl_pro2_title">Project-based flexibility</h4>
+        <p data-content="fl_pro2_desc">Engage on the projects that suit you. No retainers, no minimum commitments — just great work, when it fits your schedule.</p>
+      </div>
+    </div>
+    <div class="pro-item">
+      <div class="pro-item-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <div>
+        <h4 data-content="fl_pro3_title">A network you'll value</h4>
+        <p data-content="fl_pro3_desc">Working with us means joining a community of like-minded specialists. We connect you, collaborate with you, and grow together.</p>
+      </div>
+    </div>
+    <div class="pro-item">
+      <div class="pro-item-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+      </div>
+      <div>
+        <h4 data-content="fl_pro4_title">Fair, transparent rates</h4>
+        <p data-content="fl_pro4_desc">We pay well and on time. No haggling, no surprises. Your expertise has value and we treat it that way.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Profiles we look for -->
+<section class="profiles section-pad">
+  <div class="profiles-header">
+    <div>
+      <div class="section-eyebrow" data-content="fl_profiles_eyebrow">Who we're looking for</div>
+      <h2 class="section-h" data-content="fl_profiles_h2">The profiles<br>we work with.</h2>
+    </div>
+    <p data-content="fl_profiles_sub">Our projects span strategy, design, and implementation. We look for depth over breadth — specialists who are genuinely expert in their domain.</p>
+  </div>
+  <div class="profiles-grid">
+    <div class="profile-card">
+      <div class="profile-tag" data-content="fl_card1_tag">Strategy</div>
+      <h4 data-content="fl_card1_title">Sustainability Strategists</h4>
+      <p data-content="fl_card1_desc">Experts in ESG frameworks, transition roadmaps, and materiality assessments. You help companies set credible targets and build the plans to meet them.</p>
+    </div>
+    <div class="profile-card">
+      <div class="profile-tag" data-content="fl_card2_tag">Design</div>
+      <h4 data-content="fl_card2_title">Circular Design Specialists</h4>
+      <p data-content="fl_card2_desc">Designers with deep knowledge of circular economy principles, material flows, and product end-of-life. You design for longevity, repairability, and reuse.</p>
+    </div>
+    <div class="profile-card">
+      <div class="profile-tag" data-content="fl_card3_tag">Supply Chain</div>
+      <h4 data-content="fl_card3_title">Supply Chain Experts</h4>
+      <p data-content="fl_card3_desc">Specialists in Scope 3 mapping, supplier engagement, and responsible sourcing. You know how to trace impact across complex global value chains.</p>
+    </div>
+    <div class="profile-card">
+      <div class="profile-tag" data-content="fl_card4_tag">Measurement</div>
+      <h4 data-content="fl_card4_title">LCA & Reporting Analysts</h4>
+      <p data-content="fl_card4_desc">Practitioners in life cycle assessment, carbon accounting, and sustainability reporting (GRI, CSRD, TCFD). You turn data into credible, defensible claims.</p>
+    </div>
+    <div class="profile-card">
+      <div class="profile-tag" data-content="fl_card5_tag">Engagement</div>
+      <h4 data-content="fl_card5_title">Change & Capability Leads</h4>
+      <p data-content="fl_card5_desc">Facilitators and trainers who help organisations embed sustainability thinking. You make complex concepts stick — across teams, boards, and supply chains.</p>
+    </div>
+    <div class="profile-card">
+      <div class="profile-tag" data-content="fl_card6_tag">Innovation</div>
+      <h4 data-content="fl_card6_title">Material & Process Innovators</h4>
+      <p data-content="fl_card6_desc">Experts in alternative materials, bio-based inputs, or manufacturing process optimisation. You bridge the gap between R&D and real-world implementation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Apply form -->
+<section class="apply section-pad" id="apply">
+  <div class="apply-grid">
+    <div class="apply-left">
+      <div class="section-eyebrow" data-content="fl_apply_eyebrow">Get in touch</div>
+      <h2 data-content="fl_apply_h2">Tell us<br>about <em>yourself.</em></h2>
+      <p data-content="fl_apply_sub">Drop us a note and we'll be in touch if there's a good fit. We review every application and respond to everyone — usually within a week.</p>
+      <div class="apply-detail">
+        <div class="apply-detail-label" data-content="fl_apply_detail_label">Email us directly</div>
+        <div class="apply-detail-val" data-content="fl_apply_detail_val">hello@studioshift.nl</div>
+      </div>
+    </div>
+    <form id="applyForm">
+      <div class="fg-row">
+        <div class="fg">
+          <label class="form-label" for="firstName">First name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Jan" required>
+        </div>
+        <div class="fg">
+          <label class="form-label" for="lastName">Last name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="de Vries" required>
+        </div>
+      </div>
+      <div class="fg">
+        <label class="form-label" for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="jan@yoursite.com" required>
+      </div>
+      <div class="fg">
+        <label class="form-label" for="expertise">Area of expertise</label>
+        <select id="expertise" name="expertise" required>
+          <option value="" disabled selected>Select your specialty…</option>
+          <option>Sustainability Strategy</option>
+          <option>Circular Design</option>
+          <option>Supply Chain & Scope 3</option>
+          <option>LCA & Reporting</option>
+          <option>Change & Capability</option>
+          <option>Material & Process Innovation</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="fg">
+        <label class="form-label" for="message">A bit about you & your work</label>
+        <textarea id="message" name="message" placeholder="Tell us about your background, the kind of projects you love, and what you're looking for…" required></textarea>
+      </div>
+      <button type="submit" class="btn-submit">
+        <span data-content="fl_apply_btn">Send application</span>
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </button>
+      <div id="formSuccess">✓ Opening your mail client — send the email to reach us.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <a href="index-v6.html" class="footer-logo">Studio <span>SHIFT</span></a>
+  <div class="footer-links">
+    <a href="index-v6.html#intro">What we do</a>
+    <a href="index-v6.html#approach">How we work</a>
+    <a href="index-v6.html#contact">Contact</a>
+  </div>
+  <p data-content="footer_copy">© 2026 Studio SHIFT · Amsterdam</p>
+</footer>
+
+<script src="content.js"></script>
+<script>
+/* Navigation */
+const burger = document.getElementById('navBurger');
+const mobileNav = document.getElementById('navMobile');
+burger.addEventListener('click', () => {
+  const open = mobileNav.classList.toggle('open');
+  burger.classList.toggle('active', open);
+  burger.setAttribute('aria-expanded', open);
+});
+mobileNav.querySelectorAll('.nav-mobile-link').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+    burger.classList.remove('active');
+    burger.setAttribute('aria-expanded', false);
+  });
+});
+
+/* Apply form */
+document.getElementById('applyForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const f = e.target;
+  const name = f.firstName.value + ' ' + f.lastName.value;
+  const subject = encodeURIComponent('Freelance application — ' + f.expertise.value + ' — ' + name);
+  const body = encodeURIComponent(
+    'Name: ' + name +
+    '\nExpertise: ' + f.expertise.value +
+    '\n\n' + f.message.value
+  );
+  window.location.href = 'mailto:hello@studioshift.nl?subject=' + subject + '&body=' + body;
+  f.reset();
+  document.getElementById('formSuccess').style.display = 'block';
+});
+
+/* Scroll reveal */
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+      revealObserver.unobserve(e.target);
+      e.target.addEventListener('transitionend', () => {
+        e.target.style.opacity = '';
+        e.target.style.transform = '';
+        e.target.style.transition = '';
+      }, { once: true });
+    }
+  });
+}, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.pro-item, .profile-card').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(24px)';
+  el.style.transition = 'opacity .5s ease, transform .5s ease';
+  revealObserver.observe(el);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="160">
+  <rect width="400" height="160" fill="#FBFBFF"/>
+  <text x="200" y="74" font-family="'IBM Plex Mono', monospace" font-size="13" letter-spacing="6" fill="#0B4F6C" opacity="0.4" text-anchor="middle">STUDIO</text>
+  <text x="200" y="120" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="60" letter-spacing="-2" fill="#0B4F6C" text-anchor="middle">SHIFT</text>
+</svg>

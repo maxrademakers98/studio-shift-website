@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" width="420" height="100">
+  <rect width="420" height="100" fill="#FBFBFF"/>
+  <!-- Icon: S + slash -->
+  <rect x="0" y="0" width="100" height="100" rx="22" fill="#FBFBFF" stroke="#0B4F6C" stroke-width="2"/>
+  <text x="44" y="74" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="70" fill="#0B4F6C" text-anchor="middle">S</text>
+  <line x1="54" y1="12" x2="84" y2="88" stroke="#01BAEF" stroke-width="7" stroke-linecap="round"/>
+  <!-- Divider -->
+  <line x1="114" y1="18" x2="114" y2="82" stroke="#0B4F6C" stroke-width="1" opacity="0.12"/>
+  <!-- Wordmark -->
+  <text x="132" y="38" font-family="'Space Grotesk', sans-serif" font-weight="300" font-size="14" letter-spacing="5" fill="#0B4F6C" opacity="0.5">STUDIO</text>
+  <text x="128" y="76" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="42" letter-spacing="-1.5" fill="#0B4F6C">SHIFT</text>
+</svg>

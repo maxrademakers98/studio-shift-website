@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" width="200" height="260">
+  <rect width="200" height="260" fill="#FBFBFF"/>
+  <!-- Icon: S rounded square, centred -->
+  <rect x="50" y="20" width="100" height="100" rx="22" fill="#0B4F6C"/>
+  <text x="100" y="94" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="70" fill="#ffffff" text-anchor="middle">S</text>
+  <!-- Wordmark stacked below -->
+  <text x="100" y="158" font-family="'Space Grotesk', sans-serif" font-weight="300" font-size="13" letter-spacing="6" fill="#0B4F6C" opacity="0.5" text-anchor="middle">STUDIO</text>
+  <text x="100" y="200" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="48" letter-spacing="-2" fill="#0B4F6C" text-anchor="middle">SHIFT</text>
+  <!-- Green dot -->
+  <circle cx="100" cy="224" r="4" fill="#20BF55"/>
+</svg>
