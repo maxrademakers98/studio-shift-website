@@ -151,7 +151,8 @@ footer p { font-size: 12px; color: rgba(255,255,255,.3); font-family: 'IBM Plex 
   footer { padding: 36px 28px; }
 }
 @media (max-width: 640px) {
-  .hero-inner { padding-top: 60px; padding-bottom: 72px; }
+  .hero-inner { padding-top: 60px; padding-bottom: 72px; padding-left: 20px; padding-right: 20px; }
+  .section-pad { padding-left: 20px; padding-right: 20px; }
   .profiles-grid { grid-template-columns: 1fr; }
   .fg-row { grid-template-columns: 1fr; }
   footer { flex-direction: column; gap: 16px; text-align: center; }
@@ -385,7 +386,7 @@ document.getElementById('applyForm').addEventListener('submit', function(e) {
   document.getElementById('formSuccess').style.display = 'block';
 });
 
-/* Scroll reveal */
+/* Scroll reveal — only animate elements below the initial viewport */
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -401,9 +402,12 @@ const revealObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
 document.querySelectorAll('.pro-item, .profile-card').forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(24px)';
-  el.style.transition = 'opacity .5s ease, transform .5s ease';
+  const rect = el.getBoundingClientRect();
+  if (rect.top > window.innerHeight) {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(24px)';
+    el.style.transition = 'opacity .5s ease, transform .5s ease';
+  }
   revealObserver.observe(el);
 });
 </script>
