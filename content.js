@@ -62,11 +62,13 @@ const CONTENT = {
   team1_role: "Sustainability Strategist · Amsterdam",
   team1_bio:  "Fabeel is a sustainability expert with 15 years of experience turning ambition into impact across products and supply chains. Proven track record at Action, HEMA, Lidl, and Fairtrade Foundation, leading initiatives from strategy to execution. Delivered full tier 1 supply chain transparency, developed sustainable sourcing and packaging policies, and implemented circularity and climate programs aligned with the GHG Protocol. Combines strategic thinking with hands-on execution to make sustainability commercially viable and scalable.",
   team1_tags: ["Supply Chain", "Stakeholder Engagement", "Sustainability Strategy", "Circular Design"],
+  team1_linkedin: "",  // paste LinkedIn URL here, e.g. "https://www.linkedin.com/in/yourname"
 
   team2_name: "Luca Brandt",
   team2_role: "Circular Design Lead · Berlin",
   team2_bio:  "With a background in industrial design and ten years of hands-on LCA work, Luca brings deep product-level expertise to every project. He has redesigned materials strategies for electronics and furniture brands across Europe, and is one of the few practitioners who can move fluidly between a BOM and a boardroom.",
   team2_tags: ["Circular Design", "LCA", "Materials", "Durability & Repair"],
+  team2_linkedin: "",  // paste LinkedIn URL here, e.g. "https://www.linkedin.com/in/yourname"
 
   poolcard1_title: "Curated specialists",
   poolcard1_desc:  "Every freelancer in our network is hand-picked, vetted for real-world experience, not just credentials. We know who we're bringing in, and why they're the right fit for your project.",
@@ -190,6 +192,12 @@ const CONTENT = {
     const tags = CONTENT[el.getAttribute('data-tags')];
     if (!tags) return;
     el.innerHTML = tags.map(t => `<span class="team-tag">${t}</span>`).join('');
+  });
+
+  // LinkedIn links (hidden when empty)
+  document.querySelectorAll('[data-linkedin]').forEach(el => {
+    const url = CONTENT[el.getAttribute('data-linkedin')];
+    if (url) el.href = url;
   });
 
   // Ticker strips (items duplicated for seamless CSS loop)
