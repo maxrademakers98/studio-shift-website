@@ -169,6 +169,23 @@ h2.section-h { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-
 .step-featured .step-chip-sub { color: rgba(255,255,255,.3); }
 
 /* ── TASK 8: Pool note — Freelance with a team ── */
+/* ── How we work section ── */
+.how-section { background: var(--navy); padding: 100px 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.how-left h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(34px,3.8vw,52px); line-height: 1.06; letter-spacing: -.03em; color: #fff; margin-bottom: 20px; }
+.how-left h2 em { font-style: normal; color: var(--sky); }
+.how-left > p { font-size: 15px; line-height: 1.85; color: rgba(255,255,255,.5); margin-bottom: 36px; max-width: 420px; }
+.how-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.how-pill { border: 1.5px solid rgba(1,186,239,.3); color: rgba(255,255,255,.55); font-family: 'IBM Plex Mono', monospace; font-size: 10px; padding: 6px 16px; letter-spacing: .1em; text-transform: uppercase; border-radius: 100px; }
+.how-feats { display: flex; flex-direction: column; }
+.how-feat { display: grid; grid-template-columns: 48px 1fr; gap: 20px; align-items: start; padding: 24px 0; border-top: 1px solid rgba(255,255,255,.07); transition: padding-left .2s; }
+.how-feat:last-child { border-bottom: 1px solid rgba(255,255,255,.07); }
+.how-feat:hover { padding-left: 6px; }
+.how-feat-icon { width: 44px; height: 44px; background: rgba(255,255,255,.05); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--sky); }
+.how-feat-icon svg { width: 20px; height: 20px; }
+.how-feat h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 16px; color: #fff; margin-bottom: 5px; letter-spacing: -.01em; }
+.how-feat p { font-size: 13px; line-height: 1.75; color: rgba(255,255,255,.45); }
+@media (max-width: 1100px) { .how-section { grid-template-columns: 1fr; gap: 48px; padding-left: 28px; padding-right: 28px; } }
+
 .pool-note { background: #f2fbf6; padding: 100px 56px; border-top: 1px solid rgba(32,191,85,.12); border-bottom: 1px solid rgba(32,191,85,.12); }
 .pool-header-row { margin-bottom: 56px; }
 .pool-note .section-eyebrow { color: var(--grey); }
@@ -762,6 +779,33 @@ footer p { font-size: 12px; color: rgba(255,255,255,.3); font-family: 'IBM Plex 
           <div class="step-chips" data-chips="step4_chips"></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- How we work -->
+<section class="how-section" id="how">
+  <div class="how-left">
+    <h2 data-content="how_heading">Senior expertise.<br>No <em>nonsense.</em></h2>
+    <p data-content="how_sub">Studio SHIFT is an Amsterdam-based sustainability consultancy — not a matchmaking platform. We bring senior-level experience to your brand and translate it into actions you can actually implement.</p>
+    <div class="how-pills" data-how-pills="how_pills"></div>
+  </div>
+  <div class="how-feats">
+    <div class="how-feat">
+      <div class="how-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+      <div><h4 data-content="how_feat1_title">Senior-led, hands-on execution</h4><p data-content="how_feat1_desc">No hand-offs to juniors. Every project is led by a senior specialist who knows your industry and stays with you from brief to delivery.</p></div>
+    </div>
+    <div class="how-feat">
+      <div class="how-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+      <div><h4 data-content="how_feat2_title">Built to implement, not to impress</h4><p data-content="how_feat2_desc">Everything we deliver is designed to be used immediately — not filed away. Sharp strategy that translates into real actions your team can take.</p></div>
+    </div>
+    <div class="how-feat">
+      <div class="how-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 1 4 12.7V17H8v-2.3A7 7 0 0 1 12 2z"/></svg></div>
+      <div><h4 data-content="how_feat3_title">Big 4 thinking, without the price tag</h4><p data-content="how_feat3_desc">We run lean — no account managers, no layers of overhead. You get senior-calibre expertise at a fraction of the cost of a traditional consultancy.</p></div>
+    </div>
+    <div class="how-feat">
+      <div class="how-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <div><h4 data-content="how_feat4_title">A curated network, not a marketplace</h4><p data-content="how_feat4_desc">When we bring in specialists, we know exactly who they are and why they're right for your project. Vetted for real-world experience, not just credentials.</p></div>
     </div>
   </div>
 </section>

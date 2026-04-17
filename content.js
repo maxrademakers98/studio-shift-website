@@ -54,6 +54,19 @@ const CONTENT = {
   step4_desc:  "We track, verify, and communicate your impact, giving you the evidence base to report, improve, and lead with confidence.",
   step4_chips: ["Light LCAs", "Carbon Credits Advice", "Impact & Sustainability Reporting"],
 
+  // ── HOW WE WORK ───────────────────────────────────
+  how_heading:     "Senior expertise.<br>No <em>nonsense.</em>",
+  how_sub:         "Studio SHIFT is an Amsterdam-based sustainability consultancy — not a matchmaking platform. We bring senior-level experience to your brand and translate it into actions you can actually implement.",
+  how_pills:       ["Amsterdam Based", "Physical + Remote", "Expert Team", "Ready to Implement", "Not Big 4 Pricing"],
+  how_feat1_title: "Senior-led, hands-on execution",
+  how_feat1_desc:  "No hand-offs to juniors. Every project is led by a senior specialist who knows your industry and stays with you from brief to delivery.",
+  how_feat2_title: "Built to implement, not to impress",
+  how_feat2_desc:  "Everything we deliver is designed to be used immediately — not filed away. Sharp strategy that translates into real actions your team can take.",
+  how_feat3_title: "Big 4 thinking, without the price tag",
+  how_feat3_desc:  "We run lean — no account managers, no layers of overhead. You get senior-calibre expertise at a fraction of the cost of a traditional consultancy.",
+  how_feat4_title: "A curated network, not a marketplace",
+  how_feat4_desc:  "When we bring in specialists, we know exactly who they are and why they're right for your project. Vetted for real-world experience, not just credentials.",
+
   // ── MEET THE TEAM ─────────────────────────────────
   pool_heading: "Meet the team.",
   pool_intro:   "We bring in freelancers with real, hands-on experience, and we work alongside them ourselves. That's what makes us different: we're not a matchmaker. We're in the project with you, from start to finish.",
@@ -192,6 +205,13 @@ const CONTENT = {
     const tags = CONTENT[el.getAttribute('data-tags')];
     if (!tags) return;
     el.innerHTML = tags.map(t => `<span class="team-tag">${t}</span>`).join('');
+  });
+
+  // How-we-work pills
+  document.querySelectorAll('[data-how-pills]').forEach(el => {
+    const pills = CONTENT[el.getAttribute('data-how-pills')];
+    if (!pills) return;
+    el.innerHTML = pills.map(t => `<span class="how-pill">${t}</span>`).join('');
   });
 
   // LinkedIn links (hidden when empty)
