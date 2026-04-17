@@ -62,7 +62,7 @@ const CONTENT = {
   team1_role: "Sustainability Strategist · Amsterdam",
   team1_bio:  "Fabeel is a sustainability expert with 15 years of experience turning ambition into impact across products and supply chains. Proven track record at Action, HEMA, Lidl, and Fairtrade Foundation, leading initiatives from strategy to execution. Delivered full tier 1 supply chain transparency, developed sustainable sourcing and packaging policies, and implemented circularity and climate programs aligned with the GHG Protocol. Combines strategic thinking with hands-on execution to make sustainability commercially viable and scalable.",
   team1_tags: ["Supply Chain", "Stakeholder Engagement", "Sustainability Strategy", "Circular Design"],
-  team1_linkedin: "",  // paste LinkedIn URL here, e.g. "https://www.linkedin.com/in/yourname"
+  team1_linkedin: "https://www.linkedin.com/in/fabeelbutt/",  // paste LinkedIn URL here, e.g. "https://www.linkedin.com/in/yourname"
 
   team2_name: "Luca Brandt",
   team2_role: "Circular Design Lead · Berlin",
