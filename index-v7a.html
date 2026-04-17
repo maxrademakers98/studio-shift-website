@@ -66,9 +66,9 @@ nav a { text-decoration: none; font-size: 12px; letter-spacing: .1em; text-trans
 nav a:hover { color: rgba(255,255,255,.9); }
 nav.light-bg a { color: var(--grey); }
 nav.light-bg a:hover { color: var(--navy); }
-.nav-cta { background: var(--navy) !important; color: #fff !important; padding: 10px 24px; border-radius: 100px; font-weight: 600 !important; letter-spacing: .06em !important; border: 1.5px solid rgba(255,255,255,.2) !important; transition: background .2s, transform .2s !important; }
-.nav-cta:hover { background: var(--navy-dk) !important; transform: translateY(-1px); }
-nav.light-bg .nav-cta { border-color: transparent !important; }
+.nav-cta { background: #fff !important; color: var(--navy) !important; padding: 10px 24px; border-radius: 100px; font-weight: 600 !important; letter-spacing: .06em !important; border: 1.5px solid transparent !important; transition: background .2s, color .2s, transform .2s !important; }
+.nav-cta:hover { background: rgba(255,255,255,.85) !important; transform: translateY(-1px); }
+nav.light-bg .nav-cta { background: var(--navy) !important; color: #fff !important; }
 .nav-burger { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 36px; height: 36px; background: none; border: none; position: relative; z-index: 200; padding: 0; cursor: pointer; }
 .nav-burger span { display: block; width: 22px; height: 1.5px; background: rgba(255,255,255,.8); border-radius: 2px; transition: transform .35s cubic-bezier(.77,0,.18,1), opacity .25s ease; transform-origin: center; }
 nav.light-bg .nav-burger span { background: var(--navy); }
