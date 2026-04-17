@@ -23,7 +23,7 @@ const CONTENT = {
   // ── HERO ──────────────────────────────────────────
   hero_badge:         "Sustainability Studio",
   hero_h1:            "Ambition into<span>action.</span>",
-  hero_sub:           "We design sustainable products, processes and supply chains, turning your sustainability goals into measurable outcomes.",
+  hero_sub:           "We design and implement sustainability strategies for products, processes and supply chains that work, without the 100-slide deck. Experienced solution providers, hands-on execution, turning your goals into measurable outcomes.",
   hero_cta_primary:   "Work with us",
   hero_cta_secondary: "What we do",
 
