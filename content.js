@@ -33,21 +33,20 @@ const CONTENT = {
 
   step1_title: "1. Ambition",
   step1_desc:  "We start with where you want to go, your sustainability goals, business context, and the stakeholders who matter most.",
-  step1_chips: ["SBTi Target setting", "Stakeholder mapping", "Benchmark & gap analysis"],
+  step1_chips: ["Benchmark", "gap analysis", "Stakeholder mapping", "SBTi Target setting"],
 
   step2_title: "2. Strategy",
   step2_desc:  "We map the landscape, identify leverage points, and design a strategy that is credible, realistic, and commercially sound.",
-  step2_chips: ["Gap Analysis & Roadmap", "KPIs & Milestones", "Material Policies", "Risk & Benchmarking"],
+  step2_chips: ["Roadmapping", "KPIs & Milestones", "Material Policies", "Risk & Benchmarking"],
 
   expertise_label: "Where we love to work",
 
   step3_title: "3. Implementation",
   step3_desc:  "Hands-on execution, from material sourcing to supplier engagement to design for circularity. We work alongside your team.",
   step3_chips: [
-    { sub: "Climate" },          { chip: "Scope 3 & Supplier Strategy" },
-    { sub: "Product & Materials" }, { chip: "Material Repurposing & BOM" }, { chip: "Durability & Repair" },
-    { sub: "Capability" },       { chip: "Workshops & Events" },
-    { sub: "Outputs" },          { chip: "Toolkits & Grant Support" }
+    { sub: "Climate" },          { chip: "Scope 3" }, { chip: "Supplier Engagement" },
+    { sub: "Product & Materials" } , { chip: "Design for Durability & Repair" },{ chip: "Circular Design" },{ chip: "Material Repurposing" }, { chip: "BOM Analysis" },
+    { sub: "Outputs" },          { chip: "Toolkits" },{ chip: "Grant Support" },{ chip: "Design Guides" },  { chip: "Tailored Workshops" }
   ],
 
   step4_title: "4. Measurable Impact",
@@ -59,7 +58,7 @@ const CONTENT = {
   how_sub:         "Studio SHIFT is an Amsterdam-based sustainability consultancy — not a matchmaking platform. We bring senior-level experience to your brand and translate it into actions you can actually implement.",
   how_pills:       ["Amsterdam Based", "Physical + Remote", "Expert Team", "Ready to Implement", "Not Big 4 Pricing"],
   how_feat1_title: "Senior-led, hands-on execution",
-  how_feat1_desc:  "No hand-offs to juniors. Every project is led by a senior specialist who knows your industry and stays with you from brief to delivery.",
+  how_feat1_desc:  "Every project is led by a senior specialist who knows your industry and stays with you from brief to delivery.",
   how_feat2_title: "Built to implement, not to impress",
   how_feat2_desc:  "Everything we deliver is designed to be used immediately — not filed away. Sharp strategy that translates into real actions your team can take.",
   how_feat3_title: "Big 4 thinking, without the price tag",
