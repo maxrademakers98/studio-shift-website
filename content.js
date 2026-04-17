@@ -10,7 +10,7 @@
 const CONTENT = {
 
   // ── HERO ──────────────────────────────────────────
-  hero_badge:         "Sustainability & Circular Design Agency",
+  hero_badge:         "Sustainability Studio",
   hero_h1:            "Ambition into<span>impact.</span>",
   hero_sub:           "We design sustainable products, processes, and supply chains — turning your sustainability goals into measurable outcomes that last.",
   hero_cta_primary:   "Work with us",
