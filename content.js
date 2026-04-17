@@ -18,7 +18,7 @@ const CONTENT = {
 
   // ── WHAT WE DO (Approach) ─────────────────────────
   approach_heading:   "What we do.",
-  approach_sub:       "A proven four-phase process that takes your sustainability ambition from idea to implementation — with measurable outcomes at every step.",
+  approach_sub:       "A proven four-phase process turning sustainability ambition into real-world solutions.",
 
   step1_title: "Ambition",
   step1_desc:  "We start with where you want to go — your sustainability goals, business context, and the stakeholders who matter most.",
