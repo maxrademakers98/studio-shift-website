@@ -99,8 +99,8 @@ nav.light-bg .nav-burger span { background: var(--navy); }
 .hero h1 span { color: rgba(255,255,255,.6); display: block; font-weight: 300; }
 .hero-sub { font-size: 17px; line-height: 1.8; color: rgba(255,255,255,.42); max-width: 500px; margin-bottom: 52px; font-weight: 300; }
 .hero-actions { display: flex; gap: 16px; align-items: center; margin-bottom: 72px; flex-wrap: wrap; }
-.btn-hero { background: rgba(255,255,255,.1); color: #fff; border: 1.5px solid rgba(255,255,255,.2); font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 13px; padding: 16px 36px; border-radius: 100px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; letter-spacing: .04em; transition: background .2s, border-color .2s, transform .2s; }
-.btn-hero:hover { background: rgba(255,255,255,.16); border-color: rgba(255,255,255,.35); transform: translateY(-1px); }
+.btn-hero { background: var(--sky); color: var(--navy); border: 1.5px solid var(--sky); font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 13px; padding: 16px 36px; border-radius: 100px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; letter-spacing: .04em; transition: background .2s, border-color .2s, transform .2s; }
+.btn-hero:hover { background: #00a8d8; border-color: #00a8d8; transform: translateY(-1px); }
 .btn-hero-ghost { border-color: rgba(255,255,255,.12); color: rgba(255,255,255,.45); font-weight: 400; }
 .btn-hero-ghost:hover { border-color: rgba(255,255,255,.3); color: rgba(255,255,255,.75); }
 .hero-stats { display: flex; gap: 56px; flex-wrap: wrap; }
@@ -639,7 +639,7 @@ footer p { font-size: 12px; color: rgba(255,255,255,.3); font-family: 'IBM Plex 
       <h1 data-content="hero_h1">Ambition into<span>impact.</span></h1>
       <p class="hero-sub" data-content="hero_sub">We design sustainable products, processes, and supply chains — turning your sustainability goals into measurable outcomes that last.</p>
       <div class="hero-actions">
-        <a href="#contact" class="btn-hero"><span data-content="hero_cta_primary">Work with us</span> <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        <a href="#contact" class="btn-hero"><span data-content="hero_cta_primary">Work with us</span></a>
         <a href="#approach" class="btn-hero btn-hero-ghost" data-content="hero_cta_secondary">What we do</a>
       </div>
     </div>
