@@ -139,8 +139,8 @@ h2.section-h { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-
 
 /* ── TASK 7: Approach / How we work section ── */
 .approach { background: var(--white); }
-.approach-header { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; margin-bottom: 52px; }
-.approach-header p { font-size: 15px; line-height: 1.8; color: var(--grey); padding-bottom: 6px; }
+.approach-header { margin-bottom: 52px; }
+.approach-header p { font-size: 15px; line-height: 1.8; color: var(--grey); margin-top: 12px; max-width: 580px; }
 .approach-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
 .step { background: var(--white); border: 1px solid rgba(11,79,108,.1); border-radius: 20px; padding: 36px 28px; position: relative; transition: transform .2s, box-shadow .2s; }
 .step:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(11,79,108,.1); }
@@ -170,7 +170,7 @@ h2.section-h { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-
 
 /* ── TASK 8: Pool note — Freelance with a team ── */
 .pool-note { background: #f2fbf6; padding: 100px 56px; border-top: 1px solid rgba(32,191,85,.12); border-bottom: 1px solid rgba(32,191,85,.12); }
-.pool-header-row { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; margin-bottom: 56px; }
+.pool-header-row { margin-bottom: 56px; }
 .pool-note .section-eyebrow { color: var(--grey); }
 .pool-note .section-eyebrow::before { background: var(--grey); opacity: .4; }
 .pool-note h2.section-h { color: var(--navy); }
@@ -287,7 +287,6 @@ footer p { font-size: 12px; color: rgba(255,255,255,.3); font-family: 'IBM Plex 
   .dna-band { grid-template-columns: 1fr; }
   .dna-visual { min-height: 380px; }
   .dna-text { padding: 52px 28px; }
-  .pool-header-row { grid-template-columns: 1fr; }
   .pool-cards { grid-template-columns: 1fr 1fr; }
   .skills-header { flex-direction: column; align-items: flex-start; gap: 12px; }
   .skills-grid { grid-template-columns: 1fr 1fr; }
@@ -718,9 +717,7 @@ footer p { font-size: 12px; color: rgba(255,255,255,.3); font-family: 'IBM Plex 
 <!-- TASK 7: Approach / How we work section -->
 <section class="approach section-pad" id="approach">
   <div class="approach-header">
-    <div>
-      <h2 class="section-h" data-content="approach_heading">What we do.</h2>
-    </div>
+    <h2 class="section-h" data-content="approach_heading">What we do.</h2>
     <p data-content="approach_sub">A proven four-phase process that takes your sustainability ambition from idea to implementation — with measurable outcomes at every step.</p>
   </div>
 <div class="approach-grid">
@@ -777,9 +774,7 @@ footer p { font-size: 12px; color: rgba(255,255,255,.3); font-family: 'IBM Plex 
 <!-- TASK 8: Pool note — Freelance with a team -->
 <section class="pool-note" id="pool">
   <div class="pool-header-row">
-    <div>
-      <h2 class="section-h" data-content="pool_heading">Meet the team.</h2>
-    </div>
+    <h2 class="section-h" data-content="pool_heading">Meet the team.</h2>
     <p class="pool-sub-text" data-content="pool_intro">We bring in freelancers with real, hands-on experience — and we work alongside them ourselves. That's what makes us different: we're not a matchmaker. We're in the project with you, from start to finish.</p>
   </div>
   <div class="team-grid">
