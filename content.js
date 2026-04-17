@@ -14,10 +14,10 @@ const CONTENT = {
     "Circular Design",
     "Sustainability Strategy",
     "Scope 3 Reduction",
-    "Supply Chain",
-    "Measurable Impact",
+    "Supply Chain Transparency",
     "LCA & Reporting",
     "Material Innovation",
+    "Social Risk Assessments",
   ],
 
   // ── HERO ──────────────────────────────────────────
@@ -31,18 +31,18 @@ const CONTENT = {
   approach_heading:   "What we do.",
   approach_sub:       "A proven four-phase process turning sustainability ambition into real-world solutions.",
 
-  step1_title: "Ambition",
-  step1_desc:  "We start with where you want to go — your sustainability goals, business context, and the stakeholders who matter most.",
-  step1_chips: ["SBTi Target Setting", "Stakeholder mapping", "Benchmark & gap analysis"],
+  step1_title: "1. Ambition",
+  step1_desc:  "We start with where you want to go, your sustainability goals, business context, and the stakeholders who matter most.",
+  step1_chips: ["SBTi Target setting", "Stakeholder mapping", "Benchmark & gap analysis"],
 
-  step2_title: "Strategy",
+  step2_title: "2. Strategy",
   step2_desc:  "We map the landscape, identify leverage points, and design a strategy that is credible, realistic, and commercially sound.",
   step2_chips: ["Gap Analysis & Roadmap", "KPIs & Milestones", "Material Policies", "Risk & Benchmarking"],
 
   expertise_label: "Where we love to work",
 
-  step3_title: "Implementation",
-  step3_desc:  "Hands-on execution — from material sourcing to supplier engagement to design for circularity. We work alongside your team.",
+  step3_title: "3. Implementation",
+  step3_desc:  "Hands-on execution, from material sourcing to supplier engagement to design for circularity. We work alongside your team.",
   step3_chips: [
     { sub: "Climate" },          { chip: "Scope 3 & Supplier Strategy" },
     { sub: "Product & Materials" }, { chip: "Material Repurposing & BOM" }, { chip: "Durability & Repair" },
@@ -50,19 +50,19 @@ const CONTENT = {
     { sub: "Outputs" },          { chip: "Toolkits & Grant Support" }
   ],
 
-  step4_title: "Measurable Impact",
-  step4_desc:  "We track, verify, and communicate your impact — giving you the evidence base to report, improve, and lead with confidence.",
+  step4_title: "4. Measurable Impact",
+  step4_desc:  "We track, verify, and communicate your impact, giving you the evidence base to report, improve, and lead with confidence.",
   step4_chips: ["Light LCAs", "Carbon Credits Advice", "Impact & Sustainability Reporting"],
 
   // ── MEET THE TEAM ─────────────────────────────────
   pool_eyebrow: "Our delivery model",
   pool_heading: "Meet the team.",
-  pool_intro:   "We bring in freelancers with real, hands-on experience — and we work alongside them ourselves. That's what makes us different: we're not a matchmaker. We're in the project with you, from start to finish.",
+  pool_intro:   "We bring in freelancers with real, hands-on experience, and we work alongside them ourselves. That's what makes us different: we're not a matchmaker. We're in the project with you, from start to finish.",
 
-  team1_name: "Mara de Jong",
+  team1_name: "Fabeel Butt",
   team1_role: "Sustainability Strategist · Amsterdam",
-  team1_bio:  "Mara spent 11 years helping fashion and FMCG brands navigate complex supply chain transitions. She led Scope 3 programmes for three publicly listed companies before joining Studio SHIFT, and has a particular talent for turning regulatory pressure into commercial opportunity.",
-  team1_tags: ["Scope 3", "SBTi", "Supply Chain", "Stakeholder Engagement"],
+  team1_bio:  "Fabeel is a sustainability expert with 15 years of experience turning ambition into impact across products and supply chains. Proven track record at Action, HEMA, Lidl, and Fairtrade Foundation, leading initiatives from strategy to execution. Delivered full tier 1 supply chain transparency, developed sustainable sourcing and packaging policies, and implemented circularity and climate programs aligned with the GHG Protocol. Combines strategic thinking with hands-on execution to make sustainability commercially viable and scalable.",
+  team1_tags: ["Supply Chain", "Stakeholder Engagement", "Sustainability Strategy", "Circular Design"],
 
   team2_name: "Luca Brandt",
   team2_role: "Circular Design Lead · Berlin",
@@ -70,18 +70,18 @@ const CONTENT = {
   team2_tags: ["Circular Design", "LCA", "Materials", "Durability & Repair"],
 
   poolcard1_title: "Curated specialists",
-  poolcard1_desc:  "Every freelancer in our network is hand-picked — vetted for real-world experience, not just credentials. We know who we're bringing in, and why they're the right fit for your project.",
+  poolcard1_desc:  "Every freelancer in our network is hand-picked, vetted for real-world experience, not just credentials. We know who we're bringing in, and why they're the right fit for your project.",
 
   poolcard2_title: "Lower cost, no compromise",
-  poolcard2_desc:  "Without the overhead of a traditional agency — no account managers, no layers — you get specialist expertise at a fraction of the price. Our network model keeps costs lean while keeping quality high.",
+  poolcard2_desc:  "Without the overhead of a traditional agency, no account managers, no layers, you get specialist expertise at a fraction of the price. Our network model keeps costs lean while keeping quality high.",
 
   poolcard3_title: "We're in the project with you",
-  poolcard3_desc:  "We don't just match you with talent and step back. Studio SHIFT joins the team directly — keeping quality consistent, communication clear, and the work on track from first brief to final delivery.",
+  poolcard3_desc:  "We don't just match you with talent and step back. Studio SHIFT joins the team directly, keeping quality consistent, communication clear, and the work on track from first brief to final delivery.",
 
   // ── CONTACT ───────────────────────────────────────
   contact_eyebrow:  "Get in touch",
   contact_heading:  "Let's make<br><em>something</em><br>real.",
-  contact_sub:      "Whether you have a clear brief or just a sense of what you want to achieve — we'd love to hear from you.",
+  contact_sub:      "Whether you have a clear brief or just a sense of what you want to achieve, we'd love to hear from you.",
   contact_email:    "hello@studioshift.nl",
   contact_location: "Amsterdam, NL",
 
@@ -113,7 +113,7 @@ const CONTENT = {
   // Profiles section
   fl_profiles_eyebrow:    "Who we're looking for",
   fl_profiles_h2:         "The profiles<br>we work with.",
-  fl_profiles_sub:        "Our projects span strategy, design, and implementation. We look for depth over breadth — specialists who are genuinely expert in their domain.",
+  fl_profiles_sub:        "Our projects span strategy, design, and implementation. We look for depth over breadth, specialists who are genuinely expert in their domain.",
 
   fl_card1_tag:           "Strategy",
   fl_card1_title:         "Sustainability Strategists",
@@ -142,7 +142,7 @@ const CONTENT = {
   // Apply / CTA section
   fl_apply_eyebrow:       "Get in touch",
   fl_apply_h2:            "Tell us<br>about <em>yourself.</em>",
-  fl_apply_sub:           "Drop us a note and we'll be in touch if there's a good fit. We review every application and respond to everyone — usually within a week.",
+  fl_apply_sub:           "Drop us a note and we'll be in touch if there's a good fit. We review every application and respond to everyone, usually within a week.",
   fl_apply_detail_label:  "Email us directly",
   fl_apply_detail_val:    "hello@studioshift.nl",
   fl_apply_btn:           "Send application",
