@@ -369,263 +369,319 @@ footer p { font-size: 12px; color: rgba(255,255,255,.3); font-family: 'IBM Plex 
 <section class="hero-split" id="hero">
   <div class="hero-grill-panel" id="grillPanel">
     <svg viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" style="position:absolute;inset:0;width:100%;height:100%;" aria-hidden="true">
+      <rect width="640" height="640" fill="#0d1a24"/>
 
-  <!-- Background -->
-  <rect width="640" height="640" fill="#0d1217"/>
+      <!-- Subtle grid -->
+      <line x1="0" y1="140" x2="640" y2="140" stroke="var(--sky)" stroke-width=".4" opacity=".08"/>
+      <line x1="0" y1="280" x2="640" y2="280" stroke="var(--sky)" stroke-width=".4" opacity=".08"/>
+      <line x1="0" y1="420" x2="640" y2="420" stroke="var(--sky)" stroke-width=".4" opacity=".08"/>
+      <line x1="160" y1="0" x2="160" y2="560" stroke="var(--sky)" stroke-width=".4" opacity=".08"/>
+      <line x1="320" y1="0" x2="320" y2="560" stroke="var(--sky)" stroke-width=".4" opacity=".08"/>
+      <line x1="480" y1="0" x2="480" y2="560" stroke="var(--sky)" stroke-width=".4" opacity=".08"/>
 
-  <!-- Ambient heat glow backdrop -->
-  <ellipse cx="320" cy="460" rx="200" ry="100" fill="#ff4400" opacity=".04"/>
+      <!-- ── PANINI PRESS / GRILLED CHEESE IRON — isometric exploded view ── -->
 
-  <!-- ── prodBase: Bottom grill unit ── -->
-  <g id="prodBase" style="transition:transform 1s cubic-bezier(0.25,1,0.5,1)">
+      <!-- Title above graphic -->
+      <text x="320" y="50" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-size="22" font-weight="700" fill="#e8f4f8" opacity=".85">Panini Grill</text>
+      <text x="320" y="72" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="10" letter-spacing="3" fill="#01BAEF" opacity=".5">EXPLODED VIEW</text>
 
-    <!-- Ground shadow -->
-    <ellipse cx="320" cy="530" rx="170" ry="26" fill="#000" opacity=".28"/>
+      <!-- LAYER 1: Base housing — bottom half of press (stays fixed) -->
+      <g id="prodBase" style="transition:transform 1s cubic-bezier(0.25,1,0.5,1)">
+        <!-- Shadow on ground -->
+        <ellipse cx="320" cy="500" rx="160" ry="28" fill="#000" opacity=".15"/>
 
-    <!-- Housing body — dark charcoal metal -->
-    <!-- Top surface (rim around grill plate) -->
-    <path d="M165 432 L320 340 L475 432 L320 524Z" fill="#232323"/>
-    <!-- Left wall -->
-    <path d="M165 432 L165 470 L320 562 L320 524Z" fill="#2c2c2c"/>
-    <!-- Right wall -->
-    <path d="M475 432 L475 470 L320 562 L320 524Z" fill="#191919"/>
-    <!-- Housing rim highlight (metallic top edge) -->
-    <path d="M165 432 L320 340 L475 432" fill="none" stroke="#3e3e3e" stroke-width="1.5"/>
-    <path d="M167 433 L320 342 L473 433" fill="none" stroke="#4c4c4c" stroke-width=".5" opacity=".5"/>
+        <!-- Housing body — chunky isometric slab with depth -->
+        <!-- Bottom face -->
+        <path d="M160 410 L320 502 L480 410 L320 318Z" fill="#0b2a3d"/>
+        <!-- Left wall -->
+        <path d="M160 410 L160 440 L320 532 L320 502Z" fill="#0d3248"/>
+        <!-- Right wall -->
+        <path d="M480 410 L480 440 L320 532 L320 502Z" fill="#0a2636"/>
+        <!-- Front edge bevel -->
+        <path d="M320 502 L320 532 L322 530 L322 500Z" fill="#1a5070" opacity=".5"/>
 
-    <!-- Grill plate (cooking surface — recessed, dark metal) -->
-    <path d="M188 432 L320 352 L452 432 L320 512Z" fill="#181818"/>
+        <!-- Top surface of base housing -->
+        <path d="M160 410 L320 318 L480 410 L320 502Z" fill="#0d3c5c"/>
 
-    <!-- Orange heat glow from cooking surface -->
-    <ellipse cx="320" cy="432" rx="136" ry="80" fill="#ff4400" opacity=".09"/>
-    <ellipse cx="320" cy="432" rx="80" ry="46" fill="#ff7700" opacity=".07"/>
+        <!-- Grill plate recessed into base — slightly smaller diamond -->
+        <path d="M190 410 L320 340 L450 410 L320 480Z" fill="#0a2e42"/>
+        <!-- Grill plate metallic surface -->
+        <path d="M195 410 L320 343 L445 410 L320 477Z" fill="#103a54"/>
 
-    <!-- 8 GRILL RIDGES — prominent metallic raised bars with heat in valleys -->
-    <!-- Ridge coordinates run from upper-left plate edge to lower-right plate edge -->
-    <!-- Plate corners: Left=(188,432) Top=(320,352) Right=(452,432) Bottom=(320,512) -->
+        <!-- Grill ridges — parallel lines across cooking surface -->
+        <line x1="215" y1="404" x2="320" y2="350" stroke="#0a2a3e" stroke-width="2.5" opacity=".6"/>
+        <line x1="225" y1="414" x2="335" y2="358" stroke="#0a2a3e" stroke-width="2.5" opacity=".6"/>
+        <line x1="237" y1="424" x2="350" y2="366" stroke="#0a2a3e" stroke-width="2.5" opacity=".6"/>
+        <line x1="249" y1="434" x2="365" y2="374" stroke="#0a2a3e" stroke-width="2.5" opacity=".55"/>
+        <line x1="261" y1="444" x2="378" y2="382" stroke="#0a2a3e" stroke-width="2.5" opacity=".55"/>
+        <line x1="273" y1="454" x2="393" y2="390" stroke="#0a2a3e" stroke-width="2.5" opacity=".5"/>
+        <line x1="285" y1="464" x2="406" y2="398" stroke="#0a2a3e" stroke-width="2.5" opacity=".5"/>
+        <line x1="297" y1="474" x2="421" y2="406" stroke="#0a2a3e" stroke-width="2.5" opacity=".45"/>
+        <!-- Grill ridge highlights -->
+        <line x1="216" y1="402" x2="320" y2="348" stroke="#01BAEF" stroke-width="1" opacity=".3"/>
+        <line x1="238" y1="422" x2="350" y2="364" stroke="#01BAEF" stroke-width="1" opacity=".3"/>
+        <line x1="262" y1="442" x2="378" y2="380" stroke="#01BAEF" stroke-width="1" opacity=".25"/>
+        <line x1="286" y1="462" x2="406" y2="396" stroke="#01BAEF" stroke-width="1" opacity=".25"/>
 
-    <!-- Ridge 1 -->
-    <line x1="203" y1="423" x2="437" y2="441" stroke="#090909" stroke-width="9"/>
-    <line x1="203" y1="423" x2="437" y2="441" stroke="#484848" stroke-width="5.5"/>
-    <line x1="203" y1="423" x2="437" y2="441" stroke="#878787" stroke-width="2.5"/>
-    <line x1="203" y1="422" x2="437" y2="440" stroke="#c4c4c4" stroke-width=".9" opacity=".7"/>
+        <!-- Grease channel / drip groove around grill plate -->
+        <path d="M190 410 L320 340 L450 410 L320 480Z" fill="none" stroke="#0a2030" stroke-width="2.5" opacity=".5"/>
 
-    <!-- Ridge 2 -->
-    <line x1="217" y1="414" x2="423" y2="450" stroke="#090909" stroke-width="9"/>
-    <line x1="217" y1="414" x2="423" y2="450" stroke="#484848" stroke-width="5.5"/>
-    <line x1="217" y1="414" x2="423" y2="450" stroke="#878787" stroke-width="2.5"/>
-    <line x1="217" y1="413" x2="423" y2="449" stroke="#c4c4c4" stroke-width=".9" opacity=".7"/>
+        <!-- Drip tray slot at front -->
+        <path d="M290 488 L320 504 L350 488" fill="#081e2c" stroke="#0a2030" stroke-width="1" opacity=".6"/>
+        <path d="M295 490 L320 502 L345 490" fill="#0a2638" opacity=".4"/>
 
-    <!-- Ridge 3 -->
-    <line x1="232" y1="405" x2="408" y2="459" stroke="#090909" stroke-width="9"/>
-    <line x1="232" y1="405" x2="408" y2="459" stroke="#484848" stroke-width="5.5"/>
-    <line x1="232" y1="405" x2="408" y2="459" stroke="#878787" stroke-width="2.5"/>
-    <line x1="232" y1="404" x2="408" y2="458" stroke="#c4c4c4" stroke-width=".9" opacity=".7"/>
+        <!-- Feet — 4 rubber anti-slip pads -->
+        <ellipse cx="200" cy="442" rx="10" ry="5" fill="#000" opacity=".5"/>
+        <ellipse cx="200" cy="440" rx="8" ry="4" fill="#0d1a24" opacity=".8"/>
+        <ellipse cx="440" cy="442" rx="10" ry="5" fill="#000" opacity=".5"/>
+        <ellipse cx="440" cy="440" rx="8" ry="4" fill="#0d1a24" opacity=".8"/>
+        <ellipse cx="320" cy="534" rx="10" ry="5" fill="#000" opacity=".45"/>
+        <ellipse cx="320" cy="532" rx="8" ry="4" fill="#0d1a24" opacity=".7"/>
+        <ellipse cx="320" cy="320" rx="8" ry="4" fill="#000" opacity=".3"/>
 
-    <!-- Ridge 4 -->
-    <line x1="247" y1="396" x2="393" y2="468" stroke="#090909" stroke-width="9"/>
-    <line x1="247" y1="396" x2="393" y2="468" stroke="#484848" stroke-width="5.5"/>
-    <line x1="247" y1="396" x2="393" y2="468" stroke="#878787" stroke-width="2.5"/>
-    <line x1="247" y1="395" x2="393" y2="467" stroke="#c4c4c4" stroke-width=".9" opacity=".7"/>
+        <!-- Front control panel -->
+        <path d="M350 470 L420 434 L420 448 L350 484Z" fill="#0b2a3e" opacity=".8"/>
+        <!-- Temperature dial -->
+        <ellipse cx="370" cy="460" rx="10" ry="6" fill="#081e2c"/>
+        <ellipse cx="370" cy="458" rx="8" ry="5" fill="#0a2a3e"/>
+        <ellipse cx="370" cy="458" rx="6" ry="3.5" fill="#0d3248"/>
+        <!-- Dial indicator notch -->
+        <line x1="370" y1="455" x2="370" y2="452" stroke="#01BAEF" stroke-width="1.5" opacity=".8"/>
+        <!-- Dial markings -->
+        <circle cx="365" cy="461" r=".8" fill="#01BAEF" opacity=".4"/>
+        <circle cx="368" cy="454" r=".8" fill="#01BAEF" opacity=".4"/>
+        <circle cx="373" cy="454" r=".8" fill="#01BAEF" opacity=".4"/>
+        <circle cx="376" cy="461" r=".8" fill="#01BAEF" opacity=".4"/>
+        <!-- Power indicator light -->
+        <circle cx="396" cy="448" r="3.5" fill="#081e2c"/>
+        <circle cx="396" cy="447" r="2.5" fill="#d4623a" opacity=".8"/>
+        <circle cx="396" cy="446" r="1.2" fill="#f5e642" opacity=".6"/>
+        <!-- Ready indicator light -->
+        <circle cx="408" cy="442" r="3" fill="#081e2c"/>
+        <circle cx="408" cy="441" r="2" fill="#01BAEF" opacity=".7"/>
 
-    <!-- Ridge 5 -->
-    <line x1="261" y1="388" x2="379" y2="476" stroke="#090909" stroke-width="9"/>
-    <line x1="261" y1="388" x2="379" y2="476" stroke="#484848" stroke-width="5.5"/>
-    <line x1="261" y1="388" x2="379" y2="476" stroke="#878787" stroke-width="2.5"/>
-    <line x1="261" y1="387" x2="379" y2="475" stroke="#c4c4c4" stroke-width=".9" opacity=".7"/>
+        <!-- Power cord — exits from the back left -->
+        <path d="M195 425 C175 430, 155 425, 135 438 C115 452, 95 445, 70 458 C55 465, 40 460, 25 470"
+              stroke="#0d3c5c" stroke-width="4" fill="none" opacity=".6" stroke-linecap="round"/>
+        <path d="M195 425 C175 430, 155 425, 135 438 C115 452, 95 445, 70 458 C55 465, 40 460, 25 470"
+              stroke="#1a6080" stroke-width="2" fill="none" opacity=".3" stroke-linecap="round"/>
+        <!-- Cord strain relief -->
+        <ellipse cx="195" cy="425" rx="5" ry="3" fill="#0b2a3e"/>
 
-    <!-- Ridge 6 -->
-    <line x1="276" y1="379" x2="364" y2="485" stroke="#090909" stroke-width="9"/>
-    <line x1="276" y1="379" x2="364" y2="485" stroke="#484848" stroke-width="5.5"/>
-    <line x1="276" y1="379" x2="364" y2="485" stroke="#878787" stroke-width="2.5"/>
-    <line x1="276" y1="378" x2="364" y2="484" stroke="#c4c4c4" stroke-width=".9" opacity=".7"/>
+        <!-- Hinge assembly at back -->
+        <ellipse cx="190" cy="415" rx="6" ry="4" fill="#0a2636"/>
+        <ellipse cx="190" cy="413" rx="5" ry="3" fill="#0d3c5c"/>
+        <circle cx="190" cy="413" r="2" fill="#01BAEF" opacity=".3"/>
+        <!-- Hinge pin -->
+        <line x1="186" y1="413" x2="194" y2="413" stroke="#01BAEF" stroke-width="1" opacity=".4"/>
 
-    <!-- Ridge 7 -->
-    <line x1="291" y1="370" x2="349" y2="494" stroke="#090909" stroke-width="9"/>
-    <line x1="291" y1="370" x2="349" y2="494" stroke="#484848" stroke-width="5.5"/>
-    <line x1="291" y1="370" x2="349" y2="494" stroke="#878787" stroke-width="2.5"/>
-    <line x1="291" y1="369" x2="349" y2="493" stroke="#c4c4c4" stroke-width=".9" opacity=".7"/>
+        <!-- Housing edge details — screws/rivets -->
+        <circle cx="180" cy="425" r="2" fill="#0a2636" opacity=".7"/>
+        <circle cx="180" cy="425" r="1" fill="#0d3c5c" opacity=".5"/>
+        <circle cx="460" cy="425" r="2" fill="#0a2636" opacity=".7"/>
+        <circle cx="460" cy="425" r="1" fill="#0d3c5c" opacity=".5"/>
+        <circle cx="320" cy="520" r="2" fill="#0a2636" opacity=".6"/>
+        <circle cx="320" cy="520" r="1" fill="#0d3c5c" opacity=".4"/>
 
-    <!-- Ridge 8 -->
-    <line x1="305" y1="361" x2="335" y2="503" stroke="#090909" stroke-width="9"/>
-    <line x1="305" y1="361" x2="335" y2="503" stroke="#484848" stroke-width="5.5"/>
-    <line x1="305" y1="361" x2="335" y2="503" stroke="#878787" stroke-width="2.5"/>
-    <line x1="305" y1="360" x2="335" y2="502" stroke="#c4c4c4" stroke-width=".9" opacity=".7"/>
+        <!-- Ventilation slots on left wall -->
+        <line x1="168" y1="420" x2="172" y2="418" stroke="#081a28" stroke-width="2" opacity=".5"/>
+        <line x1="166" y1="425" x2="170" y2="423" stroke="#081a28" stroke-width="2" opacity=".5"/>
+        <line x1="164" y1="430" x2="168" y2="428" stroke="#081a28" stroke-width="2" opacity=".5"/>
 
-    <!-- Grill plate rim -->
-    <path d="M188 432 L320 352 L452 432 L320 512Z" fill="none" stroke="#303030" stroke-width="1.5"/>
-    <path d="M188 432 L320 352 L452 432" fill="none" stroke="#464646" stroke-width=".8" opacity=".7"/>
+        <!-- Brand text embossed on front -->
+        <text x="345" y="496" font-family="'IBM Plex Mono',monospace" font-size="7" letter-spacing="3" fill="#01BAEF" opacity=".4">SHIFT</text>
 
-    <!-- Rubber feet -->
-    <ellipse cx="208" cy="472" rx="10" ry="5" fill="#000" opacity=".55"/>
-    <ellipse cx="208" cy="470" rx="8" ry="4" fill="#141414"/>
-    <ellipse cx="432" cy="472" rx="10" ry="5" fill="#000" opacity=".55"/>
-    <ellipse cx="432" cy="470" rx="8" ry="4" fill="#141414"/>
-    <ellipse cx="320" cy="564" rx="10" ry="5" fill="#000" opacity=".45"/>
-    <ellipse cx="320" cy="562" rx="8" ry="4" fill="#141414"/>
+        <!-- Surface texture lines on top housing -->
+        <path d="M180 408 L320 328" stroke="#1a6080" stroke-width=".5" opacity=".15"/>
+        <path d="M460 408 L320 328" stroke="#0d3048" stroke-width=".5" opacity=".1"/>
+      </g>
 
-    <!-- Front control panel -->
-    <path d="M354 492 L444 448 L444 464 L354 508Z" fill="#1c1c1c"/>
+      <!-- LAYER 2: Internal electronics — hidden inside when assembled, revealed on explode -->
+      <g id="prodMid" style="transition:transform 1s cubic-bezier(0.25,1,0.5,1)">
+        <!-- Insulation / heat shield plate -->
+        <path d="M185 410 L320 336 L455 410 L320 484Z" fill="#081e2c" opacity=".85"/>
+        <path d="M185 410 L185 416 L320 490 L320 484Z" fill="#061828" opacity=".6"/>
+        <path d="M455 410 L455 416 L320 490 L320 484Z" fill="#041420" opacity=".6"/>
 
-    <!-- Temperature dial -->
-    <ellipse cx="374" cy="476" rx="12" ry="8" fill="#111"/>
-    <ellipse cx="374" cy="474" rx="10" ry="6.5" fill="#1a1a1a"/>
-    <ellipse cx="374" cy="474" rx="7.5" ry="5" fill="#212121"/>
-    <line x1="374" y1="469" x2="374" y2="465" stroke="#ff7700" stroke-width="2.2" stroke-linecap="round" opacity=".95"/>
-    <circle cx="368" cy="477" r=".9" fill="#555"/>
-    <circle cx="371" cy="470" r=".9" fill="#555"/>
-    <circle cx="377" cy="470" r=".9" fill="#555"/>
-    <circle cx="380" cy="477" r=".9" fill="#555"/>
-    <text x="374" y="487" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="4.5" letter-spacing="1" fill="#454545">TEMP</text>
+        <!-- PCB / control board -->
+        <path d="M240 410 L320 366 L400 410 L320 454Z" fill="#0a3c5c" opacity=".9"/>
+        <!-- PCB edge highlight -->
+        <path d="M240 410 L320 366 L400 410" fill="none" stroke="#1a6080" stroke-width=".8" opacity=".5"/>
+        <!-- PCB traces — copper tracks -->
+        <line x1="265" y1="400" x2="295" y2="385" stroke="#01BAEF" stroke-width="1.2" opacity=".45"/>
+        <line x1="295" y1="385" x2="295" y2="400" stroke="#01BAEF" stroke-width="1.2" opacity=".4"/>
+        <line x1="295" y1="400" x2="330" y2="418" stroke="#01BAEF" stroke-width="1" opacity=".35"/>
+        <line x1="345" y1="395" x2="375" y2="410" stroke="#01BAEF" stroke-width="1.2" opacity=".4"/>
+        <line x1="345" y1="395" x2="345" y2="380" stroke="#01BAEF" stroke-width="1" opacity=".35"/>
+        <line x1="310" y1="375" x2="340" y2="375" stroke="#01BAEF" stroke-width=".8" opacity=".3"/>
+        <line x1="280" y1="390" x2="310" y2="390" stroke="#01BAEF" stroke-width=".8" opacity=".3"/>
+        <line x1="320" y1="430" x2="350" y2="415" stroke="#01BAEF" stroke-width="1" opacity=".35"/>
+        <!-- Ground plane fill -->
+        <path d="M260 410 L320 378 L380 410 L320 442Z" fill="#0a3c5c" opacity=".3"/>
 
-    <!-- Power LED — orange (heating) -->
-    <circle cx="406" cy="458" r="4.5" fill="#0e0e0e"/>
-    <circle cx="406" cy="457" r="3.5" fill="#aa2200" opacity=".85"/>
-    <circle cx="406" cy="456" r="1.6" fill="#ff5500" opacity=".95"/>
+        <!-- Serpentine heating coil — bottom element -->
+        <path d="M220 408 C240 396, 260 412, 280 400 C300 388, 320 404, 340 392 C360 380, 380 396, 400 388 C415 382, 425 390, 430 396"
+              stroke="#d4623a" stroke-width="3" fill="none" opacity=".75" stroke-linecap="round"/>
+        <path d="M228 420 C248 408, 268 424, 288 412 C308 400, 328 416, 348 404 C368 392, 388 408, 408 400 C418 396, 425 402, 428 406"
+              stroke="#d4623a" stroke-width="3" fill="none" opacity=".65" stroke-linecap="round"/>
+        <path d="M236 432 C256 420, 276 436, 296 424 C316 412, 336 428, 356 416 C376 404, 396 420, 416 412"
+              stroke="#d4623a" stroke-width="2.5" fill="none" opacity=".55" stroke-linecap="round"/>
+        <!-- Coil connection terminals -->
+        <rect x="216" y="405" width="6" height="6" rx="1" fill="#c0c0c0" opacity=".6"/>
+        <rect x="430" y="393" width="6" height="6" rx="1" fill="#c0c0c0" opacity=".6"/>
 
-    <!-- Ready LED — blue -->
-    <circle cx="422" cy="450" r="4" fill="#0e0e0e"/>
-    <circle cx="422" cy="449" r="3" fill="#013a50" opacity=".85"/>
-    <circle cx="422" cy="448" r="1.5" fill="#01BAEF" opacity=".75"/>
+        <!-- Thermostat / bimetal switch -->
+        <circle cx="280" cy="430" r="8" fill="#0d1a24" opacity=".8"/>
+        <circle cx="280" cy="430" r="6" fill="#1a2a34"/>
+        <circle cx="280" cy="430" r="4" fill="#1e3448"/>
+        <circle cx="280" cy="430" r="2" fill="#01BAEF" opacity=".5"/>
+        <!-- Thermostat callout line -->
+        <line x1="280" y1="438" x2="280" y2="455" stroke="#01BAEF" stroke-width=".8" opacity=".4" stroke-dasharray="2 2"/>
+        <text x="280" y="464" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="7" fill="#01BAEF" opacity=".45">THERMOSTAT</text>
 
-    <!-- Brand text -->
-    <text x="362" y="503" font-family="'IBM Plex Mono',monospace" font-size="6" letter-spacing="2.5" fill="#3a3a3a">SHIFT</text>
+        <!-- Thermal fuse — safety cutoff -->
+        <rect x="355" y="425" width="18" height="6" rx="2" fill="#1a1e22" opacity=".8"/>
+        <rect x="358" y="427" width="12" height="2" rx="1" fill="#d4623a" opacity=".5"/>
+        <line x1="353" y1="428" x2="355" y2="428" stroke="#c0c0c0" stroke-width="1" opacity=".5"/>
+        <line x1="373" y1="428" x2="375" y2="428" stroke="#c0c0c0" stroke-width="1" opacity=".5"/>
 
-    <!-- Hinge at back left -->
-    <ellipse cx="192" cy="440" rx="9" ry="5.5" fill="#1a1a1a"/>
-    <ellipse cx="192" cy="438" rx="7.5" ry="4.5" fill="#272727"/>
-    <line x1="185" y1="438" x2="199" y2="438" stroke="#424242" stroke-width="1.5"/>
-    <circle cx="192" cy="438" r="2.2" fill="#111"/>
+        <!-- Wiring harness -->
+        <path d="M222 408 C210 412, 200 406, 195 414" stroke="#f5e642" stroke-width="1.5" fill="none" opacity=".5"/>
+        <path d="M222 411 C208 416, 198 410, 192 418" stroke="#d4623a" stroke-width="1.5" fill="none" opacity=".45"/>
+        <path d="M222 414 C210 420, 202 414, 196 422" stroke="#01BAEF" stroke-width="1.5" fill="none" opacity=".4"/>
+        <path d="M432 396 C440 400, 448 394, 452 400" stroke="#f5e642" stroke-width="1.5" fill="none" opacity=".45"/>
+        <path d="M432 399 C442 404, 450 398, 454 404" stroke="#d4623a" stroke-width="1.5" fill="none" opacity=".4"/>
 
-    <!-- Power cord -->
-    <path d="M196 456 C176 462, 156 454, 136 468 C116 482, 96 474, 74 486" stroke="#161616" stroke-width="5.5" fill="none" stroke-linecap="round"/>
-    <path d="M196 456 C176 462, 156 454, 136 468 C116 482, 96 474, 74 486" stroke="#2a2a2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-    <ellipse cx="196" cy="456" rx="6" ry="3.5" fill="#1c1c1c"/>
+        <!-- Voltage regulator IC -->
+        <rect x="330" y="380" width="14" height="10" rx="1" fill="#0d1a24" opacity=".85"/>
+        <rect x="332" y="382" width="10" height="6" fill="#1a2a34"/>
+        <text x="337" y="387" font-family="'IBM Plex Mono',monospace" font-size="4" fill="#01BAEF" opacity=".4" text-anchor="middle">IC</text>
+        <!-- IC pins -->
+        <line x1="332" y1="390" x2="332" y2="394" stroke="#c0c0c0" stroke-width="1" opacity=".4"/>
+        <line x1="337" y1="390" x2="337" y2="394" stroke="#c0c0c0" stroke-width="1" opacity=".4"/>
+        <line x1="342" y1="390" x2="342" y2="394" stroke="#c0c0c0" stroke-width="1" opacity=".4"/>
 
-  </g>
+        <!-- Capacitors — electrolytic -->
+        <ellipse cx="308" cy="405" rx="5" ry="3" fill="#0d2034"/>
+        <ellipse cx="308" cy="403" rx="4" ry="2.5" fill="#1a3c5c"/>
+        <path d="M306 403 L310 403" stroke="#01BAEF" stroke-width=".5" opacity=".5"/>
+        <ellipse cx="358" cy="408" rx="4" ry="2.5" fill="#0d2034"/>
+        <ellipse cx="358" cy="406" rx="3" ry="2" fill="#1a3c5c"/>
 
-  <!-- ── prodMid: Heat glow + steam layer ── -->
-  <g id="prodMid" style="transition:transform 1s cubic-bezier(0.25,1,0.5,1)">
-    <!-- Radiant heat between plates when open -->
-    <ellipse cx="320" cy="432" rx="148" ry="88" fill="#ff4400" opacity=".14"/>
-    <ellipse cx="320" cy="432" rx="108" ry="62" fill="#ff7700" opacity=".11"/>
-    <ellipse cx="320" cy="432" rx="64" ry="37" fill="#ffaa00" opacity=".08"/>
-    <!-- Steam wisps -->
-    <path d="M252 388 C249 368, 255 352, 250 334" stroke="rgba(215,232,232,.24)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-    <path d="M281 374 C278 354, 284 338, 279 320" stroke="rgba(215,232,232,.2)" stroke-width="3" fill="none" stroke-linecap="round"/>
-    <path d="M320 364 C317 344, 323 328, 318 310" stroke="rgba(215,232,232,.22)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-    <path d="M359 374 C356 354, 362 338, 357 320" stroke="rgba(215,232,232,.2)" stroke-width="3" fill="none" stroke-linecap="round"/>
-    <path d="M388 388 C385 368, 391 352, 386 334" stroke="rgba(215,232,232,.16)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-  </g>
+        <!-- Indicator LED on board -->
+        <circle cx="375" cy="418" r="2.5" fill="#081e2c"/>
+        <circle cx="375" cy="417" r="1.8" fill="#01BAEF" opacity=".6"/>
 
-  <!-- ── prodTop: Top lid ── -->
-  <g id="prodTop" style="transition:transform 1s cubic-bezier(0.25,1,0.5,1)">
+        <!-- Mounting holes -->
+        <circle cx="248" cy="410" r="3" fill="#060e16" opacity=".5"/>
+        <circle cx="248" cy="410" r="1.5" fill="#0d1a24" opacity=".7"/>
+        <circle cx="392" cy="410" r="3" fill="#060e16" opacity=".5"/>
+        <circle cx="392" cy="410" r="1.5" fill="#0d1a24" opacity=".7"/>
 
-    <!-- Lid body — dark charcoal, clamshell design -->
-    <!-- Lid underside (faces cooking surface when closed) -->
-    <path d="M168 434 L320 344 L472 434 L320 524Z" fill="#1c1c1c"/>
-    <!-- Lid left side wall -->
-    <path d="M168 418 L168 434 L320 344 L320 328Z" fill="#313131"/>
-    <!-- Lid right side wall -->
-    <path d="M472 418 L472 434 L320 328 L320 344Z" fill="#1a1a1a"/>
-    <!-- Lid top surface -->
-    <path d="M168 418 L320 328 L472 418 L320 508Z" fill="#272727"/>
+        <!-- Insulation outline -->
+        <path d="M188 410 L320 338 L452 410 L320 482Z" fill="none" stroke="#01BAEF" stroke-width=".6" opacity=".2" stroke-dasharray="4 4"/>
+      </g>
 
-    <!-- Top surface metallic sheen -->
-    <path d="M168 418 L320 328 L472 418" fill="none" stroke="#424242" stroke-width="1.5"/>
-    <path d="M170 420 L320 330 L470 420" fill="none" stroke="#505050" stroke-width=".5" opacity=".5"/>
-    <!-- Subtle surface texture -->
-    <path d="M200 412 L320 332" stroke="#303030" stroke-width=".8" opacity=".5"/>
-    <path d="M440 412 L320 332" stroke="#1e1e1e" stroke-width=".8" opacity=".4"/>
+      <!-- LAYER 3: Top lid — sits on top when closed, lifts on scroll -->
+      <g id="prodTop" style="transition:transform 1s cubic-bezier(0.25,1,0.5,1)">
+        <!-- Lid body — fully opaque to cover internals when closed -->
+        <path d="M160 410 L320 318 L480 410 L320 502Z" fill="#0d3c5c"/>
+        <!-- Lid left wall -->
+        <path d="M160 410 L160 395 L320 303 L320 318Z" fill="#1a5070"/>
+        <!-- Lid right wall -->
+        <path d="M480 410 L480 395 L320 303 L320 318Z" fill="#0d4060"/>
 
-    <!-- Grill ridges on lid underside (slightly darker — facing down) -->
-    <!-- Ridge 1 -->
-    <line x1="203" y1="423" x2="437" y2="441" stroke="#080808" stroke-width="8"/>
-    <line x1="203" y1="423" x2="437" y2="441" stroke="#363636" stroke-width="4.5"/>
-    <line x1="203" y1="423" x2="437" y2="441" stroke="#5c5c5c" stroke-width="2"/>
-    <!-- Ridge 2 -->
-    <line x1="217" y1="414" x2="423" y2="450" stroke="#080808" stroke-width="8"/>
-    <line x1="217" y1="414" x2="423" y2="450" stroke="#363636" stroke-width="4.5"/>
-    <line x1="217" y1="414" x2="423" y2="450" stroke="#5c5c5c" stroke-width="2"/>
-    <!-- Ridge 3 -->
-    <line x1="232" y1="405" x2="408" y2="459" stroke="#080808" stroke-width="8"/>
-    <line x1="232" y1="405" x2="408" y2="459" stroke="#363636" stroke-width="4.5"/>
-    <line x1="232" y1="405" x2="408" y2="459" stroke="#5c5c5c" stroke-width="2"/>
-    <!-- Ridge 4 -->
-    <line x1="247" y1="396" x2="393" y2="468" stroke="#080808" stroke-width="8"/>
-    <line x1="247" y1="396" x2="393" y2="468" stroke="#363636" stroke-width="4.5"/>
-    <line x1="247" y1="396" x2="393" y2="468" stroke="#5c5c5c" stroke-width="2"/>
-    <!-- Ridge 5 -->
-    <line x1="261" y1="388" x2="379" y2="476" stroke="#080808" stroke-width="8"/>
-    <line x1="261" y1="388" x2="379" y2="476" stroke="#363636" stroke-width="4.5"/>
-    <line x1="261" y1="388" x2="379" y2="476" stroke="#5c5c5c" stroke-width="2"/>
-    <!-- Ridge 6 -->
-    <line x1="276" y1="379" x2="364" y2="485" stroke="#080808" stroke-width="8"/>
-    <line x1="276" y1="379" x2="364" y2="485" stroke="#363636" stroke-width="4.5"/>
-    <line x1="276" y1="379" x2="364" y2="485" stroke="#5c5c5c" stroke-width="2"/>
-    <!-- Ridge 7 -->
-    <line x1="291" y1="370" x2="349" y2="494" stroke="#080808" stroke-width="8"/>
-    <line x1="291" y1="370" x2="349" y2="494" stroke="#363636" stroke-width="4.5"/>
-    <line x1="291" y1="370" x2="349" y2="494" stroke="#5c5c5c" stroke-width="2"/>
-    <!-- Ridge 8 -->
-    <line x1="305" y1="361" x2="335" y2="503" stroke="#080808" stroke-width="8"/>
-    <line x1="305" y1="361" x2="335" y2="503" stroke="#363636" stroke-width="4.5"/>
-    <line x1="305" y1="361" x2="335" y2="503" stroke="#5c5c5c" stroke-width="2"/>
+        <!-- Lid top surface -->
+        <path d="M160 395 L320 303 L480 395 L320 487Z" fill="#1a5c7c"/>
 
-    <!-- Lid underside rim -->
-    <path d="M168 434 L320 344 L472 434" fill="none" stroke="#2a2a2a" stroke-width="1"/>
+        <!-- Grill ridges on underside (visible from angle) — pressed into lid bottom -->
+        <line x1="175" y1="404" x2="320" y2="324" stroke="#0d3c5c" stroke-width="1.5" opacity=".3"/>
+        <line x1="185" y1="414" x2="338" y2="330" stroke="#0d3c5c" stroke-width="1.5" opacity=".3"/>
 
-    <!-- Handle on top of lid -->
-    <!-- Shadow under handle -->
-    <path d="M280 374 C280 356, 300 340, 320 334 C340 340, 360 356, 360 374" fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" opacity=".4"/>
-    <!-- Handle body (rubber/plastic grip) -->
-    <path d="M280 372 C280 354, 300 338, 320 332 C340 338, 360 354, 360 372" fill="none" stroke="#191919" stroke-width="10" stroke-linecap="round"/>
-    <!-- Handle outer surface -->
-    <path d="M280 371 C280 354, 300 338, 320 333 C340 338, 360 354, 360 371" fill="none" stroke="#252525" stroke-width="7" stroke-linecap="round"/>
-    <!-- Handle highlight (light catching top of handle arc) -->
-    <path d="M290 356 C296 344, 308 336, 320 333" fill="none" stroke="#333" stroke-width="2.5" stroke-linecap="round"/>
-    <!-- Grip texture marks -->
-    <path d="M295 362 C298 358, 302 355, 306 354" stroke="#111" stroke-width="1.3" fill="none" stroke-linecap="round"/>
-    <path d="M312 346 C316 345, 320 344, 324 345" stroke="#111" stroke-width="1.3" fill="none" stroke-linecap="round"/>
-    <path d="M334 354 C338 356, 342 360, 344 364" stroke="#111" stroke-width="1.3" fill="none" stroke-linecap="round"/>
-    <!-- Handle mount bases -->
-    <ellipse cx="280" cy="374" rx="8" ry="4.5" fill="#1e1e1e" stroke="#2d2d2d" stroke-width=".5"/>
-    <ellipse cx="360" cy="374" rx="8" ry="4.5" fill="#1e1e1e" stroke="#2d2d2d" stroke-width=".5"/>
+        <!-- Top surface grill ridge pattern — decorative lines on lid exterior -->
+        <line x1="200" y1="390" x2="320" y2="318" stroke="#1a5070" stroke-width="2" opacity=".4"/>
+        <line x1="218" y1="402" x2="340" y2="328" stroke="#1a5070" stroke-width="2" opacity=".4"/>
+        <line x1="236" y1="414" x2="358" y2="338" stroke="#1a5070" stroke-width="2" opacity=".4"/>
+        <line x1="254" y1="426" x2="376" y2="348" stroke="#1a5070" stroke-width="2" opacity=".38"/>
+        <line x1="272" y1="438" x2="394" y2="358" stroke="#1a5070" stroke-width="2" opacity=".36"/>
+        <line x1="290" y1="450" x2="412" y2="368" stroke="#1a5070" stroke-width="2" opacity=".34"/>
+        <line x1="308" y1="462" x2="430" y2="378" stroke="#1a5070" stroke-width="2" opacity=".32"/>
+        <line x1="326" y1="472" x2="448" y2="388" stroke="#1a5070" stroke-width="2" opacity=".3"/>
+        <!-- Ridge highlights -->
+        <line x1="201" y1="388" x2="320" y2="316" stroke="rgba(1,186,239,.6)" stroke-width=".8" opacity=".15"/>
+        <line x1="237" y1="412" x2="358" y2="336" stroke="rgba(1,186,239,.6)" stroke-width=".8" opacity=".15"/>
+        <line x1="273" y1="436" x2="394" y2="356" stroke="rgba(1,186,239,.6)" stroke-width=".8" opacity=".12"/>
 
-    <!-- Steam vent holes on lid top surface -->
-    <ellipse cx="426" cy="396" rx="4.5" ry="2.5" fill="#1c1c1c" stroke="#2d2d2d" stroke-width=".7"/>
-    <ellipse cx="439" cy="402" rx="4" ry="2.5" fill="#1c1c1c" stroke="#2d2d2d" stroke-width=".7"/>
-    <ellipse cx="452" cy="408" rx="3.5" ry="2" fill="#1c1c1c" stroke="#2d2d2d" stroke-width=".7"/>
+        <!-- Handle — ergonomic grip on top -->
+        <!-- Handle shadow -->
+        <path d="M278 355 L320 330 L362 355" fill="none" stroke="#081e2c" stroke-width="10" stroke-linecap="round" opacity=".3"/>
+        <!-- Handle base mounts -->
+        <ellipse cx="282" cy="358" rx="6" ry="3.5" fill="#0d3c5c"/>
+        <ellipse cx="358" cy="358" rx="6" ry="3.5" fill="#0d3c5c"/>
+        <!-- Handle bar -->
+        <path d="M282 354 C282 340, 300 326, 320 320 C340 326, 358 340, 358 354" fill="none" stroke="#0d3c5c" stroke-width="7" stroke-linecap="round"/>
+        <path d="M282 352 C282 338, 300 324, 320 318 C340 324, 358 338, 358 352" fill="none" stroke="#01BAEF" stroke-width="4" stroke-linecap="round"/>
+        <!-- Handle grip texture -->
+        <path d="M296 332 C298 330, 302 328, 306 328" stroke="#1a5070" stroke-width="1.5" opacity=".5" fill="none"/>
+        <path d="M314 326 C318 326, 322 326, 326 328" stroke="#1a5070" stroke-width="1.5" opacity=".5" fill="none"/>
+        <path d="M334 332 C338 334, 342 336, 344 338" stroke="#1a5070" stroke-width="1.5" opacity=".5" fill="none"/>
+        <!-- Handle highlight -->
+        <path d="M290 348 C294 336, 308 326, 320 322" fill="none" stroke="rgba(1,186,239,.6)" stroke-width="1.5" opacity=".3" stroke-linecap="round"/>
 
-    <!-- Hinges at back left -->
-    <ellipse cx="190" cy="424" rx="9" ry="5" fill="#1a1a1a"/>
-    <ellipse cx="190" cy="422" rx="7.5" ry="4" fill="#272727"/>
-    <line x1="183" y1="422" x2="197" y2="422" stroke="#3f3f3f" stroke-width="1.5"/>
-    <circle cx="190" cy="422" r="2" fill="#111"/>
-    <ellipse cx="214" cy="413" rx="8" ry="4.5" fill="#1a1a1a"/>
-    <ellipse cx="214" cy="411" rx="6.5" ry="3.5" fill="#272727"/>
+        <!-- Lid latch / clasp at front -->
+        <path d="M340 478 L350 472 L350 480 L340 486Z" fill="#0d3c5c"/>
+        <path d="M342 480 L348 476" stroke="#01BAEF" stroke-width="1" opacity=".4"/>
 
-    <!-- Lid latch at front -->
-    <path d="M336 497 L350 491 L350 501 L336 507Z" fill="#222" stroke="#333" stroke-width=".5"/>
-    <path d="M340 499 L348 495" stroke="#444" stroke-width=".9" opacity=".6"/>
+        <!-- Hinge assembly — 2 hinges at back -->
+        <ellipse cx="185" cy="405" rx="7" ry="4" fill="#0b2a3e"/>
+        <ellipse cx="185" cy="403" rx="5.5" ry="3" fill="#0d3c5c"/>
+        <circle cx="185" cy="403" r="2" fill="#1a5070" opacity=".5"/>
+        <ellipse cx="210" cy="393" rx="6" ry="3.5" fill="#0b2a3e"/>
+        <ellipse cx="210" cy="391" rx="4.5" ry="2.5" fill="#0d3c5c"/>
+        <circle cx="210" cy="391" r="1.5" fill="#1a5070" opacity=".5"/>
 
-    <!-- Lid top edge bevel -->
-    <path d="M170 419 L320 329 L470 419" fill="none" stroke="#383838" stroke-width=".7" opacity=".6"/>
+        <!-- Lid edge highlight -->
+        <path d="M160 395 L320 303 L480 395" fill="none" stroke="rgba(1,186,239,.6)" stroke-width="1" opacity=".25"/>
+        <!-- Lid edge bevel -->
+        <path d="M162 397 L320 305 L478 397" fill="none" stroke="#01BAEF" stroke-width=".5" opacity=".15"/>
 
-  </g>
+        <!-- Steam vent holes on lid -->
+        <circle cx="440" cy="392" r="2" fill="#0d3c5c" opacity=".6"/>
+        <circle cx="448" cy="396" r="2" fill="#0d3c5c" opacity=".6"/>
+        <circle cx="456" cy="400" r="2" fill="#0d3c5c" opacity=".5"/>
+        <circle cx="440" cy="400" r="1.5" fill="#0d3c5c" opacity=".5"/>
+        <circle cx="448" cy="404" r="1.5" fill="#0d3c5c" opacity=".45"/>
 
-  <!-- ── prodLines: Callout lines (appear on scroll explode) ── -->
-  <g id="prodLines" style="transition:opacity .8s ease; opacity:0">
-    <line x1="320" y1="328" x2="320" y2="295" stroke="#01BAEF" stroke-width="1" stroke-dasharray="4 3" opacity=".5"/>
-    <line x1="472" y1="434" x2="508" y2="434" stroke="#01BAEF" stroke-width=".8" opacity=".4"/>
-    <text x="513" y="437" font-family="'IBM Plex Mono',monospace" font-size="7.5" fill="#01BAEF" opacity=".5">Housing</text>
-    <line x1="452" y1="432" x2="508" y2="410" stroke="#01BAEF" stroke-width=".8" opacity=".35"/>
-    <text x="513" y="413" font-family="'IBM Plex Mono',monospace" font-size="7.5" fill="#01BAEF" opacity=".5">Grill plate</text>
-    <line x1="472" y1="418" x2="508" y2="386" stroke="#01BAEF" stroke-width=".8" opacity=".35"/>
-    <text x="513" y="389" font-family="'IBM Plex Mono',monospace" font-size="7.5" fill="#01BAEF" opacity=".5">Top lid</text>
-  </g>
+        <!-- Screws on lid corners -->
+        <circle cx="184" cy="402" r="1.5" fill="#081a28" opacity=".6"/>
+        <circle cx="456" cy="402" r="1.5" fill="#081a28" opacity=".6"/>
+        <circle cx="320" cy="490" r="1.5" fill="#081a28" opacity=".5"/>
+      </g>
 
-</svg>
+      <!-- Explode gap lines — dashed connectors between layers -->
+      <g id="prodLines" style="transition:opacity .8s ease; opacity:0">
+        <!-- Center vertical -->
+        <line x1="320" y1="303" x2="320" y2="275" stroke="#01BAEF" stroke-width="1.5" stroke-dasharray="4 3" opacity=".5"/>
+        <!-- Left diagonal -->
+        <line x1="160" y1="395" x2="155" y2="378" stroke="#01BAEF" stroke-width="1" stroke-dasharray="3 3" opacity=".35"/>
+        <!-- Right diagonal -->
+        <line x1="480" y1="395" x2="485" y2="378" stroke="#01BAEF" stroke-width="1" stroke-dasharray="3 3" opacity=".35"/>
+        <!-- Mid-layer connectors -->
+        <line x1="240" y1="410" x2="235" y2="395" stroke="#01BAEF" stroke-width="1" stroke-dasharray="3 3" opacity=".3"/>
+        <line x1="400" y1="410" x2="405" y2="395" stroke="#01BAEF" stroke-width="1" stroke-dasharray="3 3" opacity=".3"/>
+
+        <!-- Callout labels that appear on explode -->
+        <g opacity=".5">
+          <line x1="480" y1="430" x2="510" y2="430" stroke="#01BAEF" stroke-width=".8"/>
+          <text x="515" y="433" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#01BAEF">Housing</text>
+          <line x1="455" y1="410" x2="510" y2="390" stroke="#01BAEF" stroke-width=".8"/>
+          <text x="515" y="393" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#01BAEF">Heating element</text>
+          <line x1="480" y1="395" x2="510" y2="355" stroke="#01BAEF" stroke-width=".8"/>
+          <text x="515" y="358" font-family="'IBM Plex Mono',monospace" font-size="8" fill="#01BAEF">Grill plate</text>
+        </g>
+      </g>
+
+    </svg>
   </div>
   <div class="hero-text-panel">
     <div class="hero-grid"></div>
