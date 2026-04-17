@@ -55,7 +55,6 @@ const CONTENT = {
   step4_chips: ["Light LCAs", "Carbon Credits Advice", "Impact & Sustainability Reporting"],
 
   // ── MEET THE TEAM ─────────────────────────────────
-  pool_eyebrow: "Our delivery model",
   pool_heading: "Meet the team.",
   pool_intro:   "We bring in freelancers with real, hands-on experience, and we work alongside them ourselves. That's what makes us different: we're not a matchmaker. We're in the project with you, from start to finish.",
 
