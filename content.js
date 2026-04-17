@@ -9,17 +9,6 @@
  */
 const CONTENT = {
 
-  // ── TICKER STRIP ──────────────────────────────────
-  ticker_items: [
-    "Circular Design",
-    "Sustainability Strategy",
-    "Scope 3 Reduction",
-    "Supply Chain",
-    "Measurable Impact",
-    "LCA & Reporting",
-    "Material Innovation",
-  ],
-
   // ── HERO ──────────────────────────────────────────
   hero_badge:         "Sustainability Studio",
   hero_h1:            "Ambition into<span>action.</span>",
@@ -192,13 +181,5 @@ const CONTENT = {
     const tags = CONTENT[el.getAttribute('data-tags')];
     if (!tags) return;
     el.innerHTML = tags.map(t => `<span class="team-tag">${t}</span>`).join('');
-  });
-
-  // Ticker strips (items duplicated for seamless CSS loop)
-  document.querySelectorAll('[data-ticker]').forEach(el => {
-    const items = CONTENT[el.getAttribute('data-ticker')];
-    if (!items) return;
-    const html = items.map(t => `<span class="ticker-item">${t}</span>`).join('');
-    el.innerHTML = html + html;
   });
 })();
