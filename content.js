@@ -17,7 +17,6 @@ const CONTENT = {
   hero_cta_secondary: "What we do",
 
   // ── WHAT WE DO (Approach) ─────────────────────────
-  approach_eyebrow:   "How we work",
   approach_heading:   "What we do.",
   approach_sub:       "A proven four-phase process that takes your sustainability ambition from idea to implementation — with measurable outcomes at every step.",
 
