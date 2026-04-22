@@ -89,7 +89,7 @@ const CONTENT = {
   team1_linkedin: "https://www.linkedin.com/in/fabeelbutt/",  // paste LinkedIn URL here, e.g. "https://www.linkedin.com/in/yourname"
 
   team2_name: "Roel Laban",
-  team2_role: "Circular Design Lead · Amsterdam",
+  team2_role: "Sustainability Strategist · Haarlem",
   team2_bio:  "Roel is a sustainability professional with experience across B2B and B2C sectors, working in international value chains to drive measurable environmental and social impact. Experience includes:<b>G-Star RAW – Textiles & fashion, HEMA – Consumer goods & DSG – Construction materials.</b><br><br> He specialises in developing and implementing ESG strategies, including sustainability data exchange across supply chains to enable better decision-making in products and production. His work spans social compliance and human rights, environmental sustainability, GHG footprinting, B Corp certification and stakeholder engagement.",
   team2_tags: ["Circular Design", "Materials", "ESG Strategy", "Certification"],
   team2_linkedin: "https://www.linkedin.com/in/roel-laban-b532b328/",  // paste LinkedIn URL here, e.g. "https://www.linkedin.com/in/yourname"
