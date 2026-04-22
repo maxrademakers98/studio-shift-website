@@ -107,6 +107,9 @@ h2.section-h { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-
 
 /* ── APPLY FORM ── */
 .apply { background: var(--navy); color: #fff; }
+.apply-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.apply-right { display: flex; flex-direction: column; }
+@media (max-width: 768px) { .apply-grid { grid-template-columns: 1fr; gap: 40px; } }
 .apply-left .section-eyebrow { color: rgba(255,255,255,.35); }
 .apply-left .section-eyebrow::before { background: rgba(255,255,255,.2); }
 .apply-left h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(30px,3.5vw,46px); letter-spacing: -.03em; line-height: 1.06; margin-bottom: 20px; color: #fff; }
@@ -277,18 +280,22 @@ footer p { font-size: 12px; color: rgba(255,255,255,.3); font-family: 'IBM Plex 
 
 <!-- Apply form -->
 <section class="apply section-pad" id="apply">
-  <div class="apply-left">
-    <div class="section-eyebrow" data-content="fl_apply_eyebrow">Get in touch</div>
-    <h2 data-content="fl_apply_h2">Tell us<br>about <em>yourself.</em></h2>
-    <p data-content="fl_apply_sub">Fill in our form and we'll be in touch if there's a good fit. We review every application and respond to everyone, usually within a week.</p>
-    <div class="apply-detail">
-      <div class="apply-detail-label" data-content="fl_apply_detail_label">Email us directly</div>
-      <div class="apply-detail-val" data-content="fl_apply_detail_val">hello@studioshift.nl</div>
+  <div class="apply-grid">
+    <div class="apply-left">
+      <div class="section-eyebrow" data-content="fl_apply_eyebrow">Get in touch</div>
+      <h2 data-content="fl_apply_h2">Tell us<br>about <em>yourself.</em></h2>
+      <p data-content="fl_apply_sub">Fill in our form and we'll be in touch if there's a good fit. We review every application and respond to everyone, usually within a week.</p>
     </div>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSekmZUYiYSdjfjMw9Zu2QcdZca3RE7rWwJRuJ4NV2lBlAEbXA/viewform?usp=header" target="_blank" rel="noopener" class="btn-submit" style="margin-top:36px;max-width:320px;">
-      <span data-content="fl_apply_btn">Apply now</span>
-      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
-    </a>
+    <div class="apply-right">
+      <div class="apply-detail">
+        <div class="apply-detail-label" data-content="fl_apply_detail_label">Email us directly</div>
+        <div class="apply-detail-val" data-content="fl_apply_detail_val">hello@studioshift.nl</div>
+      </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSekmZUYiYSdjfjMw9Zu2QcdZca3RE7rWwJRuJ4NV2lBlAEbXA/viewform?usp=header" target="_blank" rel="noopener" class="btn-submit" style="margin-top:36px;max-width:320px;">
+        <span data-content="fl_apply_btn">Apply now</span>
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+    </div>
   </div>
 </section>
 
