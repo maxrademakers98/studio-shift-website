@@ -17,7 +17,8 @@ const CONTENT = {
     "Supply Chain Transparency",
     "LCA & Reporting",
     "Material Innovation",
-    "Social Risk Assessments",
+    "Social Risk Assessments"
+    "Product Certification",
   ],
 
 
@@ -73,7 +74,7 @@ const CONTENT = {
   how_feat2_title: "Built to implement, not to impress",
   how_feat2_desc:  "Everything we deliver is designed to be used immediately , not filed away. Sharp strategy that translates into real actions your team can take.",
   how_feat3_title: "Big 4 thinking, without the price tag",
-  how_feat3_desc:  "We run lean, with no layers of overhead or expensive offices. You get senior expertise at a competitive price.",
+  how_feat3_desc:  "We run lean, with no layers of overhead or expensive offices. We offer senior expertise at a competitive price.",
   how_feat4_title: "A curated network, not a marketplace",
   how_feat4_desc:  "When we bring in specialists, we know exactly who they are and why they're right for your project. Vetted for real-world experience, not just credentials.",
 
@@ -105,7 +106,7 @@ const CONTENT = {
 
   // ── CONTACT ───────────────────────────────────────
   contact_eyebrow:  "Get in touch",
-  contact_heading:  "Let's make<br><em>something</em><br>real.",
+  contact_heading:  "Let's make<br><em>something</em><br>happen",
   contact_sub:      "Whether you have a clear brief or just a sense of what you want to achieve, we'd love to hear from you.",
   contact_email:    "hello@studioshift.nl",
   contact_location: "Amsterdam, NL",
