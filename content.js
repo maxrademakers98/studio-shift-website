@@ -26,15 +26,15 @@ const CONTENT = {
   dna_h2:          "Where design meets <em>sustainability</em>",
   dna_sub:         "Sustainability is no longer a side strategy. Regulations are tightening, supply chains are under scrutiny, impact claims are being challenged. We help organizations embed solutions at the core.",
   dna_item1_title: "Design that actually delivers",
-  dna_item1_desc:  "We turn sustainability ambitions into tangible products and processes , not decks.",
-  dna_item2_title: "Expert-led, start to finish",
+  dna_item1_desc:  "We turn sustainability ambitions into tangible products and processes, not decks.",
+  dna_item2_title: "Expert-led, from start to finish",
   dna_item2_desc:  "Projects led by experts with senior oversight.",
   dna_item3_title: "We stay until it's done",
   dna_item3_desc:  "We don't just strategise, we stay involved until your ambitions become operational reality.",
 
   // ── HERO ──────────────────────────────────────────
   hero_badge:         "Sustainability Studio",
-  hero_h1:            "Ambition into<span>action.</span>",
+  hero_h1:            "Ambition into<span>action</span>",
   hero_sub:           "We design and implement sustainability strategies for products, processes and supply chains that work, without the 100-slide deck. Experienced solution providers, hands-on execution, turning your goals into measurable outcomes.",
   hero_cta_primary:   "Work with us",
   hero_cta_secondary: "What we do",
