@@ -79,7 +79,7 @@ const CONTENT = {
 
   // ── MEET THE TEAM ─────────────────────────────────
   pool_heading: "Meet the team.",
-  pool_intro:   "We bring in freelancers with real, hands-on experience, and we work alongside them ourselves. That's what makes us different: we're not a matchmaker. We're in the project with you, from start to finish.",
+  pool_intro:   "Let us introduce ourselves, we are two seasoned sustainability professionals who stay hands-on in every project, from first brief to final delivery. For each client challenge, we assess whether extra specialist support is needed, and when it is, we bring in and guide a carefully curated freelance team around us.",
 
   team1_name: "Fabeel Butt",
   team1_role: "Sustainability Strategist · Amsterdam",
