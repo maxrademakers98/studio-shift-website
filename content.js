@@ -168,10 +168,10 @@ const CONTENT = {
   // Apply / CTA section
   fl_apply_eyebrow:       "Get in touch",
   fl_apply_h2:            "Tell us<br>about <em>yourself.</em>",
-  fl_apply_sub:           "Drop us a note and we'll be in touch if there's a good fit. We review every application and respond to everyone, usually within a week.",
+  fl_apply_sub:           "Fill in our form and we'll be in touch if there's a good fit. We review every application and respond to everyone, usually within a week.",
   fl_apply_detail_label:  "Email us directly",
   fl_apply_detail_val:    "hello@studioshift.nl",
-  fl_apply_btn:           "Send application",
+  fl_apply_btn:           "Apply now",
 
   // ── V7B: SCOPE 3 VISUAL ───────────────────────────
   s3_eyebrow:      "SCOPE 3 EMISSIONS",
