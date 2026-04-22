@@ -48,7 +48,7 @@ const CONTENT = {
 
   step2_title: "2. Strategy",
   step2_desc:  "We map the landscape, identify leverage points, and design a strategy that is credible, realistic, and commercially sound.",
-  step2_chips: ["Roadmapping", "KPIs & Milestones", "Material Policies", "Risk & Benchmarking"],
+  step2_chips: ["Roadmapping", "KPIs & Milestones", "Material Policies", "Risk & Benchmarking", "Supplier code of conduct"],
 
   expertise_label: "Where we love to work",
 
