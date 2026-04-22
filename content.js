@@ -83,7 +83,7 @@ const CONTENT = {
 
   team1_name: "Fabeel Butt",
   team1_role: "Sustainability Strategist · Amsterdam",
-  team1_bio:  "Roel is a sustainability professional with experience across B2B and B2C sectors, working in international value chains to drive measurable environmental and social impact. Experience includes:<b>G-Star RAW – Textiles & fashion, HEMA – Consumer goods, DSG – Construction materials.</b><br> He specialises in developing and implementing ESG strategies, including sustainability data exchange across supply chains to enable better decision-making in products and production. His work spans social compliance and human rights, environmental sustainability, GHG footprinting, B Corp certification and stakeholder engagement.",
+  team1_bio:  "Fabeel is a sustainability expert with 15 years of experience turning ambition into impact across products and supply chains. Proven track record at <B>Action</B>, HEMA, Lidl, and Fairtrade Foundation, leading initiatives from strategy to execution. Delivered full tier 1 supply chain transparency, developed sustainable sourcing and packaging policies, and implemented circularity and climate programs aligned with the GHG Protocol. Combines strategic thinking with hands-on execution to make sustainability commercially viable and scalable.",
   
   team1_tags: ["Supply Chain", "Stakeholder Engagement", "Sustainability Strategy", "Circular Design"],
   team1_linkedin: "https://www.linkedin.com/in/fabeelbutt/",  // paste LinkedIn URL here, e.g. "https://www.linkedin.com/in/yourname"
