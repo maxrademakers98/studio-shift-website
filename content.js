@@ -72,15 +72,15 @@ const CONTENT = {
 
   team1_name: "Fabeel Butt",
   team1_role: "Sustainability Strategist · Amsterdam",
-  team1_bio:  "Fabeel is a sustainability expert with 15 years of experience turning ambition into impact across products and supply chains. Proven track record at Action, HEMA, Lidl, and Fairtrade Foundation, leading initiatives from strategy to execution. Delivered full tier 1 supply chain transparency, developed sustainable sourcing and packaging policies, and implemented circularity and climate programs aligned with the GHG Protocol. Combines strategic thinking with hands-on execution to make sustainability commercially viable and scalable.",
+  team1_bio:  "Fabeel is a sustainability expert with 15 years of experience turning ambition into impact across products and supply chains. Proven track record at <B> Action </B>, HEMA, Lidl, and Fairtrade Foundation, leading initiatives from strategy to execution. Delivered full tier 1 supply chain transparency, developed sustainable sourcing and packaging policies, and implemented circularity and climate programs aligned with the GHG Protocol. Combines strategic thinking with hands-on execution to make sustainability commercially viable and scalable.",
   team1_tags: ["Supply Chain", "Stakeholder Engagement", "Sustainability Strategy", "Circular Design"],
   team1_linkedin: "https://www.linkedin.com/in/fabeelbutt/",  // paste LinkedIn URL here, e.g. "https://www.linkedin.com/in/yourname"
 
-  team2_name: "Luca Brandt",
-  team2_role: "Circular Design Lead · Berlin",
-  team2_bio:  "With a background in industrial design and ten years of hands-on LCA work, Luca brings deep product-level expertise to every project. He has redesigned materials strategies for electronics and furniture brands across Europe, and is one of the few practitioners who can move fluidly between a BOM and a boardroom.",
-  team2_tags: ["Circular Design", "LCA", "Materials", "Durability & Repair"],
-  team2_linkedin: "",  // paste LinkedIn URL here, e.g. "https://www.linkedin.com/in/yourname"
+  team2_name: "Roel Laban",
+  team2_role: "Circular Design Lead · Amsterdam",
+  team2_bio:  "Roel is a sustainability professional with experience across B2B and B2C sectors, working in international value chains to drive measurable environmental and social impact. Experience includes: ⁠G-Star RAW – Textiles & fashion, ⁠HEMA – Consumer goods, DSG – Construction materials. He specialises in developing and implementing ESG strategies, including sustainability data exchange across supply chains to enable better decision-making in products and production. His work spans social compliance and human rights, environmental sustainability, GHG footprinting, B Corp certification and stakeholder engagement.",
+  team2_tags: ["Circular Design", "Materials", "ESG Strategy", "Certification"],
+  team2_linkedin: "https://www.linkedin.com/in/roel-laban-b532b328/",  // paste LinkedIn URL here, e.g. "https://www.linkedin.com/in/yourname"
 
   poolcard1_title: "Curated specialists",
   poolcard1_desc:  "Every freelancer in our network is hand-picked, vetted for real-world experience, not just credentials. We know who we're bringing in, and why they're the right fit for your project.",
