@@ -83,7 +83,7 @@ const CONTENT = {
 
   team1_name: "Fabeel Butt",
   team1_role: "Sustainability Strategist · Amsterdam",
-  team1_bio:  "Fabeel is a sustainability expert with 15 years of experience turning ambition into impact across products and supply chains. Proven track record at:<B>Action - Consumer goods, HEMA - Consumer goods, Lidl - FMCG & Fairtrade Foundation - NGO</b><br><br> leading initiatives from strategy to execution. Delivered full tier 1 supply chain transparency, developed sustainable sourcing and packaging policies, and implemented circularity and climate programs aligned with the GHG Protocol. Combines strategic thinking with hands-on execution to make sustainability commercially viable and scalable.",
+  team1_bio:  "Fabeel is a sustainability expert with 15 years of experience turning ambition into impact across products and supply chains. Proven track record at:<B>Action - Consumer goods, HEMA - Consumer goods, Lidl - Food retail & Fairtrade Foundation - NGO</b><br><br> leading initiatives from strategy to execution. Delivered full tier 1 supply chain transparency, developed sustainable sourcing and packaging policies, and implemented circularity and climate programs aligned with the GHG Protocol. Combines strategic thinking with hands-on execution to make sustainability commercially viable and scalable.",
   
   team1_tags: ["Supply Chain", "Stakeholder Engagement", "Sustainability Strategy", "Circular Design"],
   team1_linkedin: "https://www.linkedin.com/in/fabeelbutt/",  // paste LinkedIn URL here, e.g. "https://www.linkedin.com/in/yourname"
