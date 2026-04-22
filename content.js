@@ -156,9 +156,6 @@ const CONTENT = {
   fl_card4_title:         "LCA & Reporting Analysts",
   fl_card4_desc:          "Practitioners in life cycle assessment, carbon accounting, and sustainability reporting (GRI, CSRD, TCFD). You turn data into credible, defensible claims.",
 
-  fl_card5_tag:           "Engagement",
-  fl_card5_title:         "Change & Capability Leads",
-  fl_card5_desc:          "Facilitators and trainers who help organisations embed sustainability thinking. You make complex concepts stick , across teams, boards, and supply chains.",
 
   fl_card6_tag:           "Materials & Innovation",
   fl_card6_title:         "Material & Process Innovators",
