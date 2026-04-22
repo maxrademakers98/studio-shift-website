@@ -99,7 +99,7 @@ const CONTENT = {
   poolcard1_desc:  "Every freelancer in our network is hand-picked, vetted for real-world experience, not just credentials. We know who we're bringing in, and why they're the right fit for your project.",
 
   poolcard2_title: "Lower cost, no compromise",
-  poolcard2_desc:  "Without the overhead of a traditional agency, no account managers, no layers, you get specialist expertise at a fraction of the price. Our network model keeps costs lean while keeping quality high.",
+  poolcard2_desc:  "Without the overhead of a traditional agency, no layers, you get specialist expertise at a competitive price. Our network model keeps costs lean while keeping quality high.",
 
   poolcard3_title: "We're in the project with you",
   poolcard3_desc:  "We don't just match you with talent and step back. Studio SHIFT joins the team directly, keeping quality consistent, communication clear, and the work on track from first brief to final delivery.",
@@ -108,7 +108,7 @@ const CONTENT = {
   contact_eyebrow:  "Get in touch",
   contact_heading:  "Let's make<br><em>something</em><br>happen",
   contact_sub:      "Whether you have a clear brief or just a sense of what you want to achieve, we'd love to hear from you.",
-  contact_email:    "hello@studioshift.nl",
+  contact_email:    "hello@studioshift.eu",
   contact_location: "Amsterdam, NL",
 
   // ── FOOTER ────────────────────────────────────────
@@ -171,7 +171,7 @@ const CONTENT = {
   fl_apply_h2:            "Tell us<br>about <em>yourself</em>",
   fl_apply_sub:           "Fill in our form and we'll be in touch if there's a good fit. We review every application and respond to everyone, usually within a week.",
   fl_apply_detail_label:  "Email us directly",
-  fl_apply_detail_val:    "hello@studioshift.nl",
+  fl_apply_detail_val:    "hello@studioshift.eu",
   fl_apply_btn:           "Apply now",
 
   // ── V7B: SCOPE 3 VISUAL ───────────────────────────
