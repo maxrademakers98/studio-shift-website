@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio SHIFT — Sustainability. Designed to Act.</title>
+<meta name="description" content="Studio SHIFT is a sustainability and circular design agency based in Amsterdam. We turn ambition into measurable impact, across products, processes and supply chains.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ── TOKENS ── */
+:root {
+  --navy:    #0B3D52;
+  --navy-dk: #082e3e;
+  --sky:     #00B4D8;
+  --green:   #27AE60;
+  --cream:   #F2EDE4;
+  --white:   #FAFAF8;
+  --grey:    #6B7280;
+  --ink:     #0F1923;
+  --border:  rgba(11,61,82,.1);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--white);
+  color: var(--ink);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── SCROLL PROGRESS ── */
+#scrollProgress {
+  position: fixed; top: 0; left: 0; height: 2px;
+  background: var(--sky); width: 0%; z-index: 9999;
+  pointer-events: none; transition: width .08s linear;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 24px 56px;
+  display: flex; justify-content: space-between; align-items: center;
+  transition: background .3s, box-shadow .3s, padding .3s;
+}
+nav.scrolled {
+  padding: 16px 56px;
+  background: rgba(250,250,248,.94);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 1px 0 var(--border);
+}
+.logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 19px; letter-spacing: -.02em;
+  text-decoration: none; color: #fff;
+  transition: color .3s;
+}
+.logo span { color: rgba(255,255,255,.4); }
+nav.scrolled .logo { color: var(--navy); }
+nav.scrolled .logo span { color: var(--sky); }
+nav ul { display: flex; gap: 40px; list-style: none; }
+nav a {
+  text-decoration: none; font-size: 12px; letter-spacing: .1em;
+  text-transform: uppercase; font-weight: 500;
+  color: rgba(255,255,255,.45); transition: color .2s;
+}
+nav a:hover { color: rgba(255,255,255,.9); }
+nav.scrolled a { color: var(--grey); }
+nav.scrolled a:hover { color: var(--navy); }
+.nav-cta {
+  background: #fff !important; color: var(--navy) !important;
+  padding: 10px 22px; border-radius: 100px; font-weight: 600 !important;
+  letter-spacing: .06em !important;
+  transition: background .2s, transform .2s !important;
+}
+.nav-cta:hover { background: rgba(255,255,255,.85) !important; transform: translateY(-1px); }
+nav.scrolled .nav-cta { background: var(--navy) !important; color: #fff !important; }
+.nav-burger {
+  display: none; flex-direction: column; justify-content: center;
+  gap: 5px; width: 36px; height: 36px;
+  background: none; border: none; cursor: pointer; padding: 0;
+}
+.nav-burger span {
+  display: block; width: 22px; height: 1.5px;
+  background: rgba(255,255,255,.8); border-radius: 2px;
+  transition: transform .35s cubic-bezier(.77,0,.18,1), opacity .25s ease;
+  transform-origin: center;
+}
+nav.scrolled .nav-burger span { background: var(--navy); }
+.nav-burger.active span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-burger.active span:nth-child(2) { opacity: 0; }
+.nav-burger.active span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.nav-mobile {
+  position: fixed; inset: 0; z-index: 90;
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; visibility: hidden;
+  transition: opacity .4s cubic-bezier(.77,0,.18,1), visibility 0s .4s;
+}
+.nav-mobile.open { opacity: 1; visibility: visible; transition: opacity .4s cubic-bezier(.77,0,.18,1), visibility 0s 0s; }
+.nav-mobile-inner { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.nav-mobile-link {
+  font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+  font-size: clamp(36px,9vw,60px); line-height: 1.15;
+  letter-spacing: -.03em; color: rgba(255,255,255,.6);
+  text-decoration: none; opacity: 0; transform: translateY(24px);
+  transition: opacity .35s ease, transform .45s cubic-bezier(.77,0,.18,1), color .2s;
+}
+.nav-mobile.open .nav-mobile-link { opacity: 1; transform: translateY(0); }
+.nav-mobile.open .nav-mobile-link:nth-child(1) { transition-delay: .06s; }
+.nav-mobile.open .nav-mobile-link:nth-child(2) { transition-delay: .10s; }
+.nav-mobile.open .nav-mobile-link:nth-child(3) { transition-delay: .14s; }
+.nav-mobile-link:hover { color: #fff; }
+.nav-mobile-cta {
+  margin-top: 20px; font-size: clamp(16px,4vw,22px);
+  font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+  background: var(--sky); color: var(--navy) !important;
+  padding: 13px 36px; border-radius: 100px;
+}
+
+/* ── HERO ── */
+.hero {
+  display: grid; grid-template-columns: 50fr 50fr;
+  min-height: 100vh; overflow: hidden;
+}
+.hero-left {
+  background: var(--navy);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 100px 56px 72px;
+  position: relative; overflow: hidden;
+}
+/* Subtle grid texture */
+.hero-left::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+}
+/* Glow blobs */
+.hero-glow-a {
+  position: absolute; top: -120px; right: -120px;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(0,180,216,.08) 0%, transparent 65%);
+  pointer-events: none;
+}
+.hero-glow-b {
+  position: absolute; bottom: -60px; left: -60px;
+  width: 360px; height: 360px;
+  background: radial-gradient(circle, rgba(39,174,96,.06) 0%, transparent 65%);
+  pointer-events: none;
+}
+.hero-eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; letter-spacing: .22em; text-transform: uppercase;
+  color: rgba(255,255,255,.35);
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 28px; position: relative; z-index: 1;
+}
+.hero-eyebrow-dot {
+  width: 5px; height: 5px; background: var(--green);
+  border-radius: 50%; animation: pulse 2.5s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(.65)} }
+.hero-left h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: clamp(44px, 5.2vw, 82px);
+  line-height: .93;
+  letter-spacing: -.035em;
+  color: #fff;
+  margin-bottom: 28px;
+  position: relative; z-index: 1;
+}
+.hero-left h1 .soft {
+  color: rgba(255,255,255,.45);
+  font-weight: 300;
+  display: block;
+}
+.hero-sub {
+  font-size: 15px; line-height: 1.85;
+  color: rgba(255,255,255,.68);
+  max-width: 380px; margin-bottom: 44px;
+  position: relative; z-index: 1;
+}
+.hero-actions {
+  display: flex; gap: 12px; align-items: center;
+  flex-wrap: wrap; position: relative; z-index: 1;
+  margin-bottom: 60px;
+}
+.btn-primary {
+  background: var(--sky); color: var(--navy);
+  font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+  font-size: 13px; letter-spacing: .04em;
+  padding: 15px 32px; border-radius: 100px;
+  text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+  transition: background .2s, transform .2s;
+}
+.btn-primary:hover { background: #00a0c2; transform: translateY(-1px); }
+.btn-ghost {
+  background: rgba(255,255,255,.07);
+  color: rgba(255,255,255,.5);
+  border: 1.5px solid rgba(255,255,255,.13);
+  font-family: 'Space Grotesk', sans-serif; font-weight: 500;
+  font-size: 13px; letter-spacing: .04em;
+  padding: 15px 32px; border-radius: 100px;
+  text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+  transition: border-color .2s, color .2s;
+}
+.btn-ghost:hover { border-color: rgba(255,255,255,.3); color: rgba(255,255,255,.8); }
+
+/* Client strip inside hero */
+.hero-clients {
+  position: relative; z-index: 1;
+  border-top: 1px solid rgba(255,255,255,.08);
+  padding-top: 28px;
+}
+.hero-clients-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px; letter-spacing: .22em; text-transform: uppercase;
+  color: rgba(255,255,255,.25); margin-bottom: 14px;
+}
+.hero-clients-logos {
+  display: flex; gap: 28px; align-items: center; flex-wrap: wrap;
+}
+.hero-client {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600; font-size: 12px; letter-spacing: .04em;
+  color: rgba(255,255,255,.3);
+  text-transform: uppercase;
+  transition: color .2s;
+}
+.hero-client:hover { color: rgba(255,255,255,.5); }
+
+/* Hero right — visual editorial panel */
+.hero-right {
+  background: var(--cream);
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 100px 56px 72px 52px;
+  position: relative; overflow: hidden;
+}
+/* Large BG typographic watermark */
+.hero-right-watermark {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: clamp(120px, 16vw, 220px);
+  line-height: 1;
+  letter-spacing: -.06em;
+  color: rgba(11,61,82,.055);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+.hero-right-heading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: clamp(26px, 2.8vw, 40px);
+  line-height: 1.05;
+  letter-spacing: -.025em;
+  color: var(--navy);
+  margin-bottom: 18px;
+  position: relative; z-index: 1;
+}
+.hero-right-heading em { font-style: normal; color: var(--sky); }
+.hero-right-sub {
+  font-size: 14px; line-height: 1.85;
+  color: var(--grey); max-width: 380px;
+  margin-bottom: 40px; position: relative; z-index: 1;
+}
+.dna-items { display: flex; flex-direction: column; position: relative; z-index: 1; }
+.dna-item {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 18px 0;
+  border-top: 1px solid rgba(11,61,82,.08);
+}
+.dna-item:last-child { border-bottom: 1px solid rgba(11,61,82,.08); }
+.dna-dot {
+  width: 7px; height: 7px; background: var(--sky);
+  border-radius: 50%; margin-top: 8px; flex-shrink: 0;
+}
+.dna-item h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600; font-size: 14px; margin-bottom: 3px; color: var(--navy);
+}
+.dna-item p { font-size: 13px; line-height: 1.7; color: var(--grey); }
+
+/* ── TICKER ── */
+.ticker-strip {
+  background: var(--navy-dk); padding: 13px 0;
+  overflow: hidden; white-space: nowrap;
+  border-bottom: 1px solid rgba(255,255,255,.05);
+}
+.ticker { display: inline-flex; gap: 48px; animation: ticker 30s linear infinite; }
+.ticker-item {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; font-weight: 400; letter-spacing: .18em;
+  text-transform: uppercase; color: rgba(255,255,255,.28);
+  display: inline-flex; align-items: center; gap: 20px; flex-shrink: 0;
+}
+.ticker-item::after { content: '·'; font-size: 16px; opacity: .25; }
+@keyframes ticker { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+/* ── SHARED SECTION STYLES ── */
+.eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--grey); margin-bottom: 20px;
+  display: flex; align-items: center; gap: 12px;
+}
+.eyebrow::before { content: ''; width: 18px; height: 1px; background: currentColor; opacity: .5; }
+.eyebrow-light { color: rgba(255,255,255,.3); }
+.eyebrow-light::before { background: rgba(255,255,255,.3); }
+
+/* ── PROCESS SECTION ── */
+.process {
+  background: var(--white);
+  padding: 120px 56px;
+}
+.process-header {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  gap: 48px; margin-bottom: 80px;
+}
+.process-header h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: clamp(36px, 4vw, 56px);
+  letter-spacing: -.03em; line-height: 1.02;
+  color: var(--navy); max-width: 480px;
+}
+.process-header-sub {
+  font-size: 14px; line-height: 1.85;
+  color: var(--grey); max-width: 360px;
+  padding-bottom: 4px; flex-shrink: 0;
+}
+/* Step list */
+.process-steps { display: flex; flex-direction: column; }
+.process-step {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr;
+  gap: 32px 48px;
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+  align-items: start;
+  cursor: default;
+  transition: background .2s;
+}
+.process-step:last-child { border-bottom: 1px solid var(--border); }
+.step-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 13px; letter-spacing: .12em;
+  color: rgba(11,61,82,.25);
+  padding-top: 4px;
+}
+.step-left h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 22px;
+  letter-spacing: -.02em; color: var(--navy); margin-bottom: 10px;
+}
+.step-left p { font-size: 14px; line-height: 1.8; color: var(--grey); max-width: 320px; }
+.step-chips {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  padding-top: 6px;
+}
+.chip {
+  display: inline-flex; align-items: center;
+  background: rgba(11,61,82,.055);
+  border: 1px solid rgba(11,61,82,.1);
+  border-radius: 100px; padding: 6px 13px;
+  font-size: 12px; color: var(--navy);
+}
+.chip-sub {
+  width: 100%;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9.5px; letter-spacing: .12em;
+  text-transform: uppercase; color: rgba(11,61,82,.3);
+  margin: 10px 0 2px;
+}
+/* Active step highlight on hover */
+.process-step:hover .step-num { color: var(--sky); }
+.process-step:hover h3 { color: var(--sky); }
+
+/* ── MANIFESTO (No nonsense) ── */
+.manifesto {
+  background: var(--navy);
+  padding: 120px 56px;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: start;
+}
+.manifesto-left h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: clamp(52px, 6vw, 88px);
+  line-height: .96; letter-spacing: -.038em;
+  color: #fff; margin-bottom: 20px;
+}
+.manifesto-left h2 em { font-style: normal; color: var(--sky); }
+.manifesto-left > p {
+  font-size: 15px; line-height: 1.85;
+  color: rgba(255,255,255,.65); max-width: 420px; margin-bottom: 36px;
+}
+.manifesto-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.manifesto-pill {
+  border: 1.5px solid rgba(0,180,216,.25);
+  color: rgba(255,255,255,.45);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; padding: 6px 16px; letter-spacing: .1em;
+  text-transform: uppercase; border-radius: 100px;
+}
+/* Feature list */
+.manifesto-feats { display: flex; flex-direction: column; }
+.manifesto-feat {
+  display: grid; grid-template-columns: 48px 1fr;
+  gap: 20px; align-items: start;
+  padding: 24px 0; border-top: 1px solid rgba(255,255,255,.07);
+  transition: padding-left .2s;
+}
+.manifesto-feat:last-child { border-bottom: 1px solid rgba(255,255,255,.07); }
+.manifesto-feat:hover { padding-left: 6px; }
+.manifesto-feat-icon {
+  width: 44px; height: 44px; background: rgba(255,255,255,.05);
+  border-radius: 12px; display: flex; align-items: center;
+  justify-content: center; flex-shrink: 0; color: var(--sky);
+}
+.manifesto-feat-icon svg { width: 20px; height: 20px; }
+.manifesto-feat h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600; font-size: 16px; color: #fff;
+  margin-bottom: 5px; letter-spacing: -.01em;
+}
+.manifesto-feat p { font-size: 13px; line-height: 1.8; color: rgba(255,255,255,.65); }
+
+/* ── TEAM ── */
+.team-section {
+  background: var(--cream);
+  padding: 120px 56px;
+}
+.team-header { margin-bottom: 56px; }
+.team-header h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: clamp(36px, 4vw, 56px);
+  letter-spacing: -.03em; line-height: 1.02;
+  color: var(--navy); margin-bottom: 16px;
+}
+.team-header p { font-size: 15px; line-height: 1.85; color: var(--grey); max-width: 560px; }
+.team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px; }
+.team-card {
+  background: #fff; border-radius: 20px;
+  padding: 36px 32px; border: 1px solid rgba(11,61,82,.07);
+  display: flex; gap: 28px; align-items: flex-start;
+  transition: transform .2s, box-shadow .2s;
+}
+.team-card:hover { transform: translateY(-3px); box-shadow: 0 16px 48px rgba(11,61,82,.1); }
+.team-photo {
+  width: 68px; height: 68px; border-radius: 16px;
+  object-fit: cover; flex-shrink: 0;
+  filter: grayscale(15%);
+}
+.team-body { flex: 1; }
+.team-name-row { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+.team-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 18px; color: var(--navy); letter-spacing: -.02em;
+}
+.team-linkedin {
+  color: #0A66C2; opacity: .6;
+  display: flex; align-items: center; justify-content: center;
+  transition: opacity .2s; flex-shrink: 0;
+}
+.team-linkedin:hover { opacity: 1; }
+.team-role {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--grey);
+  margin-bottom: 12px;
+}
+.team-bio { font-size: 13px; line-height: 1.8; color: var(--grey); margin-bottom: 14px; }
+.team-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.team-tag {
+  background: rgba(11,61,82,.06); border: 1px solid rgba(11,61,82,.1);
+  border-radius: 100px; padding: 4px 12px;
+  font-size: 11px; color: var(--navy);
+}
+.team-network-note {
+  display: flex; align-items: flex-start; gap: 20px;
+  background: rgba(11,61,82,.04);
+  border: 1px solid rgba(11,61,82,.08);
+  border-radius: 16px; padding: 24px 28px;
+}
+.team-network-plus {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 28px; color: var(--sky);
+  flex-shrink: 0; line-height: 1.3;
+}
+.team-network-note p { font-size: 14px; line-height: 1.8; color: var(--grey); }
+
+/* ── CONTACT ── */
+.contact {
+  background: var(--white); padding: 120px 56px;
+  position: relative; overflow: hidden;
+}
+.contact::before {
+  content: '';
+  position: absolute; top: -200px; right: -200px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(0,180,216,.05) 0%, transparent 65%);
+  pointer-events: none;
+}
+.contact-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 100px; position: relative; z-index: 1; align-items: start;
+}
+.contact-info h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: clamp(38px, 5vw, 64px);
+  letter-spacing: -.035em; line-height: .96;
+  color: var(--navy); margin-bottom: 24px;
+}
+.contact-info h2 em { font-style: normal; color: var(--sky); }
+.contact-info > p { font-size: 15px; line-height: 1.85; color: var(--grey); margin-bottom: 44px; }
+.cdetail { margin-bottom: 20px; }
+.cdetail-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; letter-spacing: .2em;
+  text-transform: uppercase; color: rgba(11,61,82,.35); margin-bottom: 4px;
+}
+.cdetail-val {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600; font-size: 17px; color: var(--navy);
+}
+/* Form */
+.form-label {
+  display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; letter-spacing: .18em;
+  text-transform: uppercase; color: rgba(11,61,82,.38); margin-bottom: 8px;
+}
+.fg { margin-bottom: 24px; }
+.fg input, .fg textarea {
+  width: 100%; background: transparent; border: none;
+  border-bottom: 1.5px solid rgba(11,61,82,.15);
+  padding: 12px 0; font-family: 'Outfit', sans-serif;
+  font-size: 15px; color: var(--ink); outline: none;
+  transition: border-color .2s;
+}
+.fg input:focus, .fg textarea:focus { border-color: var(--sky); }
+.fg textarea { resize: none; height: 88px; }
+.fg-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.btn-submit {
+  background: var(--navy); color: #fff;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600; font-size: 13px; letter-spacing: .06em;
+  text-transform: uppercase; padding: 17px 48px;
+  border: none; border-radius: 100px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  width: 100%; margin-top: 8px;
+  transition: background .2s, transform .2s;
+}
+.btn-submit:hover { background: var(--navy-dk); transform: translateY(-1px); }
+#formSuccess {
+  display: none; margin-top: 16px; text-align: center;
+  font-size: 13px; color: var(--green);
+  font-family: 'IBM Plex Mono', monospace; letter-spacing: .08em;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--navy-dk); padding: 44px 56px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.footer-logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 18px; color: #fff; text-decoration: none;
+}
+.footer-logo span { color: var(--sky); }
+.footer-links { display: flex; gap: 28px; }
+footer a { color: rgba(255,255,255,.55); text-decoration: none; font-size: 12px; transition: color .2s; }
+footer a:hover { color: var(--sky); }
+footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex Mono', monospace; letter-spacing: .06em; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1100px) {
+  nav { padding: 18px 24px; }
+  nav.scrolled { padding: 14px 24px; }
+  nav ul { display: none; }
+  .nav-burger { display: flex; }
+  .hero { grid-template-columns: 1fr; }
+  .hero-right { display: none; }
+  .hero-left { min-height: 100vh; padding: 80px 28px 64px; justify-content: flex-end; }
+  .process { padding: 80px 28px; }
+  .process-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .process-step { grid-template-columns: 56px 1fr; grid-template-rows: auto auto; }
+  .step-chips { grid-column: 2; }
+  .manifesto { grid-template-columns: 1fr; gap: 48px; padding-left: 28px; padding-right: 28px; }
+  .team-section { padding: 80px 28px; }
+  .team-grid { grid-template-columns: 1fr; }
+  .contact { padding: 80px 28px; }
+  .contact-grid { grid-template-columns: 1fr; gap: 52px; }
+  footer { padding: 36px 24px; }
+}
+@media (max-width: 640px) {
+  .hero-left { padding: 80px 20px 56px; }
+  .process { padding: 64px 20px; }
+  .process-step { grid-template-columns: 1fr; }
+  .step-num { font-size: 11px; }
+  .manifesto { padding: 64px 20px; }
+  .team-section { padding: 64px 20px; }
+  .team-card { flex-direction: column; gap: 18px; }
+  .contact { padding: 64px 20px; }
+  .fg-row { grid-template-columns: 1fr; }
+  footer { flex-direction: column; gap: 20px; text-align: center; }
+  .footer-links { flex-wrap: wrap; justify-content: center; }
+}
+
+/* ── REVEAL ANIMATIONS ── */
+.reveal {
+  opacity: 0; transform: translateY(22px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<div id="scrollProgress"></div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#hero" class="logo">Studio <span>SHIFT</span></a>
+  <ul>
+    <li><a href="#process">What we do</a></li>
+    <li><a href="#team">Meet the team</a></li>
+    <li><a href="freelancers.html">For freelancers</a></li>
+    <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+  </ul>
+  <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <div class="nav-mobile-inner">
+    <a href="#process" class="nav-mobile-link">What we do</a>
+    <a href="#team" class="nav-mobile-link">Meet the team</a>
+    <a href="freelancers.html" class="nav-mobile-link">For freelancers</a>
+    <a href="#contact" class="nav-mobile-link nav-mobile-cta">Let's Talk</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <!-- LEFT: Text -->
+  <div class="hero-left">
+    <div class="hero-glow-a"></div>
+    <div class="hero-glow-b"></div>
+    <div class="hero-eyebrow">
+      <span class="hero-eyebrow-dot"></span>
+      Sustainability Studio · Amsterdam
+    </div>
+    <h1>Ambition into<span class="soft">action.</span></h1>
+    <p class="hero-sub">We design and implement sustainability strategies for products, processes and supply chains that work, without the 100-slide deck. Experienced solution providers, hands-on execution, turning your goals into measurable outcomes.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Work with us</a>
+      <a href="#process" class="btn-ghost">What we do</a>
+    </div>
+
+  </div>
+
+  <!-- RIGHT: Editorial panel -->
+  <div class="hero-right">
+    <div class="hero-right-watermark">SHIFT</div>
+    <h2 class="hero-right-heading">Where design meets<br><em>sustainability.</em></h2>
+    <p class="hero-right-sub">Sustainability is no longer a side strategy. Regulations are tightening, supply chains are under scrutiny, impact claims are being challenged. We help organizations embed solutions at the core.</p>
+    <div class="dna-items">
+      <div class="dna-item">
+        <div class="dna-dot"></div>
+        <div>
+          <h4>Design that actually delivers</h4>
+          <p>We turn sustainability ambitions into tangible products and processes — not decks.</p>
+        </div>
+      </div>
+      <div class="dna-item">
+        <div class="dna-dot"></div>
+        <div>
+          <h4>Expert-led, from start to finish</h4>
+          <p>Projects led by experts with senior oversight.</p>
+        </div>
+      </div>
+      <div class="dna-item">
+        <div class="dna-dot"></div>
+        <div>
+          <h4>We stay until it's done</h4>
+          <p>We don't just strategise — we stay involved until your ambitions become operational reality.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-strip">
+  <div class="ticker" id="tickerInner"></div>
+</div>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="process-header reveal">
+    <h2>What we do.</h2>
+    <p class="process-header-sub">Wherever you are on your sustainability journey, we meet you there. Our four-phase approach takes you from ambition to measurable impact.</p>
+  </div>
+  <div class="process-steps">
+    <div class="process-step reveal">
+      <div class="step-num">01</div>
+      <div class="step-left">
+        <h3>Ambition</h3>
+        <p>We start with where you want to go — your sustainability goals, business context, and the stakeholders who matter most.</p>
+      </div>
+      <div class="step-chips">
+        <span class="chip">Benchmark</span>
+        <span class="chip">Gap analysis</span>
+        <span class="chip">Stakeholder mapping</span>
+        <span class="chip">SBTi Target setting</span>
+      </div>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-num">02</div>
+      <div class="step-left">
+        <h3>Strategy</h3>
+        <p>We map the landscape, identify leverage points and design a strategy that is credible, realistic and commercially sound.</p>
+      </div>
+      <div class="step-chips">
+        <span class="chip">Roadmapping</span>
+        <span class="chip">KPIs &amp; Milestones</span>
+        <span class="chip">Material Policies</span>
+        <span class="chip">Risk &amp; Benchmarking</span>
+        <span class="chip">Supplier code of conduct</span>
+      </div>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-num">03</div>
+      <div class="step-left">
+        <h3>Implementation</h3>
+        <p>Hands-on execution — from material sourcing to supplier engagement to design for circularity. We work alongside your team.</p>
+      </div>
+      <div class="step-chips">
+        <div class="chip-sub">Climate</div>
+        <span class="chip">Scope 3</span>
+        <span class="chip">Supplier Engagement</span>
+        <div class="chip-sub">Product &amp; Materials</div>
+        <span class="chip">Circular Design</span>
+        <span class="chip">Design for Durability</span>
+        <span class="chip">BOM Analysis</span>
+        <div class="chip-sub">Outputs</div>
+        <span class="chip">Toolkits</span>
+        <span class="chip">Workshops</span>
+        <span class="chip">Design Guides</span>
+      </div>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-num">04</div>
+      <div class="step-left">
+        <h3>Measurable Impact</h3>
+        <p>We track, verify and communicate your impact — giving you the evidence base to report, improve and lead with confidence.</p>
+      </div>
+      <div class="step-chips">
+        <span class="chip">Light LCAs</span>
+        <span class="chip">Carbon Credits Advice</span>
+        <span class="chip">Impact Reporting</span>
+        <span class="chip">Sustainability Reporting</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<section class="manifesto" id="how">
+  <div class="manifesto-left reveal">
+    <div class="eyebrow eyebrow-light">How we work</div>
+    <h2>Senior expertise.<br>No <em>nonsense.</em></h2>
+    <p>Studio SHIFT is an Amsterdam-based sustainability consultancy, not a matchmaking platform. We bring senior-level experience to your brand and translate it into actions you can actually implement, guiding every expert in our network with that same senior expertise.</p>
+    <div class="manifesto-pills">
+      <span class="manifesto-pill">Amsterdam Based</span>
+      <span class="manifesto-pill">Physical + Remote</span>
+      <span class="manifesto-pill">Expert Team</span>
+      <span class="manifesto-pill">Ready to Implement</span>
+      <span class="manifesto-pill">Not Big 4 Pricing</span>
+    </div>
+  </div>
+  <div class="manifesto-feats reveal">
+    <div class="manifesto-feat">
+      <div class="manifesto-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+      <div>
+        <h4>Senior-led expert teams</h4>
+        <p>We bring in the right domain experts for your project, guided and overseen by our senior specialists from brief to delivery. Deep expertise, with experienced direction keeping quality on track.</p>
+      </div>
+    </div>
+    <div class="manifesto-feat">
+      <div class="manifesto-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+      <div>
+        <h4>Built to implement, not to impress</h4>
+        <p>Everything we deliver is designed to be used immediately, not filed away. Sharp strategy that translates into real actions your team can take.</p>
+      </div>
+    </div>
+    <div class="manifesto-feat">
+      <div class="manifesto-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 1 4 12.7V17H8v-2.3A7 7 0 0 1 12 2z"/></svg></div>
+      <div>
+        <h4>Big 4 thinking, without the price tag</h4>
+        <p>We run lean, with no layers of overhead or expensive offices. We offer senior expertise at a competitive price.</p>
+      </div>
+    </div>
+    <div class="manifesto-feat">
+      <div class="manifesto-feat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <div>
+        <h4>A curated network, not a marketplace</h4>
+        <p>When we bring in specialists, we know exactly who they are and why they're right for your project — vetted for real-world experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team-section" id="team">
+  <div class="team-header reveal">
+    <div class="eyebrow">Meet the team</div>
+    <h2>Two specialists.<br>Fully hands-on.</h2>
+    <p>We introduce ourselves — two seasoned sustainability professionals who stay hands-on in every project, from first brief to final delivery. When specialist support is needed, we bring in and guide a carefully curated freelance team around us.</p>
+  </div>
+  <div class="team-grid">
+    <div class="team-card reveal">
+      <img src="fabeel.jpg" alt="Fabeel Butt" class="team-photo">
+      <div class="team-body">
+        <div class="team-name-row">
+          <div class="team-name">Fabeel Butt</div>
+          <a href="https://www.linkedin.com/in/fabeelbutt/" class="team-linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+        <div class="team-role">Senior Sustainability Strategist · Amsterdam</div>
+        <p class="team-bio">Fabeel is a sustainability expert with 15 years of experience turning ambition into impact across products and supply chains. Proven track record at: <strong>Action - Consumer goods, HEMA - Consumer goods, Lidl - Food retail &amp; Fairtrade Foundation - NGO</strong><br><br>Leading initiatives from strategy to execution. Delivered full tier 1 supply chain transparency, developed sustainable sourcing and packaging policies, and implemented circularity and climate programs aligned with the GHG Protocol. Combines strategic thinking with hands-on execution to make sustainability commercially viable and scalable.</p>
+        <div class="team-tags">
+          <span class="team-tag">Supply Chain</span>
+          <span class="team-tag">Stakeholder Engagement</span>
+          <span class="team-tag">Sustainability Strategy</span>
+          <span class="team-tag">Circular Design</span>
+        </div>
+      </div>
+    </div>
+    <div class="team-card reveal">
+      <img src="roel.jpg" alt="Roel Laban" class="team-photo">
+      <div class="team-body">
+        <div class="team-name-row">
+          <div class="team-name">Roel Laban</div>
+          <a href="https://www.linkedin.com/in/roel-laban-b532b328/" class="team-linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+        <div class="team-role">Senior Sustainability Strategist · Haarlem</div>
+        <p class="team-bio">Roel is a sustainability professional with experience across B2B and B2C sectors, working in international value chains to drive measurable environmental and social impact. Experience includes: <strong>G-Star RAW – Textiles &amp; fashion, HEMA – Consumer goods &amp; DSG – Construction materials</strong><br><br>He specialises in developing and implementing ESG strategies, including sustainability data exchange across supply chains to enable better decision-making in products and production. His work spans social compliance and human rights, environmental sustainability, GHG footprinting, B Corp certification and stakeholder engagement.</p>
+        <div class="team-tags">
+          <span class="team-tag">Circular Design</span>
+          <span class="team-tag">Materials</span>
+          <span class="team-tag">ESG Strategy</span>
+          <span class="team-tag">Certification</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="team-network-note reveal">
+    <span class="team-network-plus">+</span>
+    <p>Backed by a curated network of independent sustainability specialists across product design, strategy, and engagement. When your project needs it, we bring in the right expert — briefed and led by us.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <div class="eyebrow">Get in touch</div>
+      <h2>Let's make<br><em>something</em><br>happen</h2>
+      <p>Whether you have a clear brief or just a sense of what you want to achieve, we'd love to hear from you.</p>
+      <div class="cdetail">
+        <div class="cdetail-label">Email</div>
+        <div class="cdetail-val">hello@studioshift.eu</div>
+      </div>
+      <div class="cdetail">
+        <div class="cdetail-label">Based in</div>
+        <div class="cdetail-val">Amsterdam, NL</div>
+      </div>
+    </div>
+    <form id="contactForm" class="reveal">
+      <div class="fg-row">
+        <div class="fg">
+          <label class="form-label" for="firstName">First name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Jan" required>
+        </div>
+        <div class="fg">
+          <label class="form-label" for="lastName">Last name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="de Vries" required>
+        </div>
+      </div>
+      <div class="fg">
+        <label class="form-label" for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="jan@company.com" required>
+      </div>
+      <div class="fg">
+        <label class="form-label" for="org">Organisation</label>
+        <input type="text" id="org" name="org" placeholder="Your company">
+      </div>
+      <div class="fg">
+        <label class="form-label" for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us about your project…" required></textarea>
+      </div>
+      <button type="submit" class="btn-submit">
+        Send message
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </button>
+      <div id="formSuccess">✓ Opening your mail client — send the email to reach us.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <a href="#hero" class="footer-logo">Studio <span>SHIFT</span></a>
+  <div class="footer-links">
+    <a href="#process">What we do</a>
+    <a href="#team">Meet the team</a>
+    <a href="freelancers.html">For freelancers</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <p>© 2026 Studio SHIFT · Amsterdam</p>
+</footer>
+
+<script>
+// Scroll progress
+const prog = document.getElementById('scrollProgress');
+window.addEventListener('scroll', () => {
+  const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+  prog.style.width = pct + '%';
+}, { passive: true });
+
+// Nav scroll state
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 80);
+}, { passive: true });
+
+// Burger menu
+const burger = document.getElementById('navBurger');
+const mobileNav = document.getElementById('navMobile');
+burger.addEventListener('click', () => {
+  const open = mobileNav.classList.toggle('open');
+  burger.classList.toggle('active', open);
+  burger.setAttribute('aria-expanded', open);
+});
+mobileNav.querySelectorAll('.nav-mobile-link').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+    burger.classList.remove('active');
+    burger.setAttribute('aria-expanded', false);
+  });
+});
+
+// Ticker
+const tickerItems = [
+  "Circular Design", "Sustainability Strategy", "Scope 3 Reduction",
+  "Supply Chain Transparency", "LCA & Reporting", "Material Innovation",
+  "Social Risk Assessments", "Product Certification"
+];
+const tickerEl = document.getElementById('tickerInner');
+const html = tickerItems.map(t => `<span class="ticker-item">${t}</span>`).join('');
+tickerEl.innerHTML = html + html;
+
+// Reveal on scroll
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      revealObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+// Contact form
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const f = e.target;
+  const name = f.firstName.value + ' ' + f.lastName.value;
+  const body = encodeURIComponent('Name: ' + name + '\nOrg: ' + f.org.value + '\n\n' + f.message.value);
+  window.location.href = 'mailto:hello@studioshift.eu?subject=' + encodeURIComponent('Enquiry from ' + name) + '&body=' + body;
+  f.reset();
+  document.getElementById('formSuccess').style.display = 'block';
+});
+</script>
+
+<!-- TWEAKS PANEL -->
+<style>
+#tweaks-panel {
+  position: fixed; bottom: 24px; right: 24px; z-index: 9998;
+  background: #fff; border: 1px solid rgba(11,61,82,.12);
+  border-radius: 16px; padding: 20px 22px;
+  box-shadow: 0 8px 32px rgba(11,61,82,.14);
+  width: 240px; display: none; flex-direction: column; gap: 16px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+#tweaks-panel h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px; font-weight: 700; color: var(--navy);
+  letter-spacing: -.01em; margin-bottom: 2px;
+}
+.tweak-row { display: flex; flex-direction: column; gap: 6px; }
+.tweak-label { font-size: 9px; letter-spacing: .18em; text-transform: uppercase; color: var(--grey); }
+.tweak-row select, .tweak-row input[type=range] { width: 100%; }
+.tweak-row select {
+  border: 1px solid rgba(11,61,82,.15); border-radius: 8px;
+  padding: 6px 10px; font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px; color: var(--navy); background: var(--white); outline: none;
+}
+.tweak-row input[type=range] { accent-color: var(--sky); }
+.tweak-swatches { display: flex; gap: 8px; flex-wrap: wrap; }
+.tweak-swatch {
+  width: 24px; height: 24px; border-radius: 50%;
+  cursor: pointer; border: 2px solid transparent;
+  transition: border-color .15s;
+}
+.tweak-swatch.active { border-color: var(--navy); }
+</style>
+
+<div id="tweaks-panel">
+  <h3>Tweaks</h3>
+  <div class="tweak-row">
+    <span class="tweak-label">Accent colour</span>
+    <div class="tweak-swatches" id="accentSwatches">
+      <div class="tweak-swatch active" style="background:#00B4D8" data-accent="#00B4D8"></div>
+      <div class="tweak-swatch" style="background:#27AE60" data-accent="#27AE60"></div>
+      <div class="tweak-swatch" style="background:#E67E22" data-accent="#E67E22"></div>
+      <div class="tweak-swatch" style="background:#8E44AD" data-accent="#8E44AD"></div>
+    </div>
+  </div>
+  <div class="tweak-row">
+    <span class="tweak-label">Heading font</span>
+    <select id="tweak-font">
+      <option value="'Space Grotesk', sans-serif">Space Grotesk</option>
+      <option value="'DM Sans', sans-serif">DM Sans</option>
+      <option value="'Syne', sans-serif">Syne</option>
+      <option value="Georgia, serif">Georgia</option>
+    </select>
+  </div>
+  <div class="tweak-row">
+    <span class="tweak-label">Body size</span>
+    <input type="range" id="tweak-size" min="13" max="17" step="1" value="15">
+  </div>
+</div>
+
+<script>
+// Tweaks
+window.addEventListener('message', e => {
+  if (e.data?.type === '__activate_edit_mode') {
+    document.getElementById('tweaks-panel').style.display = 'flex';
+  } else if (e.data?.type === '__deactivate_edit_mode') {
+    document.getElementById('tweaks-panel').style.display = 'none';
+  }
+});
+window.parent.postMessage({ type: '__edit_mode_available' }, '*');
+
+document.querySelectorAll('.tweak-swatch').forEach(sw => {
+  sw.addEventListener('click', () => {
+    document.querySelectorAll('.tweak-swatch').forEach(s => s.classList.remove('active'));
+    sw.classList.add('active');
+    const c = sw.dataset.accent;
+    document.documentElement.style.setProperty('--sky', c);
+    window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { accentColor: c } }, '*');
+  });
+});
+document.getElementById('tweak-font').addEventListener('change', function() {
+  document.querySelectorAll('h1,h2,h3,h4,.logo,.manifesto-headline,.hero-left h1').forEach(el => {
+    el.style.fontFamily = this.value;
+  });
+  window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { headingFont: this.value } }, '*');
+});
+document.getElementById('tweak-size').addEventListener('input', function() {
+  document.querySelectorAll('p, .hero-sub, .team-bio, .contact-info > p').forEach(el => {
+    el.style.fontSize = this.value + 'px';
+  });
+  window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { bodySize: +this.value } }, '*');
+});
+</script>
+
+</body>
+</html>
