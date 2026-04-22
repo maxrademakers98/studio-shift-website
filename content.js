@@ -73,7 +73,7 @@ const CONTENT = {
   how_feat2_title: "Built to implement, not to impress",
   how_feat2_desc:  "Everything we deliver is designed to be used immediately , not filed away. Sharp strategy that translates into real actions your team can take.",
   how_feat3_title: "Big 4 thinking, without the price tag",
-  how_feat3_desc:  "We run lean , no account managers, no layers of overhead. You get senior-calibre expertise at a fraction of the cost of a traditional consultancy.",
+  how_feat3_desc:  "We run lean, with no layers of overhead or expensive offices. You get senior expertise at a competitive price.",
   how_feat4_title: "A curated network, not a marketplace",
   how_feat4_desc:  "When we bring in specialists, we know exactly who they are and why they're right for your project. Vetted for real-world experience, not just credentials.",
 
@@ -90,7 +90,7 @@ const CONTENT = {
 
   team2_name: "Roel Laban",
   team2_role: "Circular Design Lead · Amsterdam",
-  team2_bio:  "Roel is a sustainability professional with experience across B2B and B2C sectors, working in international value chains to drive measurable environmental and social impact. Experience includes: ⁠G-Star RAW – Textiles & fashion, ⁠HEMA – Consumer goods, DSG – Construction materials. He specialises in developing and implementing ESG strategies, including sustainability data exchange across supply chains to enable better decision-making in products and production. His work spans social compliance and human rights, environmental sustainability, GHG footprinting, B Corp certification and stakeholder engagement.",
+  team2_bio:  "Roel is a sustainability professional with experience across B2B and B2C sectors, working in international value chains to drive measurable environmental and social impact. Experience includes:<b>G-Star RAW – Textiles & fashion, HEMA – Consumer goods, DSG – Construction materials.</b><br><br> He specialises in developing and implementing ESG strategies, including sustainability data exchange across supply chains to enable better decision-making in products and production. His work spans social compliance and human rights, environmental sustainability, GHG footprinting, B Corp certification and stakeholder engagement.",
   team2_tags: ["Circular Design", "Materials", "ESG Strategy", "Certification"],
   team2_linkedin: "https://www.linkedin.com/in/roel-laban-b532b328/",  // paste LinkedIn URL here, e.g. "https://www.linkedin.com/in/yourname"
 
