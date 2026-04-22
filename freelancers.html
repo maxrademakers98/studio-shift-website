@@ -100,6 +100,10 @@ h2.section-h { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-
 .profile-tag { display: inline-flex; align-items: center; gap: 6px; background: rgba(11,79,108,.06); border: 1px solid rgba(11,79,108,.1); border-radius: 100px; padding: 5px 14px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--navy); margin-bottom: 18px; }
 .profile-card h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 18px; color: var(--navy); margin-bottom: 10px; letter-spacing: -.02em; }
 .profile-card p { font-size: 13px; line-height: 1.75; color: var(--grey); }
+.profile-card-open { background: var(--sky); border-color: transparent; grid-column: 3; }
+.profile-card-open .profile-tag { background: rgba(255,255,255,.25); border-color: rgba(255,255,255,.3); color: #fff; }
+.profile-card-open h4 { color: #fff; }
+.profile-card-open p { color: rgba(255,255,255,.85); }
 
 /* ── APPLY FORM ── */
 .apply { background: var(--navy); color: #fff; }
@@ -285,6 +289,11 @@ footer p { font-size: 12px; color: rgba(255,255,255,.3); font-family: 'IBM Plex 
       <div class="profile-tag" data-content="fl_card6_tag">Innovation</div>
       <h4 data-content="fl_card6_title">Material & Process Innovators</h4>
       <p data-content="fl_card6_desc">Experts in alternative materials, bio-based inputs, or manufacturing process optimisation. You bridge the gap between R&D and real-world implementation.</p>
+    </div>
+    <div class="profile-card profile-card-open">
+      <div class="profile-tag" data-content="fl_card7_tag">Open Call</div>
+      <h4 data-content="fl_card7_title">Something else?</h4>
+      <p data-content="fl_card7_desc">Sustainability is a broad field and we know great expertise comes in many forms. If your skills don't fit neatly into one of these profiles, fill in our form and we will explore if there is a match.</p>
     </div>
   </div>
 </section>
