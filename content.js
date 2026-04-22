@@ -65,6 +65,12 @@ const CONTENT = {
   step4_desc:  "We track, verify and communicate your impact, giving you the evidence base to report, improve and lead with confidence.",
   step4_chips: ["Light LCAs", "Carbon Credits Advice", "Impact & Sustainability Reporting"],
 
+  // Step expand descriptions
+  step1_expand: "We start by listening before prescribing. That means structured discovery sessions with your team, competitor and sector benchmarking, an honest gap analysis, and clear target-setting tied to frameworks like SBTi. You leave this phase knowing exactly where you stand, and what good looks like for your context.",
+  step2_expand: "From the ambition, we build a credible plan. We map material hotspots, design a phased roadmap with clear KPIs and milestones, draft the policies your supply chain will need, and stress-test the strategy against commercial realities. The output is a plan your leadership can act on and your board can stand behind.",
+  step3_expand: "This is where we show up and do the work alongside your team. We join project teams, lead supplier engagement sessions, support product redesigns at the material level, and run capability workshops. We do not hand off a document and disappear. We stay until the change is embedded.",
+  step4_expand: "Impact is only useful if it can be measured and communicated. We design lightweight measurement frameworks, support your Scope 3 reporting and impact disclosures, and help you tell the story to investors, customers, and regulators in language that holds up to scrutiny.",
+
   // ── HOW WE WORK ───────────────────────────────────
   how_heading:     "Senior expertise<br>No <em>nonsense</em>",
   how_sub:         "Studio SHIFT is an Amsterdam-based sustainability consultancy, not a matchmaking platform. We bring senior-level experience to your brand and translate it into actions you can actually implement , guiding every expert in our network with that same senior expertise.",
