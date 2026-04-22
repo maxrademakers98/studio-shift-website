@@ -25,7 +25,7 @@ const CONTENT = {
   dna_h2:          "Where design meets <em>sustainability.</em>",
   dna_sub:         "We bridge the gap between ambition and action, combining strategic thinking with hands-on design expertise to create real, lasting change.",
   dna_item1_title: "Design that actually delivers",
-  dna_item1_desc:  "We turn sustainability ambitions into tangible products and processes — not decks.",
+  dna_item1_desc:  "We turn sustainability ambitions into tangible products and processes , not decks.",
   dna_item2_title: "Expert-led, start to finish",
   dna_item2_desc:  "Projects led by experts with senior oversight.",
   dna_item3_title: "We stay until it's done",
@@ -66,14 +66,14 @@ const CONTENT = {
 
   // ── HOW WE WORK ───────────────────────────────────
   how_heading:     "Senior expertise.<br>No <em>nonsense.</em>",
-  how_sub:         "Studio SHIFT is an Amsterdam-based sustainability consultancy, not a matchmaking platform. We bring senior-level experience to your brand and translate it into actions you can actually implement — guiding every expert in our network with that same senior expertise.",
+  how_sub:         "Studio SHIFT is an Amsterdam-based sustainability consultancy, not a matchmaking platform. We bring senior-level experience to your brand and translate it into actions you can actually implement , guiding every expert in our network with that same senior expertise.",
   how_pills:       ["Amsterdam Based", "Physical + Remote", "Expert Team", "Ready to Implement", "Not Big 4 Pricing"],
   how_feat1_title: "Senior-led, hands-on execution",
   how_feat1_desc:  "Every project is led by a senior specialist who knows your industry and stays with you from brief to delivery.",
   how_feat2_title: "Built to implement, not to impress",
-  how_feat2_desc:  "Everything we deliver is designed to be used immediately — not filed away. Sharp strategy that translates into real actions your team can take.",
+  how_feat2_desc:  "Everything we deliver is designed to be used immediately , not filed away. Sharp strategy that translates into real actions your team can take.",
   how_feat3_title: "Big 4 thinking, without the price tag",
-  how_feat3_desc:  "We run lean — no account managers, no layers of overhead. You get senior-calibre expertise at a fraction of the cost of a traditional consultancy.",
+  how_feat3_desc:  "We run lean , no account managers, no layers of overhead. You get senior-calibre expertise at a fraction of the cost of a traditional consultancy.",
   how_feat4_title: "A curated network, not a marketplace",
   how_feat4_desc:  "When we bring in specialists, we know exactly who they are and why they're right for your project. Vetted for real-world experience, not just credentials.",
 
@@ -121,13 +121,13 @@ const CONTENT = {
   // Why join section
   fl_why_eyebrow:         "Why freelance with us",
   fl_why_h2:              "Built for specialists,<br>not generalists.",
-  fl_why_sub:             "We believe great work happens when the right expert is paired with the right project. No junior hand-offs, no bloated teams — just people who know their craft.",
+  fl_why_sub:             "We believe great work happens when the right expert is paired with the right project. No junior hand-offs, no bloated teams , just people who know their craft.",
 
   fl_pro1_title:          "Specialists, not generalists",
-  fl_pro1_desc:           "We work with people who have a proven track record in their field — not generalists. If you know your craft and love real-world impact, we want to know you.",
+  fl_pro1_desc:           "We work with people who have a proven track record in their field , not generalists. If you know your craft and love real-world impact, we want to know you.",
 
   fl_pro2_title:          "Project-based flexibility",
-  fl_pro2_desc:           "Engage on the projects that suit you. No retainers, no minimum commitments — just great work, when it fits your schedule.",
+  fl_pro2_desc:           "Engage on the projects that suit you. No retainers, no minimum commitments , just great work, when it fits your schedule.",
 
   fl_pro3_title:          "A network you'll value",
   fl_pro3_desc:           "Working with us means joining a community of like-minded specialists. We connect you, collaborate with you, and grow together.",
@@ -158,7 +158,7 @@ const CONTENT = {
 
   fl_card5_tag:           "Engagement",
   fl_card5_title:         "Change & Capability Leads",
-  fl_card5_desc:          "Facilitators and trainers who help organisations embed sustainability thinking. You make complex concepts stick — across teams, boards, and supply chains.",
+  fl_card5_desc:          "Facilitators and trainers who help organisations embed sustainability thinking. You make complex concepts stick , across teams, boards, and supply chains.",
 
   fl_card6_tag:           "Innovation",
   fl_card6_title:         "Material & Process Innovators",
