@@ -17,7 +17,7 @@ const CONTENT = {
     "Supply Chain Transparency",
     "LCA & Reporting",
     "Material Innovation",
-    "Social Risk Assessments"
+    "Social Risk Assessments",
     "Product Certification",
   ],
 
