@@ -41,14 +41,14 @@ const CONTENT = {
 
   // ── WHAT WE DO (Approach) ─────────────────────────
   approach_heading:   "What we do",
-  approach_sub:       "Wherever you are on your sustainability journey, we meet you there. Whether you’re starting from scratch, shaping a robust strategy, or looking to enhance specific products, we help turn ambition into action. Our proven four-phase approach guides you every step of the way, defining clear Ambition, building a practical Strategy, driving effective Implementation, and delivering Measurable Impact. No matter your starting point, we help you move forward with clarity, confidence, and results.",
+  approach_sub:       "Wherever you are on your sustainability journey, we meet you there. Whether you’re starting from scratch, shaping a robust strategy, or looking to enhance specific products, we help turn ambition into action. Our four-phase approach guides you every step of the way, defining clear ambition, building a practical strategy, driving effective implementation and delivering measurable impact. No matter your starting point, we help you move forward with clarity, confidence and results.",
 
   step1_title: "1. Ambition",
   step1_desc:  "We start with where you want to go, your sustainability goals, business context, and the stakeholders who matter most.",
-  step1_chips: ["Benchmark", "gap analysis", "Stakeholder mapping", "SBTi Target setting"],
+  step1_chips: ["Benchmark", "Gap analysis", "Stakeholder mapping", "SBTi Target setting"],
 
   step2_title: "2. Strategy",
-  step2_desc:  "We map the landscape, identify leverage points, and design a strategy that is credible, realistic, and commercially sound.",
+  step2_desc:  "We map the landscape, identify leverage points and design a strategy that is credible, realistic and commercially sound.",
   step2_chips: ["Roadmapping", "KPIs & Milestones", "Material Policies", "Risk & Benchmarking", "Supplier code of conduct"],
 
   expertise_label: "Where we love to work",
@@ -62,7 +62,7 @@ const CONTENT = {
   ],
 
   step4_title: "4. Measurable Impact",
-  step4_desc:  "We track, verify, and communicate your impact, giving you the evidence base to report, improve, and lead with confidence.",
+  step4_desc:  "We track, verify and communicate your impact, giving you the evidence base to report, improve and lead with confidence.",
   step4_chips: ["Light LCAs", "Carbon Credits Advice", "Impact & Sustainability Reporting"],
 
   // ── HOW WE WORK ───────────────────────────────────
