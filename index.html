@@ -216,29 +216,6 @@ nav.scrolled .nav-burger span { background: var(--navy); }
 }
 .btn-ghost:hover { border-color: rgba(255,255,255,.3); color: rgba(255,255,255,.8); }
 
-/* Client strip inside hero */
-.hero-clients {
-  position: relative; z-index: 1;
-  border-top: 1px solid rgba(255,255,255,.08);
-  padding-top: 28px;
-}
-.hero-clients-label {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 9px; letter-spacing: .22em; text-transform: uppercase;
-  color: rgba(255,255,255,.25); margin-bottom: 14px;
-}
-.hero-clients-logos {
-  display: flex; gap: 28px; align-items: center; flex-wrap: wrap;
-}
-.hero-client {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 600; font-size: 12px; letter-spacing: .04em;
-  color: rgba(255,255,255,.3);
-  text-transform: uppercase;
-  transition: color .2s;
-}
-.hero-client:hover { color: rgba(255,255,255,.5); }
-
 /* Hero right — visual editorial panel */
 .hero-right {
   background: var(--cream);
@@ -1000,98 +977,6 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 });
 </script>
 
-<!-- TWEAKS PANEL -->
-<style>
-#tweaks-panel {
-  position: fixed; bottom: 24px; right: 24px; z-index: 9998;
-  background: #fff; border: 1px solid rgba(11,61,82,.12);
-  border-radius: 16px; padding: 20px 22px;
-  box-shadow: 0 8px 32px rgba(11,61,82,.14);
-  width: 240px; display: none; flex-direction: column; gap: 16px;
-  font-family: 'IBM Plex Mono', monospace;
-}
-#tweaks-panel h3 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 13px; font-weight: 700; color: var(--navy);
-  letter-spacing: -.01em; margin-bottom: 2px;
-}
-.tweak-row { display: flex; flex-direction: column; gap: 6px; }
-.tweak-label { font-size: 9px; letter-spacing: .18em; text-transform: uppercase; color: var(--grey); }
-.tweak-row select, .tweak-row input[type=range] { width: 100%; }
-.tweak-row select {
-  border: 1px solid rgba(11,61,82,.15); border-radius: 8px;
-  padding: 6px 10px; font-family: 'IBM Plex Mono', monospace;
-  font-size: 11px; color: var(--navy); background: var(--white); outline: none;
-}
-.tweak-row input[type=range] { accent-color: var(--sky); }
-.tweak-swatches { display: flex; gap: 8px; flex-wrap: wrap; }
-.tweak-swatch {
-  width: 24px; height: 24px; border-radius: 50%;
-  cursor: pointer; border: 2px solid transparent;
-  transition: border-color .15s;
-}
-.tweak-swatch.active { border-color: var(--navy); }
-</style>
-
-<div id="tweaks-panel">
-  <h3>Tweaks</h3>
-  <div class="tweak-row">
-    <span class="tweak-label">Accent colour</span>
-    <div class="tweak-swatches" id="accentSwatches">
-      <div class="tweak-swatch active" style="background:#00B4D8" data-accent="#00B4D8"></div>
-      <div class="tweak-swatch" style="background:#27AE60" data-accent="#27AE60"></div>
-      <div class="tweak-swatch" style="background:#E67E22" data-accent="#E67E22"></div>
-      <div class="tweak-swatch" style="background:#8E44AD" data-accent="#8E44AD"></div>
-    </div>
-  </div>
-  <div class="tweak-row">
-    <span class="tweak-label">Heading font</span>
-    <select id="tweak-font">
-      <option value="'Space Grotesk', sans-serif">Space Grotesk</option>
-      <option value="'DM Sans', sans-serif">DM Sans</option>
-      <option value="'Syne', sans-serif">Syne</option>
-      <option value="Georgia, serif">Georgia</option>
-    </select>
-  </div>
-  <div class="tweak-row">
-    <span class="tweak-label">Body size</span>
-    <input type="range" id="tweak-size" min="13" max="17" step="1" value="15">
-  </div>
-</div>
-
-<script>
-// Tweaks
-window.addEventListener('message', e => {
-  if (e.data?.type === '__activate_edit_mode') {
-    document.getElementById('tweaks-panel').style.display = 'flex';
-  } else if (e.data?.type === '__deactivate_edit_mode') {
-    document.getElementById('tweaks-panel').style.display = 'none';
-  }
-});
-window.parent.postMessage({ type: '__edit_mode_available' }, '*');
-
-document.querySelectorAll('.tweak-swatch').forEach(sw => {
-  sw.addEventListener('click', () => {
-    document.querySelectorAll('.tweak-swatch').forEach(s => s.classList.remove('active'));
-    sw.classList.add('active');
-    const c = sw.dataset.accent;
-    document.documentElement.style.setProperty('--sky', c);
-    window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { accentColor: c } }, '*');
-  });
-});
-document.getElementById('tweak-font').addEventListener('change', function() {
-  document.querySelectorAll('h1,h2,h3,h4,.logo,.manifesto-headline,.hero-left h1').forEach(el => {
-    el.style.fontFamily = this.value;
-  });
-  window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { headingFont: this.value } }, '*');
-});
-document.getElementById('tweak-size').addEventListener('input', function() {
-  document.querySelectorAll('p, .hero-sub, .team-bio, .contact-info > p').forEach(el => {
-    el.style.fontSize = this.value + 'px';
-  });
-  window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { bodySize: +this.value } }, '*');
-});
-</script>
 
 </body>
 </html>
