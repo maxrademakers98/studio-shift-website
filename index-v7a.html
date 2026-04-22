@@ -148,6 +148,7 @@ h2.section-h { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-
 .step-featured p { color: rgba(255,255,255,.5); }
 /* Expandable step details */
 .step-expand { max-height: 0; overflow: hidden; opacity: 0; transition: max-height .4s cubic-bezier(.4,0,.2,1), opacity .3s ease; }
+.step-expand-text { font-size: 13px; line-height: 1.75; color: rgba(255,255,255,.55); margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,.1); }
 .step.expanded .step-expand { max-height: 400px; opacity: 1; }
 .step-chips { display: flex; flex-wrap: wrap; gap: 7px; padding-top: 14px; }
 .step-chip { display: inline-flex; align-items: center; background: rgba(11,79,108,.06); border: 1px solid rgba(11,79,108,.1); border-radius: 100px; padding: 5px 12px; font-size: 11.5px; color: var(--navy); }
@@ -423,6 +424,7 @@ footer p { font-size: 12px; color: rgba(255,255,255,.55); font-family: 'IBM Plex
       <p data-content="step1_desc">We start with where you want to go, your sustainability goals, business context, and the stakeholders who matter most.</p>
       <div class="step-expand">
         <div class="step-chips" data-chips="step1_chips"></div>
+        <p class="step-expand-text" data-content="step1_expand"></p>
       </div>
     </div>
     <div class="step step-featured expanded">
@@ -430,6 +432,7 @@ footer p { font-size: 12px; color: rgba(255,255,255,.55); font-family: 'IBM Plex
       <p data-content="step2_desc">We map the landscape, identify leverage points, and design a strategy that is credible, realistic, and commercially sound.</p>
       <div class="step-expand">
         <div class="step-chips" data-chips="step2_chips"></div>
+        <p class="step-expand-text" data-content="step2_expand"></p>
       </div>
     </div>
     <div class="step step-featured expanded">
@@ -437,6 +440,7 @@ footer p { font-size: 12px; color: rgba(255,255,255,.55); font-family: 'IBM Plex
       <p data-content="step3_desc">Hands-on execution, from material sourcing to supplier engagement to design for circularity. We work alongside your team.</p>
       <div class="step-expand">
         <div class="step-chips" data-chips="step3_chips"></div>
+        <p class="step-expand-text" data-content="step3_expand"></p>
       </div>
     </div>
     <div class="step step-featured expanded">
@@ -444,6 +448,7 @@ footer p { font-size: 12px; color: rgba(255,255,255,.55); font-family: 'IBM Plex
       <p data-content="step4_desc">We track, verify, and communicate your impact, giving you the evidence base to report, improve, and lead with confidence.</p>
       <div class="step-expand">
         <div class="step-chips" data-chips="step4_chips"></div>
+        <p class="step-expand-text" data-content="step4_expand"></p>
       </div>
     </div>
   </div>
