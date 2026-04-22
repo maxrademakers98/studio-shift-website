@@ -24,7 +24,7 @@ const CONTENT = {
 
   // ── WHERE DESIGN MEETS (Hero right panel) ─────────
   dna_h2:          "Where design meets <em>sustainability</em>",
-  dna_sub:         "We bridge the gap between ambition and action, combining strategic thinking with hands-on design expertise to create real, lasting change.",
+  dna_sub:         "Sustainability is no longer a side strategy. Regulations are tightening, supply chains are under scrutiny, impact claims are being challenged. We help organizations embed solutions at the core.",
   dna_item1_title: "Design that actually delivers",
   dna_item1_desc:  "We turn sustainability ambitions into tangible products and processes , not decks.",
   dna_item2_title: "Expert-led, start to finish",
