@@ -63,14 +63,69 @@ const CONTENT = {
 
   step4_title: "4. Measurable Impact",
   step4_desc:  "We track, verify and communicate your impact, giving you the evidence base to report, improve and lead with confidence.",
+  step4_chips: ["Light LCAs", "Carbon Credits Advice", "Impact & Sustainability Reporting"],* Edit the text values below to update the website.
+ * Do NOT change the key names (left side of the colon).
+ * For hero_h1, wrap any word in <span> to make it appear lighter/grey.
+ * For chips with sub-group labels, use { sub: "Label" } entries.
+ * ─────────────────────────────────────────────────────
+ */
+const CONTENT = {
+
+  // ── TICKER STRIP ──────────────────────────────────
+  ticker_items: [
+    "Circular Design",
+    "Sustainability Strategy",
+    "Scope 3 Reduction",
+    "Supply Chain Transparency",
+    "LCA & Reporting",
+    "Material Innovation",
+    "Social Risk Assessments"
+    "Product Certification",
+  ],
+
+
+  // ── WHERE DESIGN MEETS (Hero right panel) ─────────
+  dna_h2:          "Where design meets <em>sustainability</em>",
+  dna_sub:         "We bridge the gap between ambition and action, combining strategic thinking with hands-on design expertise to create real, lasting change.",
+  dna_item1_title: "Design that actually delivers",
+  dna_item1_desc:  "We turn sustainability ambitions into tangible products and processes , not decks.",
+  dna_item2_title: "Expert-led, start to finish",
+  dna_item2_desc:  "Projects led by experts with senior oversight.",
+  dna_item3_title: "We stay until it's done",
+  dna_item3_desc:  "We don't just strategise, we stay involved until your ambitions become operational reality.",
+
+  // ── HERO ──────────────────────────────────────────
+  hero_badge:         "Sustainability Studio",
+  hero_h1:            "Ambition into<span>action.</span>",
+  hero_sub:           "We design and implement sustainability strategies for products, processes and supply chains that work, without the 100-slide deck. Experienced solution providers, hands-on execution, turning your goals into measurable outcomes.",
+  hero_cta_primary:   "Work with us",
+  hero_cta_secondary: "What we do",
+
+  // ── WHAT WE DO (Approach) ─────────────────────────
+  approach_heading:   "What we do",
+  approach_sub:       "Wherever you are on your sustainability journey, we meet you there. Whether you’re starting from scratch, shaping a robust strategy, or looking to enhance specific products, we help turn ambition into action. Our four-phase approach guides you every step of the way, defining clear ambition, building a practical strategy, driving effective implementation and delivering measurable impact. No matter your starting point, we help you move forward with clarity, confidence and results.",
+
+  step1_title: "1. Ambition",
+  step1_desc:  "We start with where you want to go, your sustainability goals, business context, and the stakeholders who matter most.",
+  step1_chips: ["Benchmark", "Gap analysis", "Stakeholder mapping", "SBTi Target setting"],
+
+  step2_title: "2. Strategy",
+  step2_desc:  "We map the landscape, identify leverage points and design a strategy that is credible, realistic and commercially sound.",
+  step2_chips: ["Roadmapping", "KPIs & Milestones", "Material Policies", "Risk & Benchmarking", "Supplier code of conduct"],
+
+  expertise_label: "Where we love to work",
+
+  step3_title: "3. Implementation",
+  step3_desc:  "Hands-on execution, from material sourcing to supplier engagement to design for circularity. We work alongside your team.",
+  step3_chips: [
+    { sub: "Climate" },          { chip: "Scope 3" }, { chip: "Supplier Engagement" },
+    { sub: "Product & Materials" } , { chip: "Design for Durability & Repair" },{ chip: "Circular Design" },{ chip: "Material Repurposing" }, { chip: "BOM Analysis" },
+    { sub: "Outputs" },          { chip: "Toolkits" },{ chip: "Grant Support" },{ chip: "Design Guides" },  { chip: "Tailored Workshops" }
+  ],
+
+  step4_title: "4. Measurable Impact",
+  step4_desc:  "We track, verify and communicate your impact, giving you the evidence base to report, improve and lead with confidence.",
   step4_chips: ["Light LCAs", "Carbon Credits Advice", "Impact & Sustainability Reporting"],
-
-  // Step expand descriptions
-  step1_expand: "We start by listening before prescribing. That means structured discovery sessions with your team, competitor and sector benchmarking, an honest gap analysis, and clear target-setting tied to frameworks like SBTi. You leave this phase knowing exactly where you stand, and what good looks like for your context.",
-  step2_expand: "From the ambition, we build a credible plan. We map material hotspots, design a phased roadmap with clear KPIs and milestones, draft the policies your supply chain will need, and stress-test the strategy against commercial realities. The output is a plan your leadership can act on and your board can stand behind.",
-  step3_expand: "This is where we show up and do the work alongside your team. We join project teams, lead supplier engagement sessions, support product redesigns at the material level, and run capability workshops. We do not hand off a document and disappear. We stay until the change is embedded.",
-  step4_expand: "Impact is only useful if it can be measured and communicated. We design lightweight measurement frameworks, support your Scope 3 reporting and impact disclosures, and help you tell the story to investors, customers, and regulators in language that holds up to scrutiny.",
-
   // ── HOW WE WORK ───────────────────────────────────
   how_heading:     "Senior expertise<br>No <em>nonsense</em>",
   how_sub:         "Studio SHIFT is an Amsterdam-based sustainability consultancy, not a matchmaking platform. We bring senior-level experience to your brand and translate it into actions you can actually implement , guiding every expert in our network with that same senior expertise.",
@@ -96,7 +151,7 @@ const CONTENT = {
   team1_linkedin: "https://www.linkedin.com/in/fabeelbutt/",  // paste LinkedIn URL here, e.g. "https://www.linkedin.com/in/yourname"
 
   team2_name: "Roel Laban",
-  team2_role: "Sustainability Strategist · Haarlem",
+  team2_role: "Circular Design Lead · Amsterdam",
   team2_bio:  "Roel is a sustainability professional with experience across B2B and B2C sectors, working in international value chains to drive measurable environmental and social impact. Experience includes:<b>G-Star RAW – Textiles & fashion, HEMA – Consumer goods & DSG – Construction materials.</b><br><br> He specialises in developing and implementing ESG strategies, including sustainability data exchange across supply chains to enable better decision-making in products and production. His work spans social compliance and human rights, environmental sustainability, GHG footprinting, B Corp certification and stakeholder engagement.",
   team2_tags: ["Circular Design", "Materials", "ESG Strategy", "Certification"],
   team2_linkedin: "https://www.linkedin.com/in/roel-laban-b532b328/",  // paste LinkedIn URL here, e.g. "https://www.linkedin.com/in/yourname"
