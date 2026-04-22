@@ -22,7 +22,7 @@ const CONTENT = {
 
 
   // ── WHERE DESIGN MEETS (Hero right panel) ─────────
-  dna_h2:          "Where design meets <em>sustainability.</em>",
+  dna_h2:          "Where design meets <em>sustainability</em>",
   dna_sub:         "We bridge the gap between ambition and action, combining strategic thinking with hands-on design expertise to create real, lasting change.",
   dna_item1_title: "Design that actually delivers",
   dna_item1_desc:  "We turn sustainability ambitions into tangible products and processes , not decks.",
@@ -39,7 +39,7 @@ const CONTENT = {
   hero_cta_secondary: "What we do",
 
   // ── WHAT WE DO (Approach) ─────────────────────────
-  approach_heading:   "What we do.",
+  approach_heading:   "What we do",
   approach_sub:       "Wherever you are on your sustainability journey, we meet you there. Whether you’re starting from scratch, shaping a robust strategy, or looking to enhance specific products, we help turn ambition into action. Our proven four-phase approach guides you every step of the way, defining clear Ambition, building a practical Strategy, driving effective Implementation, and delivering Measurable Impact. No matter your starting point, we help you move forward with clarity, confidence, and results.",
 
   step1_title: "1. Ambition",
@@ -65,7 +65,7 @@ const CONTENT = {
   step4_chips: ["Light LCAs", "Carbon Credits Advice", "Impact & Sustainability Reporting"],
 
   // ── HOW WE WORK ───────────────────────────────────
-  how_heading:     "Senior expertise.<br>No <em>nonsense.</em>",
+  how_heading:     "Senior expertise<br>No <em>nonsense</em>",
   how_sub:         "Studio SHIFT is an Amsterdam-based sustainability consultancy, not a matchmaking platform. We bring senior-level experience to your brand and translate it into actions you can actually implement , guiding every expert in our network with that same senior expertise.",
   how_pills:       ["Amsterdam Based", "Physical + Remote", "Expert Team", "Ready to Implement", "Not Big 4 Pricing"],
   how_feat1_title: "Senior-led expert teams",
@@ -78,7 +78,7 @@ const CONTENT = {
   how_feat4_desc:  "When we bring in specialists, we know exactly who they are and why they're right for your project. Vetted for real-world experience, not just credentials.",
 
   // ── MEET THE TEAM ─────────────────────────────────
-  pool_heading: "Meet the team.",
+  pool_heading: "Meet the team",
   pool_intro:   "Let us introduce ourselves, we are two seasoned sustainability professionals who stay hands-on in every project, from first brief to final delivery. For each client challenge, we assess whether extra specialist support is needed, and when it is, we bring in and guide a carefully curated freelance team around us.",
 
   team1_name: "Fabeel Butt",
@@ -120,7 +120,7 @@ const CONTENT = {
 
   // Why join section
   fl_why_eyebrow:         "Why freelance with us",
-  fl_why_h2:              "Built for specialists,<br>not generalists.",
+  fl_why_h2:              "Built for specialists,<br>not generalists",
   fl_why_sub:             "We believe great work happens when the right expert is paired with the right project. No junior hand-offs, no bloated teams , just people who know their craft.",
 
   fl_pro1_title:          "Specialists, not generalists",
@@ -137,7 +137,7 @@ const CONTENT = {
 
   // Profiles section
   fl_profiles_eyebrow:    "Who we're looking for",
-  fl_profiles_h2:         "The profiles<br>we work with.",
+  fl_profiles_h2:         "The profiles<br>we work with",
   fl_profiles_sub:        "Our projects span strategy, design, and implementation. We look for depth over breadth, specialists who are genuinely expert in their domain.",
 
   fl_card1_tag:           "Ambition & Strategy",
@@ -167,7 +167,7 @@ const CONTENT = {
 
   // Apply / CTA section
   fl_apply_eyebrow:       "Get in touch",
-  fl_apply_h2:            "Tell us<br>about <em>yourself.</em>",
+  fl_apply_h2:            "Tell us<br>about <em>yourself</em>",
   fl_apply_sub:           "Fill in our form and we'll be in touch if there's a good fit. We review every application and respond to everyone, usually within a week.",
   fl_apply_detail_label:  "Email us directly",
   fl_apply_detail_val:    "hello@studioshift.nl",
