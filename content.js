@@ -27,7 +27,7 @@ const CONTENT = {
   dna_item1_title: "Design that actually delivers",
   dna_item1_desc:  "We turn sustainability ambitions into tangible products and processes — not decks.",
   dna_item2_title: "Expert-led, start to finish",
-  dna_item2_desc:  "Every recommendation is grounded in data, LCA, Scope 3 analysis, and lifecycle thinking.",
+  dna_item2_desc:  "Projects led by experts with senior oversight.",
   dna_item3_title: "We stay until it's done",
   dna_item3_desc:  "We don't just strategise, we stay involved until your ambitions become operational reality.",
 
