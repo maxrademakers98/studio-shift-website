@@ -140,19 +140,19 @@ const CONTENT = {
   fl_profiles_h2:         "The profiles<br>we work with.",
   fl_profiles_sub:        "Our projects span strategy, design, and implementation. We look for depth over breadth, specialists who are genuinely expert in their domain.",
 
-  fl_card1_tag:           "Strategy",
+  fl_card1_tag:           "Ambition & Strategy",
   fl_card1_title:         "Sustainability Strategists",
   fl_card1_desc:          "Experts in ESG frameworks, transition roadmaps, and materiality assessments. You help companies set credible targets and build the plans to meet them.",
 
-  fl_card2_tag:           "Design",
+  fl_card2_tag:           "Circular Design",
   fl_card2_title:         "Circular Design Specialists",
   fl_card2_desc:          "Designers with deep knowledge of circular economy principles, material flows, and product end-of-life. You design for longevity, repairability, and reuse.",
 
-  fl_card3_tag:           "Supply Chain",
+  fl_card3_tag:           "Supply Chain & Scope 3",
   fl_card3_title:         "Supply Chain Experts",
   fl_card3_desc:          "Specialists in Scope 3 mapping, supplier engagement, and responsible sourcing. You know how to trace impact across complex global value chains.",
 
-  fl_card4_tag:           "Measurement",
+  fl_card4_tag:           "Impact & Reporting",
   fl_card4_title:         "LCA & Reporting Analysts",
   fl_card4_desc:          "Practitioners in life cycle assessment, carbon accounting, and sustainability reporting (GRI, CSRD, TCFD). You turn data into credible, defensible claims.",
 
@@ -160,9 +160,13 @@ const CONTENT = {
   fl_card5_title:         "Change & Capability Leads",
   fl_card5_desc:          "Facilitators and trainers who help organisations embed sustainability thinking. You make complex concepts stick , across teams, boards, and supply chains.",
 
-  fl_card6_tag:           "Innovation",
+  fl_card6_tag:           "Materials & Innovation",
   fl_card6_title:         "Material & Process Innovators",
   fl_card6_desc:          "Experts in alternative materials, bio-based inputs, or manufacturing process optimisation. You bridge the gap between R&D and real-world implementation.",
+
+  fl_card7_tag:           "Open Call",
+  fl_card7_title:         "Something else?",
+  fl_card7_desc:          "Sustainability is a broad field and we know great expertise comes in many forms. If your skills don't fit neatly into one of these profiles, fill in our form and we will explore if there is a match.",
 
   // Apply / CTA section
   fl_apply_eyebrow:       "Get in touch",
