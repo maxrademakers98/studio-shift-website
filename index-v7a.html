@@ -127,7 +127,7 @@ h2.section-h { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-
 .dna-text { padding: 120px 56px 80px 52px; background: var(--navy); color: #fff; display: flex; flex-direction: column; justify-content: flex-start; }
 .dna-text .section-eyebrow { color: rgba(255,255,255,.35); }
 .dna-text .section-eyebrow::before { background: rgba(255,255,255,.2); }
-.dna-text h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(30px,3vw,44px); letter-spacing: -.02em; line-height: 1.08; margin-top: 71px; margin-bottom: 20px; color: #fff; }
+.dna-text h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(30px,3vw,44px); letter-spacing: -.02em; line-height: 1.08; margin-top: 86px; margin-bottom: 20px; color: #fff; }
 .dna-text h2 em { font-style: normal; color: rgba(255,255,255,.55); font-weight: 300; }
 .dna-text > p { font-size: 15px; line-height: 1.85; color: rgba(255,255,255,.75); margin-bottom: 32px; max-width: 400px; }
 .dna-items { display: flex; flex-direction: column; }
@@ -660,27 +660,6 @@ document.querySelectorAll('.pool-card, .pro-item').forEach(el => {
 });
 </script>
 
-<!-- DEV TOOL: alignment slider — remove when done -->
-<div id="devTool" style="position:fixed;bottom:24px;right:24px;z-index:9999;background:#0d1a24;border:1px solid #01BAEF;border-radius:12px;padding:16px 20px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#fff;box-shadow:0 8px 32px rgba(0,0,0,.4);min-width:220px">
-  <div style="color:#01BAEF;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px">DNA text offset</div>
-  <input type="range" id="offsetSlider" min="0" max="200" value="71" step="1"
-    style="width:100%;accent-color:#01BAEF;margin-bottom:8px">
-  <div style="display:flex;justify-content:space-between;align-items:center">
-    <span style="color:rgba(255,255,255,.5);font-size:11px">margin-top:</span>
-    <span id="offsetVal" style="color:#01BAEF;font-weight:700;font-size:14px">71px</span>
-  </div>
-  <div style="margin-top:10px;font-size:10px;color:rgba(255,255,255,.35)">Tell Claude this value ↑</div>
-</div>
-<script>
-(function(){
-  const slider = document.getElementById('offsetSlider');
-  const val    = document.getElementById('offsetVal');
-  const h2     = document.querySelector('.dna-text h2');
-  slider.addEventListener('input', function(){
-    h2.style.marginTop = this.value + 'px';
-    val.textContent = this.value + 'px';
-  });
-})();
-</script>
+
 </body>
 </html>
