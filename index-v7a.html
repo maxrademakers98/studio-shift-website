@@ -202,6 +202,9 @@ h2.section-h { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-
 .team-name-link:hover .team-name { color: var(--sky); }
 .team-name-link[href="#"] { pointer-events: none; cursor: default; }
 .team-tag { display: inline-flex; background: rgba(11,79,108,.06); border: 1px solid rgba(11,79,108,.1); border-radius: 100px; padding: 4px 11px; font-size: 11px; color: var(--navy); }
+.team-expert-note { display: flex; align-items: flex-start; gap: 16px; background: rgba(11,79,108,.03); border: 1px solid rgba(11,79,108,.07); border-radius: 16px; padding: 20px 28px; margin-top: 4px; }
+.team-expert-icon { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 22px; color: var(--sky); flex-shrink: 0; line-height: 1.4; }
+.team-expert-note p { font-size: 13px; line-height: 1.75; color: var(--grey); margin: 0; }
 @media (max-width: 640px) { .team-grid { grid-template-columns: 1fr; } .team-card { flex-direction: column; gap: 16px; } }
 
 /* ── TASK 9: Skills breakdown ── */
@@ -443,6 +446,10 @@ footer p { font-size: 12px; color: rgba(255,255,255,.55); font-family: 'IBM Plex
         <div class="step-chips" data-chips="step4_chips"></div>
       </div>
     </div>
+  </div>
+  <div class="team-expert-note">
+    <span class="team-expert-icon">+</span>
+    <p>Backed by a curated network of independent sustainability specialists across product design, strategy, and engagement. When your project needs it, we bring in the right expert, briefed and led by us.</p>
   </div>
 </section>
 
