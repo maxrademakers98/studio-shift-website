@@ -66,15 +66,15 @@ const CONTENT = {
   step4_chips: ["Light LCAs", "Carbon Credits Advice", "Impact & Sustainability Reporting"],
   // ── HOW WE WORK ───────────────────────────────────
   how_heading:     "Senior expertise<br>No <em>nonsense</em>",
-  how_sub:         "Studio SHIFT is an Amsterdam-based sustainability consultancy, not a matchmaking platform. We bring senior-level experience to your brand and translate it into actions you can actually implement , guiding every expert in our network with that same senior expertise.",
+  how_sub:         "Studio SHIFT is an Amsterdam-based sustainability studio. We bring senior-level experience to your brand and translate it into actions you can actually implement, guiding every expert in our network with that same senior expertise.",
   how_pills:       ["Amsterdam Based", "Physical + Remote", "Expert Team", "Ready to Implement", "Not Big 4 Pricing"],
   how_feat1_title: "Senior-led expert teams",
   how_feat1_desc:  "We bring in the right domain experts for your project, guided and overseen by our senior specialists from brief to delivery. Deep expertise, with experienced direction keeping quality on track.",
   how_feat2_title: "Built to implement, not to impress",
-  how_feat2_desc:  "Everything we deliver is designed to be used immediately , not filed away. Sharp strategy that translates into real actions your team can take.",
+  how_feat2_desc:  "Everything we deliver is designed to be used, not filed away. Sharp strategy that translates into real actions your team can take.",
   how_feat3_title: "Big 4 thinking, without the price tag",
   how_feat3_desc:  "We run lean, with no layers of overhead or expensive offices. We offer senior expertise at a competitive price.",
-  how_feat4_title: "A curated network, not a marketplace",
+  how_feat4_title: "A curated network of professionals",
   how_feat4_desc:  "When we bring in specialists, we know exactly who they are and why they're right for your project. Vetted for real-world experience, not just credentials.",
 
   // ── MEET THE TEAM ─────────────────────────────────
