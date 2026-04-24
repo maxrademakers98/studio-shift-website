@@ -26,7 +26,7 @@ const CONTENT = {
   dna_h2:          "Where design meets <em>sustainability</em>",
   dna_sub:         "Sustainability is no longer a side strategy. Regulations are tightening, supply chains are under scrutiny, impact claims are being challenged. We help organizations embed solutions at the core.",
   dna_item1_title: "Design that actually delivers",
-  dna_item1_desc:  "We turn sustainability ambitions into tangible products and processes, not decks.",
+  dna_item1_desc:  "We turn sustainability ambitions into tangible products and processes.",
   dna_item2_title: "Expert-led, from start to finish",
   dna_item2_desc:  "Projects led by experts with senior oversight.",
   dna_item3_title: "We stay until it's done",
