@@ -79,7 +79,7 @@ const CONTENT = {
 
   // ── MEET THE TEAM ─────────────────────────────────
   pool_heading: "Meet the team",
-  pool_intro:   "We are two seasoned sustainability professionals who stay hands-on in every project, from first brief to final delivery. For each client challenge, we assess whether extra specialist support is needed, and when it is, we bring in and guide a carefully curated freelance team around us.",
+  pool_intro:   "Let us introduce ourselves, we are two seasoned sustainability professionals with hands-on experience. We are committed in every project, from first brief to final delivery. For each client challenge, we assess whether specialist support is needed, and when it is, we bring in and guide a carefully curated freelance team around us.",
 
   team1_name: "Fabeel Butt",
   team1_role: "Senior Sustainability Strategist · Amsterdam",
