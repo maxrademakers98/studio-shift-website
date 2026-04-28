@@ -1,4 +1,4 @@
-/**
+d/**
  * STUDIO SHIFT — Content File
  * ─────────────────────────────────────────────────────
  * Edit the text values below to update the website.
@@ -41,7 +41,7 @@ const CONTENT = {
 
   // ── WHAT WE DO (Approach) ─────────────────────────
   approach_heading:   "What we do",
-  approach_sub:       "Wherever you are on your sustainability journey, we meet you there. Whether you’re starting from scratch, shaping a robust strategy, or looking to enhance specific products, we help turn ambition into action. Our four-phase approach guides you every step of the way, defining clear ambition, building a practical strategy, driving effective implementation and delivering measurable impact. No matter your starting point, we help you move forward with clarity, confidence and results.",
+  approach_sub:       "Wherever you are on your sustainability journey, we will meet you there. Whether you’re starting from scratch, shaping a robust strategy, or looking to enhance specific products, we help turn ambition into action. Our four-phase approach guides you every step of the way, defining clear ambition, building a practical strategy, driving effective implementation and delivering measurable impact. No matter your starting point, we help you move forward with clarity, confidence and results.",
 
   step1_title: "1. Ambition",
   step1_desc:  "We start with where you want to go, your sustainability goals, business context, and the stakeholders who matter most.",
