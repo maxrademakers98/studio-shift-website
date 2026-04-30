@@ -40,6 +40,7 @@ const CONTENT = {
   hero_cta_secondary: "What we do",
 
   // ── WHAT WE DO (Approach) ─────────────────────────
+  approach_eyebrow:   "How we work",
   approach_heading:   "What we do",
   approach_sub:       "Wherever you are on your sustainability journey, we will meet you there. Whether you’re starting from scratch, shaping a robust strategy, or looking to enhance specific products, we help turn ambition into action. Our four-phase approach guides you every step of the way, defining clear ambition, building a practical strategy, driving effective implementation and delivering measurable impact. No matter your starting point, we help you move forward with clarity, confidence and results.",
 
@@ -78,6 +79,7 @@ const CONTENT = {
   how_feat4_desc:  "When we bring in specialists, we know exactly who they are and why they're right for your project. Vetted for real-world experience, not just credentials.",
 
   // ── MEET THE TEAM ─────────────────────────────────
+  pool_eyebrow: "Our delivery model",
   pool_heading: "Meet the team",
   pool_intro:   "Let us introduce ourselves, we are two seasoned sustainability professionals with hands-on experience. We are committed in every project, from first brief to final delivery. For each client challenge, we assess whether specialist support is needed, and when it is, we bring in and guide a carefully curated freelance team around us.",
 
