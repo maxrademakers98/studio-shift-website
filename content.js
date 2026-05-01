@@ -1,4 +1,4 @@
-d/**
+/**
  * STUDIO SHIFT — Content File
  * ─────────────────────────────────────────────────────
  * Edit the text values below to update the website.
