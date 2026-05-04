@@ -23,8 +23,8 @@ const CONTENT = {
 
 
   // ── WHERE DESIGN MEETS (Hero right panel) ─────────
-  dna_h2:          "Where design meets <em>sustainability</em>",
-  dna_sub:         "Sustainability is no longer a side hustle. Regulations are tightening, supply chains are under scrutiny, impact claims are being challenged. We help organizations embed solutions at the core of their operations.",
+  dna_h2:          "Less Talk, more SHIFT <em>sustainability</em>",
+  dna_sub:         "Sustainability is no longer a side strategy. Regulations are tightening, supply chains are under scrutiny, impact claims are being challenged. We help organizations embed solutions at the core of their operations.",
   dna_item1_title: "Design that actually delivers",
   dna_item1_desc:  "We turn sustainability ambitions into tangible products and processes.",
   dna_item2_title: "Expert-led, from start to finish",
