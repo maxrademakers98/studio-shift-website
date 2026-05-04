@@ -44,25 +44,25 @@ const CONTENT = {
   approach_heading:   "What we do",
   approach_sub:       "Wherever you are on your sustainability journey, we will meet you there. Whether you're starting from scratch, shaping a robust strategy, or looking to enhance specific products, we help turn ambition into action. Our four-phase approach guides you every step of the way, defining clear ambition, building a practical strategy, driving effective implementation and delivering measurable impact. No matter your starting point, we help you move forward with clarity, confidence and results.",
 
-  step1_title: "Ambition",
+  step1_title: "1. Ambition",
   step1_desc:  "We start with who you are and where you want to go. Grounded in your business, stakeholders and opportunities, we help you ask and answer the right questions to define an ambition that’s credible and built to hold up.",
-  step1_chips: ["Ambition workshop", "Stakeholder alignment sessions", "Material topic prioritization", "Gap analysis"],
+  step1_chips: ["Ambition workshop", "Stakeholder alignment sessions", "Material topic prioritization", "Benchmarking & Gap analysis"],
 
-  step2_title: "Strategy",
+  step2_title: "2. Strategy",
   step2_desc:  "Once the direction is clear, we translate it into a practical strategy aligned with business goals, operations and value creation.",
   step2_chips: ["Roadmapping", "KPI framework", "Material Policies", "SBTi Target setting", "Risk & Benchmarking", "Governance model"],
 
   expertise_label: "Where we love to work",
 
-  step3_title: "Action",
-  step3_desc:  "We help embed sustainability into the organization, so it becomes part of decision-making, operations, and culture not a standalone initiative.",
+  step3_title: "3. Action",
+  step3_desc:  "We help embed sustainability into the organisation, so it becomes part of decision-making, operations, and culture not a standalone initiative.",
   step3_chips: [
     { sub: "Deliverables" }, { chip: "Internal toolkits" }, { chip: "Grant Support" }, { chip: "Design Guides" }, { chip: "Tailored Workshops" }, { chip: "supplier code of conduct" },
     { sub: "Product & Materials" }, { chip: "Design for Durability & Repair" }, { chip: "Circular Design" }, { chip: "Material Repurposing" }, { chip: "BOM Analysis" },
     { sub: "Climate" }, { chip: "Scope 3" }, { chip: "Supplier Engagement" }
   ],
 
-  step4_title: "Measurable Impact",
+  step4_title: "4. Measurable Impact",
   step4_desc:  "To maintain momentum, we help measure impact, monitor progress and communicate transparently with internal and external stakeholders.",
   step4_chips: ["Impact measurement", "Communications narrative and messaging", "Light LCAs", "Carbon Credits Advice", "Impact & Sustainability Reporting"],
 
@@ -81,23 +81,22 @@ const CONTENT = {
 
   // ── MEET THE TEAM ─────────────────────────────────
   pool_eyebrow: "Our delivery model",
-  pool_h2:      "Senior Expertise, Fully Invested.",
-  pool_h2:      "Senior Expertise, Fully Invested",
+  pool_h2:      "Two specialists.<br>Fully hands-on.",
   pool_heading: "Meet the team",
   pool_intro:   "We are two seasoned sustainability professionals with hands-on experience in a wide variety of organizations. Over the years, we’ve had the opportunity to work on impactful sustainability transformations, helping businesses turn ambition into real progress. What drives us is simple: we genuinely care about sustainability and the role organizaitons can play in shaping a better future. We are committed in every project, from first brief to final delivery. For each client challenge, we assess whether specialist support is needed, and when it is, we bring in and guide a carefully curated freelance team around us.",
 
   team1_name: "Fabeel Butt",
   team1_role: "Senior Sustainability Strategist · Amsterdam",
   team1_bio:  "Fabeel is a sustainability expert with 15 years of experience at both NGO's and retail, he can turn ambition into impact across products and supply chains. He has a proven track record at:<B>Action - Consumer goods, HEMA - Consumer goods, Lidl - Food retail & Fairtrade Foundation - NGO</b><br><br> He has lead sustainabilty teams from strategy to execution. Including work on supply chain transparency and social risk, development of sustainable material sourcing and packaging policies, has experience with circular business models and climate programs. He combines strategy with hands-on execution to make sustainability commercially viable and scalable.",
-  team1_tags: [],
+  team1_tags: ["Fabeel@studioshift.eu"],
   team1_linkedin: "https://www.linkedin.com/in/fabeelbutt/",
 
   team2_name: "Roel Laban",
   team2_role: "Senior Sustainability Strategist · Haarlem",
   team2_bio:  "Roel is a sustainability professional with experience across B2B and B2C sectors, working in international value chains to drive measurable environmental and social impact. Experience includes:<b>G-Star RAW – Textiles & fashion, HEMA – Consumer goods & DSG – Construction materials.</b><br><br> He specialises in developing and implementing ESG strategies, including sustainability data exchange across supply chains to enable better decision-making in products and production. His work spans social compliance and human rights, environmental sustainability, GHG footprinting, B Corp certification and stakeholder engagement.",
-  team2_tags: [],
+  team2_tags: ["Roel@studioshift.eu"],
   team2_linkedin: "https://www.linkedin.com/in/roel-laban-b532b328/",
-  team_expert_note: "Backed by a curated network of sustainability specialists across disciplines. When your project needs it, we bring in the right specialists, briefed and led by us. Interested in becoming part of our network? Check out the For Freelancers section.",
+  team_expert_note: "Backed by a curated network of independent sustainability specialists across product design, strategy, and engagement. When your project needs it, we bring in the right expert, briefed and led by us.",
 
   poolcard1_title: "Curated specialists",
   poolcard1_desc:  "Every freelancer in our network is hand-picked, vetted for real-world experience, not just credentials. We know who we're bringing in, and why they're the right fit for your project.",
@@ -112,7 +111,7 @@ const CONTENT = {
   contact_eyebrow:  "Get in touch",
   contact_heading:  "Let's make<br><em>something</em><br>happen",
   contact_sub:      "Whether you have a clear brief or just a sense of what you want to achieve, we'd love to hear from you.",
-  contact_email:    "shift@studioshift.eu",
+  contact_email:    "hello@studioshift.eu",
   contact_location: "Amsterdam, Netherlands",
 
   // ── FOOTER ────────────────────────────────────────
@@ -128,40 +127,40 @@ const CONTENT = {
   fl_why_sub:             "We believe great work happens when the right expert is paired with the right project. No junior hand-offs, no bloated teams , just people who know their craft.",
 
   fl_pro1_title:          "Specialists, not generalists",
-  fl_pro1_desc:           "We work with people who have a proven track record in their field, not generalists. If you know your craft and love real-world impact, we want to get to know you.",
+  fl_pro1_desc:           "We work with people who have a proven track record in their field , not generalists. If you know your craft and love real-world impact, we want to know you.",
 
   fl_pro2_title:          "Project-based flexibility",
-  fl_pro2_desc:           "Engage on the projects that suit you. No retainers, no commitments, just great work, when it fits your schedule.",
+  fl_pro2_desc:           "Engage on the projects that suit you. No retainers, no minimum commitments , just great work, when it fits your schedule.",
 
   fl_pro3_title:          "A network you'll value",
-  fl_pro3_desc:           "Working with us means joining a community of like-minded specialists. We want to collaborate with you and grow together.",
+  fl_pro3_desc:           "Working with us means joining a community of like-minded specialists. We connect you, collaborate with you, and grow together.",
 
   fl_pro4_title:          "Fair, transparent rates",
-  fl_pro4_desc:           "Fair rates and on time payments. No haggling, no surprises. Your expertise has value and we treat it that way.",
+  fl_pro4_desc:           "We pay well and on time. No haggling, no surprises. Your expertise has value and we treat it that way.",
 
   fl_profiles_eyebrow:    "Who we're looking for",
   fl_profiles_h2:         "The profiles<br>we work with",
-  fl_profiles_sub:        "Our projects span strategy, sustainable design and implementation. We look for depth over breadth, specialists who are genuinely expert in their domain.",
+  fl_profiles_sub:        "Our projects span strategy, design, and implementation. We look for depth over breadth, specialists who are genuinely expert in their domain.",
 
   fl_card1_tag:           "Ambition & Strategy",
   fl_card1_title:         "Sustainability Strategists",
-  fl_card1_desc:          "Experts in ESG frameworks, transition roadmaps and materiality assessments. You help companies set credible targets and build the plans to meet them.",
+  fl_card1_desc:          "Experts in ESG frameworks, transition roadmaps, and materiality assessments. You help companies set credible targets and build the plans to meet them.",
 
   fl_card2_tag:           "Circular Design",
   fl_card2_title:         "Circular Design Specialists",
-  fl_card2_desc:          "Designers with deep knowledge of circular economy principles, material flows and product end-of-life. You design for longevity, repairability, and reuse.",
+  fl_card2_desc:          "Designers with deep knowledge of circular economy principles, material flows, and product end-of-life. You design for longevity, repairability, and reuse.",
 
-  fl_card3_tag:           "Supply Chain & Climate Specialists",
+  fl_card3_tag:           "Supply Chain & Scope 3",
   fl_card3_title:         "Supply Chain Experts",
-  fl_card3_desc:          "Specialists in climate, specifically Scope 3 mapping and supplier engagement. You know how to trace impact across complex global value chains.",
+  fl_card3_desc:          "Specialists in Scope 3 mapping, supplier engagement, and responsible sourcing. You know how to trace impact across complex global value chains.",
 
   fl_card4_tag:           "Impact & Reporting",
   fl_card4_title:         "LCA & Reporting Analysts",
-  fl_card4_desc:          "Practitioners in life cycle assessment, carbon accounting and sustainability reporting (Global Reporting Initiative, Corporate Sustainability Reporting Directive, The Task Force on Climate-related Financial Disclosures and Packaging and Packaging Waste Directive. You turn data into credible, defensible claims.",
+  fl_card4_desc:          "Practitioners in life cycle assessment, carbon accounting, and sustainability reporting (GRI, CSRD, TCFD). You turn data into credible, defensible claims.",
 
   fl_card6_tag:           "Materials & Innovation",
   fl_card6_title:         "Material & Process Innovators",
-  fl_card6_desc:          "Experts in alternative materials, bio-based inputs or manufacturing process optimisation. You bridge the gap between R&D and real-world implementation.",
+  fl_card6_desc:          "Experts in alternative materials, bio-based inputs, or manufacturing process optimisation. You bridge the gap between R&D and real-world implementation.",
 
   fl_card7_tag:           "Open Call",
   fl_card7_title:         "Something else?",
@@ -171,7 +170,7 @@ const CONTENT = {
   fl_apply_h2:            "Tell us<br>about <em>yourself</em>",
   fl_apply_sub:           "Fill in our form and we'll be in touch if there's a good fit. We review every application and respond to everyone, usually within a week.",
   fl_apply_detail_label:  "Email us directly",
-  fl_apply_detail_val:    "shift@studioshift.eu",
+  fl_apply_detail_val:    "hello@studioshift.eu",
   fl_apply_btn:           "Apply now",
 
   // ── V7B: SCOPE 3 VISUAL ───────────────────────────
