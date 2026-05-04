@@ -89,13 +89,13 @@ const CONTENT = {
   team1_name: "Fabeel Butt",
   team1_role: "Senior Sustainability Strategist · Amsterdam",
   team1_bio:  "Fabeel is a sustainability expert with 15 years of experience at both NGO's and retail, he can turn ambition into impact across products and supply chains. He has a proven track record at:<B>Action - Consumer goods, HEMA - Consumer goods, Lidl - Food retail & Fairtrade Foundation - NGO</b><br><br> He has lead sustainabilty teams from strategy to execution. Including work on supply chain transparency and social risk, development of sustainable material sourcing and packaging policies, has experience with circular business models and climate programs. He combines strategy with hands-on execution to make sustainability commercially viable and scalable.",
-  team1_tags: ["Fabeel@studioshift.eu"],
+  team1_tags: [],
   team1_linkedin: "https://www.linkedin.com/in/fabeelbutt/",
 
   team2_name: "Roel Laban",
   team2_role: "Senior Sustainability Strategist · Haarlem",
   team2_bio:  "Roel is a sustainability professional with experience across B2B and B2C sectors, working in international value chains to drive measurable environmental and social impact. Experience includes:<b>G-Star RAW – Textiles & fashion, HEMA – Consumer goods & DSG – Construction materials.</b><br><br> He specialises in developing and implementing ESG strategies, including sustainability data exchange across supply chains to enable better decision-making in products and production. His work spans social compliance and human rights, environmental sustainability, GHG footprinting, B Corp certification and stakeholder engagement.",
-  team2_tags: ["Roel@studioshift.eu"],
+  team2_tags: [],
   team2_linkedin: "https://www.linkedin.com/in/roel-laban-b532b328/",
   team_expert_note: "Backed by a curated network of independent sustainability specialists across disciplines. When your project needs it, we bring in the right specialists, briefed and led by us. Interested in becoming part of our network? Check out the For Freelancers section.",
 
