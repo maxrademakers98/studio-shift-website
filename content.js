@@ -68,13 +68,13 @@ const CONTENT = {
 
   // ── HOW WE WORK ───────────────────────────────────
   how_heading:     "Senior expertise<br>No <em>nonsense</em>",
-  how_sub:         "Studio SHIFT is an Amsterdam-based sustainability studio. We bring senior-level experience to your organisation and translate it into actions you can actually implement.",
-  how_pills:       ["Amsterdam Based", "Physical + Remote", "Expert Team", "Ready to Implement", "Competitive Pricing"],
+  how_sub:         "Studio SHIFT is an Amsterdam based sustainability studio. We know sustainability can complex, that's why we bring together the right senior expertise—in-house or through our curated network and lead every step to ensure quality outcomes.",
+  how_pills:       ["Amsterdam Based", "Physical or Remote", "Expert Team", "Ready to Implement", "Competitive Pricing"],
   how_feat1_title: "Senior-led expert teams",
   how_feat1_desc:  "We bring in the right domain experts for your project, guided and overseen by our senior specialists from brief to delivery. Deep expertise, with experienced direction keeping quality on track.",
   how_feat2_title: "Built to implement, not to impress",
   how_feat2_desc:  "Everything we deliver is designed to be used, not filed away. Sharp strategy that translates into real actions your team can take.",
-  how_feat3_title: "Big 4 thinking, without the price tag",
+  how_feat3_title: "Big league thinking, smarter pricing",
   how_feat3_desc:  "We run lean, with no layers of overhead or expensive offices. We offer senior expertise at a competitive price.",
   how_feat4_title: "A curated network of professionals",
   how_feat4_desc:  "When we bring in specialists, we know exactly who they are and why they're right for your project. Vetted for real-world experience, not just credentials.",
