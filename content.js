@@ -16,7 +16,7 @@ const CONTENT = {
     "Scope 3 Reduction",
     "Supply Chain Transparency",
     "LCA & Reporting",
-    "Material Innovation",
+    "Material Sourcing Strategy",
     "Social Risk Assessments",
     "Product Certification",
   ],
@@ -24,7 +24,7 @@ const CONTENT = {
 
   // ── WHERE DESIGN MEETS (Hero right panel) ─────────
   dna_h2:          "Where design meets <em>sustainability</em>",
-  dna_sub:         "Sustainability is no longer a side strategy. Regulations are tightening, supply chains are under scrutiny, impact claims are being challenged. We help organizations embed solutions at the core.",
+  dna_sub:         "Sustainability is no longer a side hussle. Regulations are tightening, supply chains are under scrutiny, impact claims are being challenged. We help organizations embed solutions at the core of their operations.",
   dna_item1_title: "Design that actually delivers",
   dna_item1_desc:  "We turn sustainability ambitions into tangible products and processes.",
   dna_item2_title: "Expert-led, from start to finish",
@@ -35,7 +35,7 @@ const CONTENT = {
   // ── HERO ──────────────────────────────────────────
   hero_badge:         "Sustainability Studio",
   hero_h1:            "Ambition into<span>action</span>",
-  hero_sub:           "We design and implement sustainability strategies for products, processes and supply chains that work, without the 100-slide deck. Experienced solution providers, hands-on execution, turning your goals into measurable outcomes.",
+  hero_sub:           "We design and implement sustainability strategies for products, processes and supply chains, without the extensive slide decks. Experienced solution providers, hands-on execution, turning your goals into measurable outcomes.",
   hero_cta_primary:   "Work with us",
   hero_cta_secondary: "What we do",
 
