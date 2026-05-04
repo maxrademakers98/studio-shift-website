@@ -45,22 +45,22 @@ const CONTENT = {
   approach_sub:       "Wherever you are on your sustainability journey, we will meet you there. Whether you’re starting from scratch, shaping a robust strategy, or looking to enhance specific products, we help turn ambition into action. Our four-phase approach guides you every step of the way, defining clear ambition, building a practical strategy, driving effective implementation and delivering measurable impact. No matter your starting point, we help you move forward with clarity, confidence and results.",
 
   step1_title: "1. Ambition",
-  step1_desc:  "Let's start with where you want to go, your sustainability goals, business context, and the stakeholders who matter most.",
-  step1_chips: ["Gap analysis", "Stakeholder mapping"],
+  step1_desc:  "Let's start with where you want to go, your sustainability goals, business context, stakeholders expectations and opportunities to shape an ambition that is both credible and bold.",
+  step1_chips: ["Ambition workshop", "Stakeholder alignment sessions"], "Material topic prioritization"], "Benchmarking & Gap analyis"]
 
   step2_title: "2. Strategy",
-  step2_desc:  "We map the landscape, identify leverage points and design a strategy that is credible, realistic and commercially sound.",
-  step2_chips: ["Roadmapping", "KPIs & Milestones", "Material Policies", "SBTi Target setting", "Risk & Benchmarking", "Gap analysis"],
+  step2_desc:  "Once the direction is clear, we translate it into a practical strategy aligned with business goals, operations and value creation."
+  step2_chips: ["Roadmapping", "KPI framework", "Material Policies", "SBTi Target setting", "Risk & Benchmarking", "Governance model"]
 
   expertise_label: "Where we love to work",
 
-  step3_title: "3. Implementation",
-  step3_desc:  "Hands-on execution, from material sourcing to supplier engagement, to design for circularity. We work alongside your team.",
+  step3_title: "3. Action",
+  step3_desc:  "We help embed sustainability into the organisation, so it becomes part of decision-making, operations, and culture not a standalone initiative.",
   step3_chips: [
-    { sub: "Climate" },          { chip: "Scope 3" }, { chip: "Supplier Engagement" },
-    { sub: "Product & Materials" } , { chip: "Design for Durability & Repair" },{ chip: "Circular Design" },{ chip: "Material Repurposing" }, { chip: "BOM Analysis" },
-    { sub: "Outputs" },          { chip: "Toolkits" },{ chip: "Grant Support" },{ chip: "Design Guides" },  { chip: "Tailored Workshops" } , { chip: "supplier code of conduct" }
+    { sub: "Deliverables" }, { chip: "Internal toolkits" },{ chip: "Grant Support" },{ chip: "Design Guides" }, { chip: "Tailored Workshops" } , { chip: "supplier code of conduct" }
   ],
+    { sub: "Product & Materials" } , { chip: "Design for Durability & Repair" },{ chip: "Circular Design" },{ chip: "Material Repurposing" }, { chip: "BOM Analysis" },
+    { sub: "Climate" },          { chip: "Scope 3" }, { chip: "Supplier Engagement" }
 
   step4_title: "4. Measurable Impact",
   step4_desc:  "We track, verify and communicate your impact, giving you the evidence base to report, improve and lead with confidence.",
