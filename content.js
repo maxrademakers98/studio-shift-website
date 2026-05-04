@@ -46,7 +46,7 @@ const CONTENT = {
 
   step1_title: "Ambition",
   step1_desc:  "We start with who you are and where you want to go. Grounded in your business, stakeholders and opportunities, we help you ask and answer the right questions to define an ambition that’s credible and built to hold up.",
-  step1_chips: ["Ambition workshop", "Stakeholder alignment sessions", "Material topic prioritization", "Benchmarking & Gap analysis"],
+  step1_chips: ["Ambition workshop", "Stakeholder alignment sessions", "Material topic prioritization", "Gap analysis"],
 
   step2_title: "Strategy",
   step2_desc:  "Once the direction is clear, we translate it into a practical strategy aligned with business goals, operations and value creation.",
@@ -55,7 +55,7 @@ const CONTENT = {
   expertise_label: "Where we love to work",
 
   step3_title: "Action",
-  step3_desc:  "We help embed sustainability into the organisation, so it becomes part of decision-making, operations, and culture not a standalone initiative.",
+  step3_desc:  "We help embed sustainability into the organization, so it becomes part of decision-making, operations, and culture not a standalone initiative.",
   step3_chips: [
     { sub: "Deliverables" }, { chip: "Internal toolkits" }, { chip: "Grant Support" }, { chip: "Design Guides" }, { chip: "Tailored Workshops" }, { chip: "supplier code of conduct" },
     { sub: "Product & Materials" }, { chip: "Design for Durability & Repair" }, { chip: "Circular Design" }, { chip: "Material Repurposing" }, { chip: "BOM Analysis" },
