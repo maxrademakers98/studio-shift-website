@@ -312,12 +312,12 @@ nav.scrolled .nav-burger span { background: var(--navy); }
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700; font-size: clamp(36px, 4vw, 56px);
   letter-spacing: -.03em; line-height: 1.02;
-  color: var(--navy); max-width: 480px;
+  color: var(--navy); max-width: 480px; text-align: right; flex-shrink: 0;
 }
 .process-header-sub {
   font-size: 14px; line-height: 1.85;
-  color: var(--grey); max-width: 360px;
-  padding-bottom: 4px; flex-shrink: 0;
+  color: var(--grey); max-width: 520px;
+  padding-bottom: 4px; flex: 1;
 }
 /* Step list */
 .process-steps { display: flex; flex-direction: column; }
@@ -689,8 +689,8 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
 <!-- PROCESS -->
 <section class="process" id="process">
   <div class="process-header reveal">
-    <h2 data-content="approach_heading"></h2>
     <p class="process-header-sub" data-content="approach_sub"></p>
+    <h2 data-content="approach_heading"></h2>
   </div>
   <div class="process-steps">
     <div class="process-step reveal">
