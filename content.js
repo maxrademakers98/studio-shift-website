@@ -82,7 +82,7 @@ const CONTENT = {
   // ── MEET THE TEAM ─────────────────────────────────
   pool_eyebrow: "Our delivery model",
   pool_heading: "Meet the team",
-  pool_intro:   "We are two seasoned sustainability professionals with hands-on experience in a wide variety of organizations. We are committed in every project, from first brief to final delivery. For each client challenge, we assess whether specialist support is needed, and when it is, we bring in and guide a carefully curated freelance team around us.",
+  pool_intro:   "We are two seasoned sustainability professionals with hands-on experience in a wide variety of organizations. Over the years, we’ve had the privilege of working on impactful sustainability transformations, helping businesses turn ambition into real progress. What drives us is simple: we genuinely care about sustainability and the role businesses can play in shaping a better future. We are committed in every project, from first brief to final delivery. For each client challenge, we assess whether specialist support is needed, and when it is, we bring in and guide a carefully curated freelance team around us.",
 
   team1_name: "Fabeel Butt",
   team1_role: "Senior Sustainability Strategist · Amsterdam",
@@ -111,7 +111,7 @@ const CONTENT = {
   contact_heading:  "Let's make<br><em>something</em><br>happen",
   contact_sub:      "Whether you have a clear brief or just a sense of what you want to achieve, we'd love to hear from you.",
   contact_email:    "hello@studioshift.eu",
-  contact_location: "Amsterdam, NL",
+  contact_location: "Amsterdam, Netherlands",
 
   // ── FOOTER ────────────────────────────────────────
   footer_copy: "© 2026 Studio SHIFT · Amsterdam",
