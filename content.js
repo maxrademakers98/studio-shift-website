@@ -45,12 +45,12 @@ const CONTENT = {
   approach_sub:       "Wherever you are on your sustainability journey, we will meet you there. Whether you’re starting from scratch, shaping a robust strategy, or looking to enhance specific products, we help turn ambition into action. Our four-phase approach guides you every step of the way, defining clear ambition, building a practical strategy, driving effective implementation and delivering measurable impact. No matter your starting point, we help you move forward with clarity, confidence and results.",
 
   step1_title: "1. Ambition",
-  step1_desc:  "We start with where you want to go, your sustainability goals, business context, and the stakeholders who matter most.",
-  step1_chips: ["Benchmark", "Gap analysis", "Stakeholder mapping", "SBTi Target setting"],
+  step1_desc:  "Let's start with where you want to go, your sustainability goals, business context, and the stakeholders who matter most.",
+  step1_chips: ["Gap analysis", "Stakeholder mapping"],
 
   step2_title: "2. Strategy",
   step2_desc:  "We map the landscape, identify leverage points and design a strategy that is credible, realistic and commercially sound.",
-  step2_chips: ["Roadmapping", "KPIs & Milestones", "Material Policies", "Risk & Benchmarking", "Supplier code of conduct"],
+  step2_chips: ["Roadmapping", "KPIs & Milestones", "Material Policies", "SBTi Target setting", "Risk & Benchmarking", "Gap analysis"],
 
   expertise_label: "Where we love to work",
 
@@ -59,7 +59,7 @@ const CONTENT = {
   step3_chips: [
     { sub: "Climate" },          { chip: "Scope 3" }, { chip: "Supplier Engagement" },
     { sub: "Product & Materials" } , { chip: "Design for Durability & Repair" },{ chip: "Circular Design" },{ chip: "Material Repurposing" }, { chip: "BOM Analysis" },
-    { sub: "Outputs" },          { chip: "Toolkits" },{ chip: "Grant Support" },{ chip: "Design Guides" },  { chip: "Tailored Workshops" }
+    { sub: "Outputs" },          { chip: "Toolkits" },{ chip: "Grant Support" },{ chip: "Design Guides" },  { chip: "Tailored Workshops" } , { chip: "supplier code of conduct" }
   ],
 
   step4_title: "4. Measurable Impact",
