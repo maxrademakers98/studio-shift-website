@@ -97,7 +97,7 @@ const CONTENT = {
   team2_bio:  "Roel is a sustainability professional with experience across B2B and B2C sectors, working in international value chains to drive measurable environmental and social impact. Experience includes:<b>G-Star RAW – Textiles & fashion, HEMA – Consumer goods & DSG – Construction materials.</b><br><br> He specialises in developing and implementing ESG strategies, including sustainability data exchange across supply chains to enable better decision-making in products and production. His work spans social compliance and human rights, environmental sustainability, GHG footprinting, B Corp certification and stakeholder engagement.",
   team2_tags: ["Roel@studioshift.eu"],
   team2_linkedin: "https://www.linkedin.com/in/roel-laban-b532b328/",
-  team_expert_note: "Backed by a curated network of independent sustainability specialists across product design, strategy, and engagement. When your project needs it, we bring in the right expert, briefed and led by us.",
+  team_expert_note: "Backed by a curated network of independent sustainability specialists across disciplines. When your project needs it, we bring in the right specialists, briefed and led by us. Interested in becoming part of our network? Check out the For Freelancers section.",
 
   poolcard1_title: "Curated specialists",
   poolcard1_desc:  "Every freelancer in our network is hand-picked, vetted for real-world experience, not just credentials. We know who we're bringing in, and why they're the right fit for your project.",
