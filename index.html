@@ -319,6 +319,21 @@ nav.scrolled .nav-burger span { background: var(--navy); }
   color: var(--grey); max-width: none;
   padding-bottom: 4px; flex: 1;
 }
+
+.process-header-toggle {
+  position: absolute; top: 0; right: 0;
+  background: none; border: 1px solid var(--border);
+  border-radius: 6px; padding: 6px 10px;
+  cursor: pointer; color: var(--grey);
+  font-size: 12px; font-family: 'IBM Plex Mono', monospace;
+  display: flex; align-items: center; gap: 6px;
+  transition: border-color .2s, color .2s;
+}
+.process-header-toggle:hover { border-color: var(--navy); color: var(--navy); }
+.process-header-toggle svg { width: 14px; height: 14px; }
+.process-header.flipped { flex-direction: row-reverse; }
+.process-header.flipped h2 { text-align: left; }
+.process-header { position: relative; }
 /* Step list */
 .process-steps { display: flex; flex-direction: column; }
 .process-step {
@@ -688,9 +703,13 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
 
 <!-- PROCESS -->
 <section class="process" id="process">
-  <div class="process-header reveal">
+  <div class="process-header reveal" id="processHeader">
     <p class="process-header-sub" data-content="approach_sub"></p>
     <h2 data-content="approach_heading"></h2>
+    <button class="process-header-toggle" onclick="document.getElementById('processHeader').classList.toggle('flipped')" title="Switch layout">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 5h12M11 2l3 3-3 3M14 11H2M5 8l-3 3 3 3"/></svg>
+      swap
+    </button>
   </div>
   <div class="process-steps">
     <div class="process-step reveal">
