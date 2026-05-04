@@ -128,40 +128,40 @@ const CONTENT = {
   fl_why_sub:             "We believe great work happens when the right expert is paired with the right project. No junior hand-offs, no bloated teams , just people who know their craft.",
 
   fl_pro1_title:          "Specialists, not generalists",
-  fl_pro1_desc:           "We work with people who have a proven track record in their field , not generalists. If you know your craft and love real-world impact, we want to know you.",
+  fl_pro1_desc:           "We work with people who have a proven track record in their field, not generalists. If you know your craft and love real-world impact, we want to get to know you.",
 
   fl_pro2_title:          "Project-based flexibility",
-  fl_pro2_desc:           "Engage on the projects that suit you. No retainers, no minimum commitments , just great work, when it fits your schedule.",
+  fl_pro2_desc:           "Engage on the projects that suit you. No retainers, no commitments, just great work, when it fits your schedule.",
 
   fl_pro3_title:          "A network you'll value",
-  fl_pro3_desc:           "Working with us means joining a community of like-minded specialists. We connect you, collaborate with you, and grow together.",
+  fl_pro3_desc:           "Working with us means joining a community of like-minded specialists. We want to collaborate with you and grow together.",
 
   fl_pro4_title:          "Fair, transparent rates",
-  fl_pro4_desc:           "We pay well and on time. No haggling, no surprises. Your expertise has value and we treat it that way.",
+  fl_pro4_desc:           "Fair rates and on time payments. No haggling, no surprises. Your expertise has value and we treat it that way.",
 
   fl_profiles_eyebrow:    "Who we're looking for",
   fl_profiles_h2:         "The profiles<br>we work with",
-  fl_profiles_sub:        "Our projects span strategy, design, and implementation. We look for depth over breadth, specialists who are genuinely expert in their domain.",
+  fl_profiles_sub:        "Our projects span strategy, sustainable design and implementation. We look for depth over breadth, specialists who are genuinely expert in their domain.",
 
   fl_card1_tag:           "Ambition & Strategy",
   fl_card1_title:         "Sustainability Strategists",
-  fl_card1_desc:          "Experts in ESG frameworks, transition roadmaps, and materiality assessments. You help companies set credible targets and build the plans to meet them.",
+  fl_card1_desc:          "Experts in ESG frameworks, transition roadmaps and materiality assessments. You help companies set credible targets and build the plans to meet them.",
 
   fl_card2_tag:           "Circular Design",
   fl_card2_title:         "Circular Design Specialists",
-  fl_card2_desc:          "Designers with deep knowledge of circular economy principles, material flows, and product end-of-life. You design for longevity, repairability, and reuse.",
+  fl_card2_desc:          "Designers with deep knowledge of circular economy principles, material flows and product end-of-life. You design for longevity, repairability, and reuse.",
 
-  fl_card3_tag:           "Supply Chain & Scope 3",
+  fl_card3_tag:           "Supply Chain & Climate Specialists",
   fl_card3_title:         "Supply Chain Experts",
-  fl_card3_desc:          "Specialists in Scope 3 mapping, supplier engagement, and responsible sourcing. You know how to trace impact across complex global value chains.",
+  fl_card3_desc:          "Specialists in climate, specifically Scope 3 mapping and supplier engagement. You know how to trace impact across complex global value chains.",
 
   fl_card4_tag:           "Impact & Reporting",
   fl_card4_title:         "LCA & Reporting Analysts",
-  fl_card4_desc:          "Practitioners in life cycle assessment, carbon accounting, and sustainability reporting (GRI, CSRD, TCFD). You turn data into credible, defensible claims.",
+  fl_card4_desc:          "Practitioners in life cycle assessment, carbon accounting and sustainability reporting (Global Reporting Initiative, Corporate Sustainability Reporting Directive, The Task Force on Climate-related Financial Disclosures and Packaging and Packaging Waste Directive. You turn data into credible, defensible claims.",
 
   fl_card6_tag:           "Materials & Innovation",
   fl_card6_title:         "Material & Process Innovators",
-  fl_card6_desc:          "Experts in alternative materials, bio-based inputs, or manufacturing process optimisation. You bridge the gap between R&D and real-world implementation.",
+  fl_card6_desc:          "Experts in alternative materials, bio-based inputs or manufacturing process optimisation. You bridge the gap between R&D and real-world implementation.",
 
   fl_card7_tag:           "Open Call",
   fl_card7_title:         "Something else?",
