@@ -55,7 +55,7 @@ const CONTENT = {
   expertise_label: "Where we love to work",
 
   step3_title: "3. Implementation",
-  step3_desc:  "Hands-on execution, from material sourcing to supplier engagement to design for circularity. We work alongside your team.",
+  step3_desc:  "Hands-on execution, from material sourcing to supplier engagement, to design for circularity. We work alongside your team.",
   step3_chips: [
     { sub: "Climate" },          { chip: "Scope 3" }, { chip: "Supplier Engagement" },
     { sub: "Product & Materials" } , { chip: "Design for Durability & Repair" },{ chip: "Circular Design" },{ chip: "Material Repurposing" }, { chip: "BOM Analysis" },
@@ -67,8 +67,8 @@ const CONTENT = {
   step4_chips: ["Light LCAs", "Carbon Credits Advice", "Impact & Sustainability Reporting"],
   // ── HOW WE WORK ───────────────────────────────────
   how_heading:     "Senior expertise<br>No <em>nonsense</em>",
-  how_sub:         "Studio SHIFT is an Amsterdam-based sustainability studio. We bring senior-level experience to your brand and translate it into actions you can actually implement, guiding every expert in our network with that same senior expertise.",
-  how_pills:       ["Amsterdam Based", "Physical + Remote", "Expert Team", "Ready to Implement", "Not Big 4 Pricing"],
+  how_sub:         "Studio SHIFT is an Amsterdam-based sustainability studio. We bring senior-level experience to your organisation and translate it into actions you can actually implement.",
+  how_pills:       ["Amsterdam Based", "Physical + Remote", "Expert Team", "Ready to Implement", "Competitive Pricing"],
   how_feat1_title: "Senior-led expert teams",
   how_feat1_desc:  "We bring in the right domain experts for your project, guided and overseen by our senior specialists from brief to delivery. Deep expertise, with experienced direction keeping quality on track.",
   how_feat2_title: "Built to implement, not to impress",
@@ -81,11 +81,11 @@ const CONTENT = {
   // ── MEET THE TEAM ─────────────────────────────────
   pool_eyebrow: "Our delivery model",
   pool_heading: "Meet the team",
-  pool_intro:   "Let us introduce ourselves, we are two seasoned sustainability professionals with hands-on experience. We are committed in every project, from first brief to final delivery. For each client challenge, we assess whether specialist support is needed, and when it is, we bring in and guide a carefully curated freelance team around us.",
+  pool_intro:   "We are two seasoned sustainability professionals with hands-on experience in a wide variety of organizations. We are committed in every project, from first brief to final delivery. For each client challenge, we assess whether specialist support is needed, and when it is, we bring in and guide a carefully curated freelance team around us.",
 
   team1_name: "Fabeel Butt",
   team1_role: "Senior Sustainability Strategist · Amsterdam",
-  team1_bio:  "Fabeel is a sustainability expert with 15 years of experience turning ambition into impact across products and supply chains. Proven track record at:<B>Action - Consumer goods, HEMA - Consumer goods, Lidl - Food retail & Fairtrade Foundation - NGO</b><br><br> leading initiatives from strategy to execution. Delivered full tier 1 supply chain transparency, developed sustainable material sourcing and packaging policies, has experience with circular business models and climate programs aligned with the GHG Protocol. Combines strategic thinking with hands-on execution to make sustainability commercially viable and scalable.",
+  team1_bio:  "Fabeel is a sustainability expert with 15 years of experience at both NGO's and retail, he can turn ambition into impact across products and supply chains. He has a proven track record at:<B>Action - Consumer goods, HEMA - Consumer goods, Lidl - Food retail & Fairtrade Foundation - NGO</b><br><br> leading initiatives from strategy to execution. Delivered full tier 1 supply chain transparency, developed sustainable material sourcing and packaging policies, has experience with circular business models and climate programs aligned with the GHG Protocol. Combines strategy with hands-on execution to make sustainability commercially viable and scalable.",
   
   team1_tags: ["Supply Chain", "Stakeholder Engagement", "Sustainability Strategy", "Circular Design"],
   team1_linkedin: "https://www.linkedin.com/in/fabeelbutt/",  // paste LinkedIn URL here, e.g. "https://www.linkedin.com/in/yourname"
