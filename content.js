@@ -82,7 +82,7 @@ const CONTENT = {
   // ── MEET THE TEAM ─────────────────────────────────
   pool_eyebrow: "Our delivery model",
   pool_h2:      "Senior Expertise, Fully Invested.",
-  pool_h2:      "Two specialists.<br>Fully hands-on.",
+  pool_h2:      "Senior Expertise, Fully Invested",
   pool_heading: "Meet the team",
   pool_intro:   "We are two seasoned sustainability professionals with hands-on experience in a wide variety of organizations. Over the years, we’ve had the opportunity to work on impactful sustainability transformations, helping businesses turn ambition into real progress. What drives us is simple: we genuinely care about sustainability and the role organizaitons can play in shaping a better future. We are committed in every project, from first brief to final delivery. For each client challenge, we assess whether specialist support is needed, and when it is, we bring in and guide a carefully curated freelance team around us.",
 
@@ -97,7 +97,7 @@ const CONTENT = {
   team2_bio:  "Roel is a sustainability professional with experience across B2B and B2C sectors, working in international value chains to drive measurable environmental and social impact. Experience includes:<b>G-Star RAW – Textiles & fashion, HEMA – Consumer goods & DSG – Construction materials.</b><br><br> He specialises in developing and implementing ESG strategies, including sustainability data exchange across supply chains to enable better decision-making in products and production. His work spans social compliance and human rights, environmental sustainability, GHG footprinting, B Corp certification and stakeholder engagement.",
   team2_tags: [],
   team2_linkedin: "https://www.linkedin.com/in/roel-laban-b532b328/",
-  team_expert_note: "Backed by a curated network of independent sustainability specialists across disciplines. When your project needs it, we bring in the right specialists, briefed and led by us. Interested in becoming part of our network? Check out the For Freelancers section.",
+  team_expert_note: "Backed by a curated network of sustainability specialists across disciplines. When your project needs it, we bring in the right specialists, briefed and led by us. Interested in becoming part of our network? Check out the For Freelancers section.",
 
   poolcard1_title: "Curated specialists",
   poolcard1_desc:  "Every freelancer in our network is hand-picked, vetted for real-world experience, not just credentials. We know who we're bringing in, and why they're the right fit for your project.",
