@@ -23,7 +23,7 @@ const CONTENT = {
 
 
   // ── WHERE DESIGN MEETS (Hero right panel) ─────────
-  dna_h2:          "Less Talk, more SHIFT <em>sustainability</em>",
+  dna_h2:          "Less talk, more <em>SHIFT</em>",
   dna_sub:         "Sustainability is no longer a side strategy. Regulations are tightening, supply chains are under scrutiny, impact claims are being challenged. We help organizations embed solutions at the core of their operations.",
   dna_item1_title: "Design that actually delivers",
   dna_item1_desc:  "We turn sustainability ambitions into tangible products and processes.",
@@ -45,7 +45,7 @@ const CONTENT = {
   approach_sub:       "Wherever you are on your sustainability journey, we will meet you there. Whether you're starting from scratch, shaping a robust strategy, or looking to enhance specific products, we help turn ambition into action. Our four-phase approach guides you every step of the way, defining clear ambition, building a practical strategy, driving effective implementation and delivering measurable impact. No matter your starting point, we help you move forward with clarity, confidence and results.",
 
   step1_title: "1. Ambition",
-  step1_desc:  "Let's start with where you want to go, your sustainability goals, business context, stakeholders expectations and opportunities to shape an ambition that is both credible and bold.",
+  step1_desc:  "We start with who you are and where you want to go. Grounded in your business, stakeholders and opportunities, we help you ask and answer the right questions to define an ambition that’s credible and built to hold up.",
   step1_chips: ["Ambition workshop", "Stakeholder alignment sessions", "Material topic prioritization", "Benchmarking & Gap analysis"],
 
   step2_title: "2. Strategy",
@@ -87,13 +87,13 @@ const CONTENT = {
   team1_name: "Fabeel Butt",
   team1_role: "Senior Sustainability Strategist · Amsterdam",
   team1_bio:  "Fabeel is a sustainability expert with 15 years of experience at both NGO's and retail, he can turn ambition into impact across products and supply chains. He has a proven track record at:<B>Action - Consumer goods, HEMA - Consumer goods, Lidl - Food retail & Fairtrade Foundation - NGO</b><br><br> leading initiatives from strategy to execution. Delivered full tier 1 supply chain transparency, developed sustainable material sourcing and packaging policies, has experience with circular business models and climate programs aligned with the GHG Protocol. Combines strategy with hands-on execution to make sustainability commercially viable and scalable.",
-  team1_tags: ["Get in touch Fabeel@studioshift.eu"],
+  team1_tags: ["Fabeel@studioshift.eu"],
   team1_linkedin: "https://www.linkedin.com/in/fabeelbutt/",
 
   team2_name: "Roel Laban",
   team2_role: "Senior Sustainability Strategist · Haarlem",
   team2_bio:  "Roel is a sustainability professional with experience across B2B and B2C sectors, working in international value chains to drive measurable environmental and social impact. Experience includes:<b>G-Star RAW – Textiles & fashion, HEMA – Consumer goods & DSG – Construction materials.</b><br><br> He specialises in developing and implementing ESG strategies, including sustainability data exchange across supply chains to enable better decision-making in products and production. His work spans social compliance and human rights, environmental sustainability, GHG footprinting, B Corp certification and stakeholder engagement.",
-  team2_tags: ["Get in touch Roel@studioshift.eu"],
+  team2_tags: ["Roel@studioshift.eu"],
   team2_linkedin: "https://www.linkedin.com/in/roel-laban-b532b328/",
   team_expert_note: "Backed by a curated network of independent sustainability specialists across product design, strategy, and engagement. When your project needs it, we bring in the right expert, briefed and led by us.",
 
