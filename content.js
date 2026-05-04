@@ -63,8 +63,8 @@ const CONTENT = {
     { sub: "Climate" },          { chip: "Scope 3" }, { chip: "Supplier Engagement" }
 
   step4_title: "4. Measurable Impact",
-  step4_desc:  "We track, verify and communicate your impact, giving you the evidence base to report, improve and lead with confidence.",
-  step4_chips: ["Light LCAs", "Carbon Credits Advice", "Impact & Sustainability Reporting"],
+  step4_desc:  "To maintain momentum, we help measure impact, monitor progress and communicate transparently with internal and external stakeholders.",
+  step4_chips: ["Impact measurement", "Communications narrative and messaging", "Light LCAs", "Carbon Credits Advice", "Impact & Sustainability Reporting"],
   // ── HOW WE WORK ───────────────────────────────────
   how_heading:     "Senior expertise<br>No <em>nonsense</em>",
   how_sub:         "Studio SHIFT is an Amsterdam-based sustainability studio. We bring senior-level experience to your organisation and translate it into actions you can actually implement.",
