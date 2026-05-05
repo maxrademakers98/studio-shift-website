@@ -81,7 +81,7 @@ const CONTENT = {
 
   // ── MEET THE TEAM ─────────────────────────────────
   pool_eyebrow: "Our delivery model",
-  pool_h2:      "Built on<br>Fully Experience",
+  pool_h2:      "Built on<br>Experience",
   pool_heading: "Meet the team",
   pool_intro:   "We are two sustainability professionals with hands-on experience across a wide range of organisations. Over the years, we’ve worked on impactful sustainability transformations helping turn ambition into real progress. That experience shapes how we work: focused, practical and fully involved from first brief to final delivery. What drives us is simple, we genuinely care about sustainability and the role organizaitons can play in shaping a better future. When needed, we bring in additional expertise through our curated network. Always carefully selected, clearly briefed and guided by us to ensure consistent, high-quality outcomes.",
 
