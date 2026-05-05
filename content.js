@@ -111,7 +111,7 @@ const CONTENT = {
   contact_eyebrow:  "Get in touch",
   contact_heading:  "Let's make<br><em>something</em><br>happen",
   contact_sub:      "Whether you have a clear brief or just a sense of what you want to achieve, we'd love to hear from you.",
-  contact_email:    "fabeel@studioshift.eu","roel@studioshift.eu",
+  contact_email:    "hello@studioshift.eu",
   contact_location: "Amsterdam, Netherlands",
 
   // ── FOOTER ────────────────────────────────────────
