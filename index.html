@@ -312,6 +312,7 @@ nav.scrolled .nav-burger span { background: var(--navy); }
 .process {
   background: var(--white);
   padding: 120px 56px;
+  overflow: hidden;
 }
 .process-header {
   display: flex; justify-content: space-between; align-items: flex-end;
@@ -595,7 +596,7 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
   nav ul { display: none; }
   .nav-burger { display: flex; }
   .hero { grid-template-columns: 1fr; }
-  .hero-right { display: none; }
+  .hero-right { display: flex; padding: 60px 28px; min-height: auto; }
   .hero-left { min-height: 100vh; padding: 80px 28px 64px; justify-content: flex-end; }
   .process { padding: 80px 28px; }
   .process-header { flex-direction: column; align-items: flex-start; gap: 16px; }
