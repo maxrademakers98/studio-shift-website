@@ -82,7 +82,7 @@ const CONTENT = {
   // ── MEET THE TEAM ─────────────────────────────────
   pool_eyebrow: "Our delivery model",
   pool_h2:      "Built on experience",
-  pool_heading: "Meet the team",
+  pool_heading: "Built on experience",
   pool_intro:   "We are two seasoned sustainability professionals with hands-on experience in a wide variety of organizations. Over the years, we’ve had the opportunity to work on impactful sustainability transformations, helping businesses turn ambition into real progress. What drives us is simple: we genuinely care about sustainability and the role organizaitons can play in shaping a better future. We are committed in every project, from first brief to final delivery. For each client challenge, we assess whether specialist support is needed, and when it is, we bring in and guide a carefully curated freelance team around us.",
 
   team1_name: "Fabeel Butt",
