@@ -57,7 +57,7 @@ const CONTENT = {
   step3_title: "Action",
   step3_desc:  "We help embed sustainability into the organisation, so it becomes part of decision-making, operations, and culture not a standalone initiative.",
   step3_chips: [
-    { sub: "Deliverables" }, { chip: "Internal toolkits" }, { chip: "Grant Support" }, { chip: "Design Guides" }, { chip: "Tailored Workshops" }, { chip: "supplier code of conduct" },
+    { sub: "Deliverables" }, { chip: "Internal toolkits" }, { chip: "Grant Support" }, { chip: "Design Guides" }, { chip: "Tailored Workshops" }, { chip: "Supplier Code of Conduct" },
     { sub: "Product & Materials" }, { chip: "Design for Durability & Repair" }, { chip: "Circular Design" }, { chip: "Material Repurposing" }, { chip: "BOM Analysis" },
     { sub: "Climate" }, { chip: "Scope 3" }, { chip: "Supplier Engagement" }
   ],
