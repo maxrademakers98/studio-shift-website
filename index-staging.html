@@ -574,6 +574,49 @@ nav.scrolled .nav-burger span { background: var(--navy); }
   font-family: 'IBM Plex Mono', monospace; letter-spacing: .08em;
 }
 
+/* ── TESTIMONIALS ── */
+.testimonials {
+  background: var(--cream);
+  padding: 80px 56px;
+}
+.testimonials-header { margin-bottom: 40px; }
+.testimonials-header h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: clamp(28px, 3vw, 40px);
+  letter-spacing: -.03em; line-height: 1.05;
+  color: var(--navy); margin-bottom: 12px;
+}
+.testimonials-header p { font-size: 13px; line-height: 1.8; color: var(--grey); max-width: 480px; }
+.testimonials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.testimonial-card {
+  background: #fff; border-radius: 16px;
+  padding: 24px 22px; border: 1px solid rgba(11,61,82,.07);
+  display: flex; flex-direction: column;
+  transition: transform .2s, box-shadow .2s;
+}
+.testimonial-card:hover { transform: translateY(-3px); box-shadow: 0 16px 48px rgba(11,61,82,.1); }
+.testimonial-person {
+  display: flex; gap: 12px; align-items: center;
+  margin-bottom: 14px;
+}
+.testimonial-photo {
+  width: 42px; height: 42px; border-radius: 12px;
+  object-fit: cover; flex-shrink: 0;
+  filter: grayscale(15%);
+}
+.testimonial-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 13px; color: var(--navy); letter-spacing: -.02em;
+}
+.testimonial-role {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--grey); margin-top: 2px;
+}
+.testimonial-quote {
+  font-size: 13px; line-height: 1.7; color: var(--ink);
+}
+
 /* ── FOOTER ── */
 footer {
   background: var(--navy-dk); padding: 44px 56px;
@@ -605,6 +648,8 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
   .manifesto { grid-template-columns: 1fr; gap: 48px; padding-left: 28px; padding-right: 28px; }
   .team-section { padding: 80px 28px; }
   .team-grid { grid-template-columns: 1fr; }
+  .testimonials { padding: 80px 28px; }
+  .testimonials-grid { grid-template-columns: 1fr; }
   .contact { padding: 80px 28px; }
   .contact-grid { grid-template-columns: 1fr; gap: 52px; }
   footer { padding: 36px 24px; }
@@ -617,6 +662,7 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
   .manifesto { padding: 64px 20px; }
   .team-section { padding: 64px 20px; }
   .team-card { flex-direction: column; gap: 18px; }
+  .testimonials { padding: 64px 20px; }
   .contact { padding: 64px 20px; }
   .fg-row { grid-template-columns: 1fr; }
   footer { flex-direction: column; gap: 20px; text-align: center; }
@@ -867,6 +913,37 @@ function checkStagePass(){
   <div class="team-network-note reveal">
     <span class="team-network-plus">+</span>
     <p data-content="team_expert_note"></p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="testimonials-header reveal">
+    <div class="eyebrow" data-content="testimonials_eyebrow"></div>
+    <h2 data-content="testimonials_h2"></h2>
+    <p data-content="testimonials_intro"></p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <div class="testimonial-person">
+        <img src="nanne.png" alt="Nanne Batelaan" class="testimonial-photo">
+        <div>
+          <div class="testimonial-name" data-content="testimonial1_name"></div>
+          <div class="testimonial-role" data-content="testimonial1_role"></div>
+        </div>
+      </div>
+      <p class="testimonial-quote" data-content="testimonial1_quote"></p>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="testimonial-person">
+        <img src="eva.jpg" alt="Eva Ronhaar" class="testimonial-photo">
+        <div>
+          <div class="testimonial-name" data-content="testimonial2_name"></div>
+          <div class="testimonial-role" data-content="testimonial2_role"></div>
+        </div>
+      </div>
+      <p class="testimonial-quote" data-content="testimonial2_quote"></p>
+    </div>
   </div>
 </section>
 

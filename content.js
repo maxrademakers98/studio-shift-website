@@ -107,6 +107,19 @@ const CONTENT = {
   poolcard3_title: "We're in the project with you",
   poolcard3_desc:  "We don't just match you with talent and step back. Studio SHIFT joins the team directly, keeping quality consistent, communication clear, and the work on track from first brief to final delivery.",
 
+  // ── TESTIMONIALS ──────────────────────────────────
+  testimonials_eyebrow: "What clients say",
+  testimonials_h2:      "Trusted to deliver",
+  testimonials_intro:   "We've had the opportunity to work with great people across a range of organisations. Here's what a few of them have to say.",
+
+  testimonial1_quote: "Roel not only proved to be a reliable specialist across most ESG topics, but he truly helped us build sustainability from the ground up and embed it firmly within our organisation. I wholeheartedly recommend Roel and his new company. Especially to organisations looking for the right way to organise sustainability effectively in the years ahead.",
+  testimonial1_name:  "Nanne Batelaan",
+  testimonial1_role:  "CEO, DSG",
+
+  testimonial2_quote: "Over four years working together on sustainability at HEMA, Fabeel consistently brought both deep expertise and real creativity to the table. He has a talent for making ambitious sustainability goals achievable. I've no doubt Studio SHIFT will do the same for its clients.",
+  testimonial2_name:  "Eva Ronhaar",
+  testimonial2_role:  "Head of Sustainability, HEMA",
+
   // ── CONTACT ───────────────────────────────────────
   contact_eyebrow:  "Get in touch",
   contact_heading:  "Let's make<br><em>it</em><br>happen",
