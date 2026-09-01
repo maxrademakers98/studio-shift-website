@@ -141,19 +141,9 @@ nav.scrolled .nav-burger span { background: var(--navy); }
 }
 .hero-left {
   background: var(--navy);
-  display: flex; flex-direction: column; justify-content: flex-end;
-  padding: 100px 56px 72px;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 72px 56px;
   position: relative; overflow: hidden;
-}
-/* Subtle grid texture */
-.hero-left::before {
-  content: '';
-  position: absolute; inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
-  background-size: 48px 48px;
-  pointer-events: none;
 }
 /* Glow blobs */
 .hero-glow-a {
@@ -230,8 +220,8 @@ nav.scrolled .nav-burger span { background: var(--navy); }
 /* Hero right — visual editorial panel */
 .hero-right {
   background: var(--cream);
-  display: flex; flex-direction: column; justify-content: flex-end;
-  padding: 100px 56px 72px 52px;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 72px 56px 72px 52px;
   position: relative; overflow: hidden;
 }
 /* Large BG typographic watermark */
@@ -504,11 +494,11 @@ nav.scrolled .nav-burger span { background: var(--navy); }
 }
 .specialist-header .eyebrow { margin-bottom: 0; }
 .specialist-note {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 11px; letter-spacing: .04em;
-  color: var(--sky); background: rgba(0,180,216,.1);
-  border: 1px solid rgba(0,180,216,.25);
-  border-radius: 100px; padding: 6px 14px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px; font-weight: 700; letter-spacing: -.01em;
+  color: var(--navy); background: rgba(0,180,216,.12);
+  border: 1px solid rgba(0,180,216,.3);
+  border-radius: 100px; padding: 8px 18px;
 }
 .specialist-grid {
   display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px;
@@ -672,7 +662,7 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
   .nav-burger { display: flex; }
   .hero { grid-template-columns: 1fr; }
   .hero-right { display: flex; padding: 60px 28px; min-height: auto; }
-  .hero-left { min-height: 100vh; padding: 80px 28px 64px; justify-content: flex-end; }
+  .hero-left { min-height: 100vh; padding: 80px 28px 64px; justify-content: center; }
   .process { padding: 80px 28px; }
   .process-header { flex-direction: column; align-items: flex-start; gap: 16px; }
   .process-step { grid-template-columns: 56px 1fr; grid-template-rows: auto auto; }
@@ -747,7 +737,7 @@ function checkStagePass(){
 <!-- NAV -->
 <nav id="mainNav">
   <a href="#hero" class="logo">
-    <svg class="logo-mark" width="34" height="34" viewBox="0 0 100 100" aria-hidden="true">
+    <svg class="logo-mark" width="60" height="60" viewBox="0 0 100 100" aria-hidden="true">
       <circle cx="50" cy="50" r="46" fill="#0B3D52" stroke="#8FBAC9" stroke-width="4"/>
       <text x="50" y="47" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="17" fill="#fff" letter-spacing="-0.5">STUDIO</text>
       <text x="50" y="68" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-style="italic" font-size="19" fill="#fff" letter-spacing="-0.5">SHIFT</text>
