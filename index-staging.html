@@ -63,11 +63,13 @@ nav.scrolled {
   box-shadow: 0 1px 0 var(--border);
 }
 .logo {
+  display: flex; align-items: center; gap: 10px;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700; font-size: 19px; letter-spacing: -.02em;
   text-decoration: none; color: #fff;
   transition: color .3s;
 }
+.logo-mark { flex-shrink: 0; display: block; }
 .logo span { font-style: italic; }
 .logo span { color: rgba(255,255,255,.4); }
 nav.scrolled .logo { color: var(--navy); }
@@ -491,18 +493,48 @@ nav.scrolled .nav-burger span { background: var(--navy); }
   border-radius: 100px; padding: 4px 12px;
   font-size: 11px; color: var(--navy);
 }
-.team-network-note {
-  display: flex; align-items: flex-start; gap: 20px;
-  background: rgba(11,61,82,.04);
+.specialist-section {
+  background: rgba(11,61,82,.035);
   border: 1px solid rgba(11,61,82,.08);
-  border-radius: 16px; padding: 24px 28px;
+  border-radius: 20px; padding: 36px 32px;
 }
-.team-network-plus {
+.specialist-header {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 10px; margin-bottom: 28px;
+}
+.specialist-header .eyebrow { margin-bottom: 0; }
+.specialist-note {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px; letter-spacing: .04em;
+  color: var(--sky); background: rgba(0,180,216,.1);
+  border: 1px solid rgba(0,180,216,.25);
+  border-radius: 100px; padding: 6px 14px;
+}
+.specialist-grid {
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px;
+}
+.specialist-card { text-align: center; transition: transform .25s ease; }
+.specialist-card:hover { transform: translateY(-5px); }
+.specialist-photo-ring {
+  width: 84px; height: 84px; border-radius: 50%;
+  margin: 0 auto 14px; padding: 3px;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, var(--navy), var(--sky));
+  transition: transform .25s ease;
+}
+.specialist-card:hover .specialist-photo-ring { transform: scale(1.06); }
+.specialist-photo {
+  width: 100%; height: 100%; border-radius: 50%;
+  object-fit: cover; display: block;
+  border: 2.5px solid var(--white);
+}
+.specialist-name {
   font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700; font-size: 28px; color: var(--sky);
-  flex-shrink: 0; line-height: 1.3;
+  font-weight: 700; font-size: 14px; color: var(--navy);
+  letter-spacing: -.01em; margin-bottom: 8px;
 }
-.team-network-note p { font-size: 14px; line-height: 1.8; color: var(--grey); }
+.specialist-tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+.specialist-tags .team-tag { border-radius: 100px; font-size: 11px; padding: 4px 12px; }
 
 /* ── CONTACT ── */
 .contact {
@@ -600,7 +632,7 @@ nav.scrolled .nav-burger span { background: var(--navy); }
   margin-bottom: 14px;
 }
 .testimonial-photo {
-  width: 42px; height: 42px; border-radius: 12px;
+  width: 60px; height: 60px; border-radius: 14px;
   object-fit: cover; flex-shrink: 0;
   filter: grayscale(15%);
 }
@@ -648,6 +680,7 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
   .manifesto { grid-template-columns: 1fr; gap: 48px; padding-left: 28px; padding-right: 28px; }
   .team-section { padding: 80px 28px; }
   .team-grid { grid-template-columns: 1fr; }
+  .specialist-grid { grid-template-columns: repeat(3, 1fr); gap: 24px 16px; }
   .testimonials { padding: 80px 28px; }
   .testimonials-grid { grid-template-columns: 1fr; }
   .contact { padding: 80px 28px; }
@@ -662,6 +695,7 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
   .manifesto { padding: 64px 20px; }
   .team-section { padding: 64px 20px; }
   .team-card { flex-direction: column; gap: 18px; }
+  .specialist-grid { grid-template-columns: repeat(2, 1fr); }
   .testimonials { padding: 64px 20px; }
   .contact { padding: 64px 20px; }
   .fg-row { grid-template-columns: 1fr; }
@@ -712,7 +746,14 @@ function checkStagePass(){
 
 <!-- NAV -->
 <nav id="mainNav">
-  <a href="#hero" class="logo">Studio <span>SHIFT</span></a>
+  <a href="#hero" class="logo">
+    <svg class="logo-mark" width="34" height="34" viewBox="0 0 100 100" aria-hidden="true">
+      <circle cx="50" cy="50" r="46" fill="#0B3D52" stroke="#8FBAC9" stroke-width="4"/>
+      <text x="50" y="47" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="17" fill="#fff" letter-spacing="-0.5">STUDIO</text>
+      <text x="50" y="68" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-style="italic" font-size="19" fill="#fff" letter-spacing="-0.5">SHIFT</text>
+    </svg>
+    Less talk, more <span>SHIFT</span>
+  </a>
   <ul>
     <li><a href="#process">What we do</a></li>
     <li><a href="#team">Meet the team</a></li>
@@ -792,10 +833,6 @@ function checkStagePass(){
   <div class="process-header reveal" id="processHeader">
     <p class="process-header-sub" data-content="approach_sub"></p>
     <h2 data-content="approach_heading"></h2>
-    <button class="process-header-toggle" onclick="document.getElementById('processHeader').classList.toggle('flipped')" title="Switch layout">
-      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 5h12M11 2l3 3-3 3M14 11H2M5 8l-3 3 3 3"/></svg>
-      swap
-    </button>
   </div>
   <div class="process-steps">
     <div class="process-step reveal">
@@ -829,6 +866,22 @@ function checkStagePass(){
         <p data-content="step4_desc"></p>
       </div>
       <div class="step-chips" data-chips="step4_chips"></div>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-num">05</div>
+      <div class="step-left">
+        <h3 data-content="step5_title"></h3>
+        <p data-content="step5_desc"></p>
+      </div>
+      <div class="step-chips" data-chips="step5_chips"></div>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-num">06</div>
+      <div class="step-left">
+        <h3 data-content="step6_title"></h3>
+        <p data-content="step6_desc"></p>
+      </div>
+      <div class="step-chips" data-chips="step6_chips"></div>
     </div>
   </div>
 </section>
@@ -910,9 +963,43 @@ function checkStagePass(){
       </div>
     </div>
   </div>
-  <div class="team-network-note reveal">
-    <span class="team-network-plus">+</span>
-    <p data-content="team_expert_note"></p>
+  <div class="specialist-section reveal">
+    <div class="specialist-header">
+      <div class="eyebrow" data-content="specialist_heading"></div>
+      <div class="specialist-note" data-content="specialist_sub"></div>
+    </div>
+    <div class="specialist-grid">
+      <div class="specialist-card">
+        <div class="specialist-photo-ring"><img src="daniella.jpg" alt="Daniella" class="specialist-photo"></div>
+        <div class="specialist-name" data-content="specialist1_name"></div>
+        <div class="specialist-tags" data-tags="specialist1_skills"></div>
+      </div>
+      <div class="specialist-card">
+        <div class="specialist-photo-ring"><img src="maarten.jpg" alt="Maarten" class="specialist-photo"></div>
+        <div class="specialist-name" data-content="specialist2_name"></div>
+        <div class="specialist-tags" data-tags="specialist2_skills"></div>
+      </div>
+      <div class="specialist-card">
+        <div class="specialist-photo-ring"><img src="pijke.jpg" alt="Pijke" class="specialist-photo"></div>
+        <div class="specialist-name" data-content="specialist3_name"></div>
+        <div class="specialist-tags" data-tags="specialist3_skills"></div>
+      </div>
+      <div class="specialist-card">
+        <div class="specialist-photo-ring"><img src="jordan.jpg" alt="Jordan" class="specialist-photo"></div>
+        <div class="specialist-name" data-content="specialist4_name"></div>
+        <div class="specialist-tags" data-tags="specialist4_skills"></div>
+      </div>
+      <div class="specialist-card">
+        <div class="specialist-photo-ring"><img src="barend.jpg" alt="Barend" class="specialist-photo"></div>
+        <div class="specialist-name" data-content="specialist5_name"></div>
+        <div class="specialist-tags" data-tags="specialist5_skills"></div>
+      </div>
+      <div class="specialist-card">
+        <div class="specialist-photo-ring"><img src="digna.jpg" alt="Digna" class="specialist-photo"></div>
+        <div class="specialist-name" data-content="specialist6_name"></div>
+        <div class="specialist-tags" data-tags="specialist6_skills"></div>
+      </div>
+    </div>
   </div>
 </section>
 

@@ -40,31 +40,35 @@ const CONTENT = {
   hero_cta_secondary: "What we do",
 
   // ── WHAT WE DO (Approach) ─────────────────────────
-  approach_eyebrow:   "How we work",
+  approach_eyebrow:   "What we offer",
   approach_heading:   "What we do",
-  approach_sub:       "Wherever you are on your sustainability journey, we will meet you there. Whether you're starting from scratch, shaping a robust strategy, or looking to enhance specific products, we help turn ambition into action. Our four-phase approach guides you every step of the way, defining clear ambition, building a practical strategy, driving effective implementation and delivering measurable impact. No matter your starting point, we help you move forward with clarity, confidence and results.",
+  approach_sub:       "In-depth expertise across six core sustainability topics — from strategy setting and stakeholder engagement to climate action, supply chain, product transformation and reporting. The same disciplined approach to governance, ownership and ways of working is embedded into every topic, so change sticks.",
 
-  step1_title: "Ambition",
-  step1_desc:  "We start with who you are and where you want to go. Grounded in your business, stakeholders and opportunities, we help you ask and answer the right questions to define an ambition that’s credible and built to hold up.",
-  step1_chips: ["Ambition workshop", "Stakeholder alignment sessions", "Material topic prioritization", "Benchmarking & Gap analysis"],
+  step1_title: "Strategy Setting",
+  step1_desc:  "We help (re-)design your sustainability strategy based on your value creation model, incorporating stakeholder interests and legal requirements. The result is an actionable program that aligns with your business strategy.",
+  step1_chips: ["Materiality Assessment", "Baselining & Benchmarking", "Target Setting", "Governance"],
 
-  step2_title: "Strategy",
-  step2_desc:  "Once the direction is clear, we translate it into a practical strategy aligned with business goals, operations and value creation.",
-  step2_chips: ["Roadmapping", "KPI framework", "Material Policies", "SBTi Target setting", "Risk & Benchmarking", "Governance model"],
+  step2_title: "Stakeholder Engagement",
+  step2_desc:  "We help you build structured, credible relationships with the stakeholders who shape your sustainability performance — suppliers, buyers, NGOs and industry peers.",
+  step2_chips: ["Supplier Engagement", "Procurement Workshops", "Multi Stakeholder Partnership", "NGO Collaboration"],
 
   expertise_label: "Where we love to work",
 
-  step3_title: "Action",
-  step3_desc:  "We help embed sustainability into the organisation, so it becomes part of decision-making, operations, and culture not a standalone initiative.",
-  step3_chips: [
-    { sub: "Deliverables" }, { chip: "Internal toolkits" }, { chip: "Grant Support" }, { chip: "Design Guides" }, { chip: "Tailored Workshops" }, { chip: "Supplier Code of Conduct" },
-    { sub: "Product & Materials" }, { chip: "Design for Durability & Repair" }, { chip: "Circular Design" }, { chip: "Material Repurposing" }, { chip: "BOM Analysis" },
-    { sub: "Climate" }, { chip: "Scope 3" }, { chip: "Supplier Engagement" }
-  ],
+  step3_title: "Climate Action",
+  step3_desc:  "We help you get insight into the direct and indirect climate impact that results from your value creation model. We identify hotspots and set up reduction roadmaps, aligned with international frameworks.",
+  step3_chips: ["GHG Carbon Accounting (Scope 1–3)", "Science Based Targets Validation", "Climate Adaptation", "Climate Mitigation", "Renewable Energy"],
 
-  step4_title: "Measurable Impact",
-  step4_desc:  "To maintain momentum, we help measure impact, monitor progress and communicate transparently with internal and external stakeholders.",
-  step4_chips: ["Impact measurement", "Communications narrative and messaging", "Light LCAs", "Carbon Credits Advice", "Impact & Sustainability Reporting"],
+  step4_title: "Supply Chain",
+  step4_desc:  "Regulation, buyers and investors now ask the same question: what happens upstream of your own operations? We help you see your chain clearly and act on the risks that matter.",
+  step4_chips: ["Supply Chain Transparency", "Human Rights Due Diligence", "Environmental Due Diligence", "Supplier Scorecards & Ranking"],
+
+  step5_title: "Product Transformation",
+  step5_desc:  "We work with your design, packaging and procurement teams to change what products are made of, how they are wrapped and what they can tell you while the specification is still open.",
+  step5_chips: ["Circular Design", "Packaging", "Digital Product Passport", "Material Mapping & Policy Setting"],
+
+  step6_title: "Data & Reporting",
+  step6_desc:  "We build the data behind your numbers, the process that keeps it current, and the reporting that turns it into something worth reading.",
+  step6_chips: ["CSRD & ESG Reporting", "Life Cycle Assessment", "Data Collection & Systems", "Claims & Communication"],
 
   // ── HOW WE WORK ───────────────────────────────────
   how_heading:     "Senior expertise<br>No <em>nonsense</em>",
@@ -96,7 +100,26 @@ const CONTENT = {
   team2_bio:  "Roel is a sustainability professional with experience across B2B and B2C sectors, working in international value chains to drive measurable environmental and social impact. Experience includes:<b>G-Star RAW – Textiles & fashion, HEMA – Consumer goods & DSG – Construction materials.</b><br><br> He specialises in developing and implementing ESG strategies, including sustainability data exchange across supply chains to enable better decision-making in products and production. His work spans social compliance and human rights, environmental sustainability, GHG footprinting, B Corp certification and stakeholder engagement.",
   team2_tags: ["Roel@studioshift.eu"],
   team2_linkedin: "https://www.linkedin.com/in/roel-laban-b532b328/",
-  team_expert_note: "Backed by a curated network of independent sustainability specialists across product design, strategy, and engagement. When your project needs it, we bring in the right expert, briefed and led by us.",
+  specialist_heading: "The Collective",
+  specialist_sub: "A few of the 25+ specialists we work with.",
+
+  specialist1_name: "Daniella",
+  specialist1_skills: ["Circularity", "Reuse"],
+
+  specialist2_name: "Maarten",
+  specialist2_skills: ["Renewable Energy"],
+
+  specialist3_name: "Pijke",
+  specialist3_skills: ["Circular Design"],
+
+  specialist4_name: "Jordan",
+  specialist4_skills: ["Reuse Researcher"],
+
+  specialist5_name: "Barend",
+  specialist5_skills: ["Circular Design"],
+
+  specialist6_name: "Digna",
+  specialist6_skills: ["Human Rights", "CSRD"],
 
   poolcard1_title: "Curated specialists",
   poolcard1_desc:  "Every freelancer in our network is hand-picked, vetted for real-world experience, not just credentials. We know who we're bringing in, and why they're the right fit for your project.",
@@ -118,7 +141,7 @@ const CONTENT = {
 
   testimonial2_quote: "Over four years working together on sustainability at HEMA, Fabeel consistently brought both deep expertise and real creativity to the table. He has a talent for making ambitious sustainability goals achievable. I've no doubt Studio SHIFT will do the same for its clients.",
   testimonial2_name:  "Eva Ronhaar",
-  testimonial2_role:  "Head of Sustainability, HEMA",
+  testimonial2_role:  "Former Head of Sustainability, HEMA",
 
   // ── CONTACT ───────────────────────────────────────
   contact_eyebrow:  "Get in touch",
