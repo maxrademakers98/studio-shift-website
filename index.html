@@ -63,11 +63,13 @@ nav.scrolled {
   box-shadow: 0 1px 0 var(--border);
 }
 .logo {
+  display: flex; align-items: center; gap: 10px;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700; font-size: 19px; letter-spacing: -.02em;
   text-decoration: none; color: #fff;
   transition: color .3s;
 }
+.logo-mark { flex-shrink: 0; display: block; }
 .logo span { font-style: italic; }
 .logo span { color: rgba(255,255,255,.4); }
 nav.scrolled .logo { color: var(--navy); }
@@ -139,19 +141,9 @@ nav.scrolled .nav-burger span { background: var(--navy); }
 }
 .hero-left {
   background: var(--navy);
-  display: flex; flex-direction: column; justify-content: flex-end;
-  padding: 100px 56px 72px;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 72px 56px;
   position: relative; overflow: hidden;
-}
-/* Subtle grid texture */
-.hero-left::before {
-  content: '';
-  position: absolute; inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
-  background-size: 48px 48px;
-  pointer-events: none;
 }
 /* Glow blobs */
 .hero-glow-a {
@@ -228,8 +220,8 @@ nav.scrolled .nav-burger span { background: var(--navy); }
 /* Hero right — visual editorial panel */
 .hero-right {
   background: var(--cream);
-  display: flex; flex-direction: column; justify-content: flex-end;
-  padding: 100px 56px 72px 52px;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 72px 56px 72px 52px;
   position: relative; overflow: hidden;
 }
 /* Large BG typographic watermark */
@@ -462,7 +454,7 @@ nav.scrolled .nav-burger span { background: var(--navy); }
 }
 .team-card:hover { transform: translateY(-3px); box-shadow: 0 16px 48px rgba(11,61,82,.1); }
 .team-photo {
-  width: 68px; height: 68px; border-radius: 16px;
+  width: 120px; height: 120px; border-radius: 20px;
   object-fit: cover; flex-shrink: 0;
   filter: grayscale(15%);
 }
@@ -491,18 +483,48 @@ nav.scrolled .nav-burger span { background: var(--navy); }
   border-radius: 100px; padding: 4px 12px;
   font-size: 11px; color: var(--navy);
 }
-.team-network-note {
-  display: flex; align-items: flex-start; gap: 20px;
-  background: rgba(11,61,82,.04);
+.specialist-section {
+  background: rgba(11,61,82,.035);
   border: 1px solid rgba(11,61,82,.08);
-  border-radius: 16px; padding: 24px 28px;
+  border-radius: 20px; padding: 36px 32px;
 }
-.team-network-plus {
+.specialist-header {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 10px; margin-bottom: 28px;
+}
+.specialist-header .eyebrow { margin-bottom: 0; }
+.specialist-note {
   font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700; font-size: 28px; color: var(--sky);
-  flex-shrink: 0; line-height: 1.3;
+  font-size: 15px; font-weight: 700; letter-spacing: -.01em;
+  color: var(--navy); background: rgba(0,180,216,.12);
+  border: 1px solid rgba(0,180,216,.3);
+  border-radius: 100px; padding: 8px 18px;
 }
-.team-network-note p { font-size: 14px; line-height: 1.8; color: var(--grey); }
+.specialist-grid {
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px;
+}
+.specialist-card { text-align: center; transition: transform .25s ease; }
+.specialist-card:hover { transform: translateY(-5px); }
+.specialist-photo-ring {
+  width: 132px; height: 132px; border-radius: 50%;
+  margin: 0 auto 14px; padding: 4px;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, var(--navy), var(--sky));
+  transition: transform .25s ease;
+}
+.specialist-card:hover .specialist-photo-ring { transform: scale(1.06); }
+.specialist-photo {
+  width: 100%; height: 100%; border-radius: 50%;
+  object-fit: cover; display: block;
+  border: 2.5px solid var(--white);
+}
+.specialist-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 14px; color: var(--navy);
+  letter-spacing: -.01em; margin-bottom: 8px;
+}
+.specialist-tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+.specialist-tags .team-tag { border-radius: 100px; font-size: 11px; padding: 4px 12px; }
 
 /* ── CONTACT ── */
 .contact {
@@ -574,6 +596,49 @@ nav.scrolled .nav-burger span { background: var(--navy); }
   font-family: 'IBM Plex Mono', monospace; letter-spacing: .08em;
 }
 
+/* ── TESTIMONIALS ── */
+.testimonials {
+  background: var(--cream);
+  padding: 80px 56px;
+}
+.testimonials-header { margin-bottom: 40px; }
+.testimonials-header h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: clamp(28px, 3vw, 40px);
+  letter-spacing: -.03em; line-height: 1.05;
+  color: var(--navy); margin-bottom: 12px;
+}
+.testimonials-header p { font-size: 13px; line-height: 1.8; color: var(--grey); max-width: 480px; }
+.testimonials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.testimonial-card {
+  background: #fff; border-radius: 16px;
+  padding: 24px 22px; border: 1px solid rgba(11,61,82,.07);
+  display: flex; flex-direction: column;
+  transition: transform .2s, box-shadow .2s;
+}
+.testimonial-card:hover { transform: translateY(-3px); box-shadow: 0 16px 48px rgba(11,61,82,.1); }
+.testimonial-person {
+  display: flex; gap: 12px; align-items: center;
+  margin-bottom: 14px;
+}
+.testimonial-photo {
+  width: 96px; height: 96px; border-radius: 18px;
+  object-fit: cover; flex-shrink: 0;
+  filter: grayscale(15%);
+}
+.testimonial-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700; font-size: 13px; color: var(--navy); letter-spacing: -.02em;
+}
+.testimonial-role {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--grey); margin-top: 2px;
+}
+.testimonial-quote {
+  font-size: 13px; line-height: 1.7; color: var(--ink);
+}
+
 /* ── FOOTER ── */
 footer {
   background: var(--navy-dk); padding: 44px 56px;
@@ -597,7 +662,7 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
   .nav-burger { display: flex; }
   .hero { grid-template-columns: 1fr; }
   .hero-right { display: flex; padding: 60px 28px; min-height: auto; }
-  .hero-left { min-height: 100vh; padding: 80px 28px 64px; justify-content: flex-end; }
+  .hero-left { min-height: 100vh; padding: 80px 28px 64px; justify-content: center; }
   .process { padding: 80px 28px; }
   .process-header { flex-direction: column; align-items: flex-start; gap: 16px; }
   .process-step { grid-template-columns: 56px 1fr; grid-template-rows: auto auto; }
@@ -605,6 +670,9 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
   .manifesto { grid-template-columns: 1fr; gap: 48px; padding-left: 28px; padding-right: 28px; }
   .team-section { padding: 80px 28px; }
   .team-grid { grid-template-columns: 1fr; }
+  .specialist-grid { grid-template-columns: repeat(3, 1fr); gap: 24px 16px; }
+  .testimonials { padding: 80px 28px; }
+  .testimonials-grid { grid-template-columns: 1fr; }
   .contact { padding: 80px 28px; }
   .contact-grid { grid-template-columns: 1fr; gap: 52px; }
   footer { padding: 36px 24px; }
@@ -617,6 +685,8 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
   .manifesto { padding: 64px 20px; }
   .team-section { padding: 64px 20px; }
   .team-card { flex-direction: column; gap: 18px; }
+  .specialist-grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials { padding: 64px 20px; }
   .contact { padding: 64px 20px; }
   .fg-row { grid-template-columns: 1fr; }
   footer { flex-direction: column; gap: 20px; text-align: center; }
@@ -632,12 +702,18 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
 </style>
 </head>
 <body>
-
 <div id="scrollProgress"></div>
 
 <!-- NAV -->
 <nav id="mainNav">
-  <a href="#hero" class="logo">Studio <span>SHIFT</span></a>
+  <a href="#hero" class="logo">
+    <svg class="logo-mark" width="60" height="60" viewBox="0 0 100 100" aria-hidden="true">
+      <circle cx="50" cy="50" r="46" fill="#0B3D52" stroke="#8FBAC9" stroke-width="4"/>
+      <text x="50" y="47" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="17" fill="#fff" letter-spacing="-0.5">STUDIO</text>
+      <text x="50" y="68" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="700" font-style="italic" font-size="19" fill="#fff" letter-spacing="-0.5">SHIFT</text>
+    </svg>
+    Less talk, more <span>SHIFT</span>
+  </a>
   <ul>
     <li><a href="#process">What we do</a></li>
     <li><a href="#team">Meet the team</a></li>
@@ -717,10 +793,6 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
   <div class="process-header reveal" id="processHeader">
     <p class="process-header-sub" data-content="approach_sub"></p>
     <h2 data-content="approach_heading"></h2>
-    <button class="process-header-toggle" onclick="document.getElementById('processHeader').classList.toggle('flipped')" title="Switch layout">
-      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 5h12M11 2l3 3-3 3M14 11H2M5 8l-3 3 3 3"/></svg>
-      swap
-    </button>
   </div>
   <div class="process-steps">
     <div class="process-step reveal">
@@ -754,6 +826,22 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
         <p data-content="step4_desc"></p>
       </div>
       <div class="step-chips" data-chips="step4_chips"></div>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-num">05</div>
+      <div class="step-left">
+        <h3 data-content="step5_title"></h3>
+        <p data-content="step5_desc"></p>
+      </div>
+      <div class="step-chips" data-chips="step5_chips"></div>
+    </div>
+    <div class="process-step reveal">
+      <div class="step-num">06</div>
+      <div class="step-left">
+        <h3 data-content="step6_title"></h3>
+        <p data-content="step6_desc"></p>
+      </div>
+      <div class="step-chips" data-chips="step6_chips"></div>
     </div>
   </div>
 </section>
@@ -835,9 +923,74 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
       </div>
     </div>
   </div>
-  <div class="team-network-note reveal">
-    <span class="team-network-plus">+</span>
-    <p data-content="team_expert_note"></p>
+  <div class="specialist-section reveal">
+    <div class="specialist-header">
+      <div class="eyebrow" data-content="specialist_heading"></div>
+      <div class="specialist-note" data-content="specialist_sub"></div>
+    </div>
+    <div class="specialist-grid">
+      <div class="specialist-card">
+        <div class="specialist-photo-ring"><img src="daniella.jpg" alt="Daniella" class="specialist-photo"></div>
+        <div class="specialist-name" data-content="specialist1_name"></div>
+        <div class="specialist-tags" data-tags="specialist1_skills"></div>
+      </div>
+      <div class="specialist-card">
+        <div class="specialist-photo-ring"><img src="maarten.jpg" alt="Maarten" class="specialist-photo"></div>
+        <div class="specialist-name" data-content="specialist2_name"></div>
+        <div class="specialist-tags" data-tags="specialist2_skills"></div>
+      </div>
+      <div class="specialist-card">
+        <div class="specialist-photo-ring"><img src="pijke.jpg" alt="Pijke" class="specialist-photo"></div>
+        <div class="specialist-name" data-content="specialist3_name"></div>
+        <div class="specialist-tags" data-tags="specialist3_skills"></div>
+      </div>
+      <div class="specialist-card">
+        <div class="specialist-photo-ring"><img src="jordan.jpg" alt="Jordan" class="specialist-photo"></div>
+        <div class="specialist-name" data-content="specialist4_name"></div>
+        <div class="specialist-tags" data-tags="specialist4_skills"></div>
+      </div>
+      <div class="specialist-card">
+        <div class="specialist-photo-ring"><img src="barend.jpg" alt="Barend" class="specialist-photo"></div>
+        <div class="specialist-name" data-content="specialist5_name"></div>
+        <div class="specialist-tags" data-tags="specialist5_skills"></div>
+      </div>
+      <div class="specialist-card">
+        <div class="specialist-photo-ring"><img src="digna.jpg" alt="Digna" class="specialist-photo"></div>
+        <div class="specialist-name" data-content="specialist6_name"></div>
+        <div class="specialist-tags" data-tags="specialist6_skills"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="testimonials-header reveal">
+    <div class="eyebrow" data-content="testimonials_eyebrow"></div>
+    <h2 data-content="testimonials_h2"></h2>
+    <p data-content="testimonials_intro"></p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <div class="testimonial-person">
+        <img src="nanne.png" alt="Nanne Batelaan" class="testimonial-photo">
+        <div>
+          <div class="testimonial-name" data-content="testimonial1_name"></div>
+          <div class="testimonial-role" data-content="testimonial1_role"></div>
+        </div>
+      </div>
+      <p class="testimonial-quote" data-content="testimonial1_quote"></p>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="testimonial-person">
+        <img src="eva.jpg" alt="Eva Ronhaar" class="testimonial-photo">
+        <div>
+          <div class="testimonial-name" data-content="testimonial2_name"></div>
+          <div class="testimonial-role" data-content="testimonial2_role"></div>
+        </div>
+      </div>
+      <p class="testimonial-quote" data-content="testimonial2_quote"></p>
+    </div>
   </div>
 </section>
 
