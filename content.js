@@ -46,7 +46,7 @@ const CONTENT = {
 
   step1_title: "Strategy Setting",
   step1_desc:  "We help (re-)design your sustainability strategy based on your value creation model, incorporating stakeholder interests and legal requirements. The result is an actionable program that aligns with your business strategy.",
-  step1_chips: ["Materiality Assessment", "Baselining & Benchmarking", "Target Setting", "Governance"],
+  step1_chips: ["Double Materiality Assessment", "Baselining & Benchmarking", "Target Setting", "Governance"],
 
   step2_title: "Stakeholder Engagement",
   step2_desc:  "We help you build structured, credible relationships with the stakeholders who shape your sustainability performance — suppliers, buyers, NGOs and industry peers.",
