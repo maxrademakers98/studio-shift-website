@@ -68,7 +68,7 @@ const CONTENT = {
 
   step6_title: "Data & Reporting",
   step6_desc:  "We build the data behind your numbers, the process that keeps it current, and the reporting that turns it into something worth reading.",
-  step6_chips: ["CSRD & ESG Reporting", "Life Cycle Assessment", "Data Collection & Systems", "Claims & Communication"],
+  step6_chips: ["CSRD Reporting", "Life Cycle Assessment", "Data Collection & Systems", "Claims & Communication"],
 
   // ── HOW WE WORK ───────────────────────────────────
   how_heading:     "Senior expertise<br>No <em>nonsense</em>",
