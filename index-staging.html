@@ -1298,6 +1298,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
     document.getElementById('bioName').textContent = name;
     document.getElementById('bioTags').innerHTML = card.querySelector('.specialist-tags').innerHTML;
     document.getElementById('bioText').textContent = (typeof CONTENT !== 'undefined' && CONTENT[key + '_bio']) || '';
+    overlay.dataset.key = key;
     lastCard = card;
     overlay.classList.add('open');
     overlay.setAttribute('aria-hidden', 'false');
@@ -1313,8 +1314,13 @@ document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
   document.querySelectorAll('.specialist-card').forEach(card => {
     card.setAttribute('tabindex', '0');
     card.setAttribute('role', 'button');
-    card.addEventListener('click', () => open(card));
+    card.addEventListener('click', e => {
+      // in edit mode (?edit) only the "Read bio" hint opens the popup, so names and skills stay editable
+      if (document.body.classList.contains('editing') && !e.target.closest('.specialist-more')) return;
+      open(card);
+    });
     card.addEventListener('keydown', e => {
+      if (e.target !== card) return;
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(card); }
     });
   });
@@ -1330,7 +1336,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
   const list = document.getElementById('faqList');
   const cats = document.getElementById('faqCats');
   list.innerHTML = CONTENT.faq_items.map(i =>
-    `<details class="faq-item" data-cat="${i.cat}"><summary>${i.q}</summary><div class="faq-answer">${i.a}</div></details>`
+    `<details class="faq-item" data-cat="${i.cat}"><summary><span class="faq-q">${i.q}</span></summary><div class="faq-answer">${i.a}</div></details>`
   ).join('');
   cats.innerHTML = CONTENT.faq_categories.map((c, n) =>
     `<button type="button" class="faq-cat${n === 0 ? ' active' : ''}" data-cat="${c.key}">${c.label}</button>`
@@ -1358,5 +1364,6 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 </script>
 
 
+<script src="edit-mode.js"></script>
 </body>
 </html>
