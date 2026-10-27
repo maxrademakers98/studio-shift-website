@@ -227,7 +227,7 @@ const CONTENT = {
       },
       {
           "cat": "offering",
-          "q": "Which EU regulations are the hottest right now?",
+          "q": "Which EU regulations are the most relevant right now?",
           "a": "The ones landing on our clients' desks most often:<ul><li><strong>CSRD &amp; ESRS</strong>: sustainability reporting, including double materiality, currently being simplified through the Omnibus package.</li><li><strong>CSDDD</strong>: human rights and environmental due diligence across your value chain.</li><li><strong>PPWR</strong>: the new Packaging and Packaging Waste Regulation, with recyclability, recycled content and reuse requirements.</li><li><strong>ESPR &amp; Digital Product Passport</strong>: ecodesign requirements and product-level data.</li><li><strong>Green claims rules</strong> (Empowering Consumers Directive): what you may and may not say about your products.</li><li><strong>EUDR</strong> (deforestation) and <strong>EPR</strong> schemes: traceability and producer responsibility.</li></ul>Scope and timelines are shifting, so the first question is always what actually applies to <em>you</em>."
       },
       {
