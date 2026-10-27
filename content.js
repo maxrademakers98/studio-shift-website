@@ -173,7 +173,7 @@ const CONTENT = {
 
   // ── FAQ ───────────────────────────────────────────
   faq_eyebrow: "Questions & answers",
-  faq_heading: "How we work,<br>in plain <em>words</em>",
+  faq_heading: "How we work",
   faq_sub:     "Our model, our offering, EU legislation, and what it takes to make sustainability stick inside your organisation.",
   faq_note:    "General information, not legal advice. EU rules and timelines are changing, so we always check what applies to you.",
   faq_categories: [
