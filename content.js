@@ -124,6 +124,9 @@ const CONTENT = {
   specialist7_name: "Casper",
   specialist7_skills: ["Packaging"],
 
+  specialist8_name: "Marilise",
+  specialist8_skills: ["Circular Design", "Supply Chain Transparency"],
+
   poolcard1_title: "Curated specialists",
   poolcard1_desc:  "Every freelancer in our network is hand-picked, vetted for real-world experience, not just credentials. We know who we're bringing in, and why they're the right fit for your project.",
 
