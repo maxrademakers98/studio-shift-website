@@ -105,30 +105,39 @@ const CONTENT = {
 
   specialist1_name: "Daniella",
   specialist1_skills: ["Circularity", "Reuse"],
+  specialist1_bio: "PLACEHOLDER: two or three sentences on Daniella's background, the kind of projects Daniella has worked on, and what Daniella brings to a SHIFT team.",
 
   specialist2_name: "Maarten",
   specialist2_skills: ["Renewable Energy"],
+  specialist2_bio: "PLACEHOLDER: two or three sentences on Maarten's background, the kind of projects Maarten has worked on, and what Maarten brings to a SHIFT team.",
 
   specialist3_name: "Pijke",
   specialist3_skills: ["Circular Design"],
+  specialist3_bio: "PLACEHOLDER: two or three sentences on Pijke's background, the kind of projects Pijke has worked on, and what Pijke brings to a SHIFT team.",
 
   specialist4_name: "Jordan",
   specialist4_skills: ["Reuse Researcher"],
+  specialist4_bio: "PLACEHOLDER: two or three sentences on Jordan's background, the kind of projects Jordan has worked on, and what Jordan brings to a SHIFT team.",
 
   specialist5_name: "Barend",
   specialist5_skills: ["Circular Design"],
+  specialist5_bio: "PLACEHOLDER: two or three sentences on Barend's background, the kind of projects Barend has worked on, and what Barend brings to a SHIFT team.",
 
   specialist6_name: "Digna",
   specialist6_skills: ["Human Rights", "CSRD"],
+  specialist6_bio: "PLACEHOLDER: two or three sentences on Digna's background, the kind of projects Digna has worked on, and what Digna brings to a SHIFT team.",
 
   specialist7_name: "Casper",
   specialist7_skills: ["Packaging", "PPWR"],
+  specialist7_bio: "PLACEHOLDER: two or three sentences on Casper's background, the kind of projects Casper has worked on, and what Casper brings to a SHIFT team.",
 
   specialist8_name: "Marilise",
   specialist8_skills: ["Circular Design", "Supply Chain Transparency"],
+  specialist8_bio: "PLACEHOLDER: two or three sentences on Marilise's background, the kind of projects Marilise has worked on, and what Marilise brings to a SHIFT team.",
 
   specialist9_name: "Emilie",
   specialist9_skills: ["EPR", "Stakeholder Engagement", "PPWR"],
+  specialist9_bio: "PLACEHOLDER: two or three sentences on Emilie's background, the kind of projects Emilie has worked on, and what Emilie brings to a SHIFT team.",
 
   poolcard1_title: "Curated specialists",
   poolcard1_desc:  "Every freelancer in our network is hand-picked, vetted for real-world experience, not just credentials. We know who we're bringing in, and why they're the right fit for your project.",

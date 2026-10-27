@@ -526,6 +526,61 @@ nav.scrolled .nav-burger span { background: var(--navy); }
 .specialist-tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
 .specialist-tags .team-tag { border-radius: 100px; font-size: 11px; padding: 4px 12px; }
 
+/* Specialist bio: hover hint + click-to-open modal */
+.specialist-card { cursor: pointer; border-radius: 16px; outline-offset: 6px; }
+.specialist-more {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 10px; font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px; font-weight: 500; letter-spacing: .04em; color: var(--sky);
+  opacity: 0; transform: translateY(-4px);
+  transition: opacity .2s ease, transform .2s ease;
+}
+.specialist-more i {
+  font-style: normal; width: 18px; height: 18px; border-radius: 50%;
+  background: var(--sky); color: var(--white);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 13px; line-height: 1;
+}
+.specialist-card:hover .specialist-more,
+.specialist-card:focus-visible .specialist-more { opacity: 1; transform: none; }
+@media (hover: none) { .specialist-more { opacity: 1; transform: none; } }
+
+.bio-overlay {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(11,61,82,.55); backdrop-filter: blur(6px);
+  display: flex; align-items: center; justify-content: center; padding: 20px;
+  opacity: 0; visibility: hidden; transition: opacity .25s ease, visibility .25s;
+}
+.bio-overlay.open { opacity: 1; visibility: visible; }
+.bio-modal {
+  position: relative; background: var(--white); border-radius: 24px;
+  width: 100%; max-width: 560px; padding: 36px;
+  display: flex; gap: 28px; align-items: flex-start;
+  box-shadow: 0 30px 80px rgba(11,61,82,.35);
+  transform: translateY(16px) scale(.97); transition: transform .3s cubic-bezier(.2,.8,.2,1);
+}
+.bio-overlay.open .bio-modal { transform: none; }
+.bio-modal .specialist-photo-ring { flex: 0 0 132px; margin: 0; }
+.bio-body { min-width: 0; }
+.bio-name {
+  font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+  font-size: 26px; letter-spacing: -.02em; color: var(--navy); margin-bottom: 10px;
+}
+.bio-body .specialist-tags { justify-content: flex-start; margin-bottom: 16px; }
+.bio-text { font-size: 15px; line-height: 1.65; color: var(--navy); opacity: .85; margin-bottom: 20px; }
+.bio-cta { display: inline-block; font-size: 14px; padding: 10px 20px; }
+.bio-close {
+  position: absolute; top: 14px; right: 14px; width: 36px; height: 36px;
+  border: none; border-radius: 50%; cursor: pointer;
+  background: rgba(11,61,82,.07); color: var(--navy); font-size: 20px; line-height: 1;
+  transition: background .2s;
+}
+.bio-close:hover { background: rgba(11,61,82,.14); }
+@media (max-width: 560px) {
+  .bio-modal { flex-direction: column; align-items: center; text-align: center; padding: 32px 24px 28px; }
+  .bio-body .specialist-tags { justify-content: center; }
+}
+
 /* ── CONTACT ── */
 .contact {
   background: var(--white); padding: 120px 56px;
@@ -963,46 +1018,55 @@ function checkStagePass(){
         <div class="specialist-photo-ring"><img src="daniella.jpg" alt="Daniella" class="specialist-photo"></div>
         <div class="specialist-name" data-content="specialist1_name"></div>
         <div class="specialist-tags" data-tags="specialist1_skills"></div>
+        <div class="specialist-more">Read bio <i>+</i></div>
       </div>
       <div class="specialist-card">
         <div class="specialist-photo-ring"><img src="maarten.jpg" alt="Maarten" class="specialist-photo"></div>
         <div class="specialist-name" data-content="specialist2_name"></div>
         <div class="specialist-tags" data-tags="specialist2_skills"></div>
+        <div class="specialist-more">Read bio <i>+</i></div>
       </div>
       <div class="specialist-card">
         <div class="specialist-photo-ring"><img src="pijke.jpg" alt="Pijke" class="specialist-photo"></div>
         <div class="specialist-name" data-content="specialist3_name"></div>
         <div class="specialist-tags" data-tags="specialist3_skills"></div>
+        <div class="specialist-more">Read bio <i>+</i></div>
       </div>
       <div class="specialist-card">
         <div class="specialist-photo-ring"><img src="jordan.jpg" alt="Jordan" class="specialist-photo"></div>
         <div class="specialist-name" data-content="specialist4_name"></div>
         <div class="specialist-tags" data-tags="specialist4_skills"></div>
+        <div class="specialist-more">Read bio <i>+</i></div>
       </div>
       <div class="specialist-card">
         <div class="specialist-photo-ring"><img src="barend.jpg" alt="Barend" class="specialist-photo"></div>
         <div class="specialist-name" data-content="specialist5_name"></div>
         <div class="specialist-tags" data-tags="specialist5_skills"></div>
+        <div class="specialist-more">Read bio <i>+</i></div>
       </div>
       <div class="specialist-card">
         <div class="specialist-photo-ring"><img src="digna.jpg" alt="Digna" class="specialist-photo"></div>
         <div class="specialist-name" data-content="specialist6_name"></div>
         <div class="specialist-tags" data-tags="specialist6_skills"></div>
+        <div class="specialist-more">Read bio <i>+</i></div>
       </div>
       <div class="specialist-card">
         <div class="specialist-photo-ring"><img src="casper.jpg" alt="Casper" class="specialist-photo"></div>
         <div class="specialist-name" data-content="specialist7_name"></div>
         <div class="specialist-tags" data-tags="specialist7_skills"></div>
+        <div class="specialist-more">Read bio <i>+</i></div>
       </div>
       <div class="specialist-card">
         <div class="specialist-photo-ring"><img src="marilise.jpg" alt="Marilise" class="specialist-photo"></div>
         <div class="specialist-name" data-content="specialist8_name"></div>
         <div class="specialist-tags" data-tags="specialist8_skills"></div>
+        <div class="specialist-more">Read bio <i>+</i></div>
       </div>
       <div class="specialist-card">
         <div class="specialist-photo-ring"><img src="emilie.jpg" alt="Emilie" class="specialist-photo"></div>
         <div class="specialist-name" data-content="specialist9_name"></div>
         <div class="specialist-tags" data-tags="specialist9_skills"></div>
+        <div class="specialist-more">Read bio <i>+</i></div>
       </div>
     </div>
   </div>
@@ -1098,6 +1162,19 @@ function checkStagePass(){
   <p data-content="footer_copy"></p>
 </footer>
 
+<div class="bio-overlay" id="bioOverlay" aria-hidden="true">
+  <div class="bio-modal" role="dialog" aria-modal="true" aria-labelledby="bioName">
+    <button class="bio-close" id="bioClose" aria-label="Close">&times;</button>
+    <div class="specialist-photo-ring"><img id="bioPhoto" src="" alt="" class="specialist-photo"></div>
+    <div class="bio-body">
+      <div class="bio-name" id="bioName"></div>
+      <div class="specialist-tags" id="bioTags"></div>
+      <p class="bio-text" id="bioText"></p>
+      <a href="#contact" class="btn-primary bio-cta" id="bioCta">Work with us</a>
+    </div>
+  </div>
+</div>
+
 <script src="content.js"></script>
 <script>
 // Scroll progress
@@ -1139,6 +1216,45 @@ const revealObs = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
 document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+// Specialist bios (click / Enter / Space opens modal)
+(function () {
+  const overlay = document.getElementById('bioOverlay');
+  let lastCard = null;
+  function open(card) {
+    const key = card.querySelector('[data-content$="_name"]').getAttribute('data-content').replace('_name', '');
+    const name = card.querySelector('.specialist-name').textContent;
+    const img = card.querySelector('.specialist-photo');
+    document.getElementById('bioPhoto').src = img.src;
+    document.getElementById('bioPhoto').alt = name;
+    document.getElementById('bioName').textContent = name;
+    document.getElementById('bioTags').innerHTML = card.querySelector('.specialist-tags').innerHTML;
+    document.getElementById('bioText').textContent = (typeof CONTENT !== 'undefined' && CONTENT[key + '_bio']) || '';
+    lastCard = card;
+    overlay.classList.add('open');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    document.getElementById('bioClose').focus();
+  }
+  function close() {
+    overlay.classList.remove('open');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (lastCard) lastCard.focus();
+  }
+  document.querySelectorAll('.specialist-card').forEach(card => {
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+    card.addEventListener('click', () => open(card));
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(card); }
+    });
+  });
+  overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+  document.getElementById('bioClose').addEventListener('click', close);
+  document.getElementById('bioCta').addEventListener('click', close);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && overlay.classList.contains('open')) close(); });
+})();
 
 // Contact form
 document.getElementById('contactForm').addEventListener('submit', function(e) {
