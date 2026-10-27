@@ -198,7 +198,7 @@ const CONTENT = {
       {
           "cat": "model",
           "q": "What is Studio SHIFT?",
-          "a": "Studio SHIFT is an Amsterdam-based sustainability studio. We design and implement sustainability strategies for products, processes and supply chains, without the extensive slide decks. A senior sustainability professional leads every project and brings in the right specialists around them."
+          "a": "Studio SHIFT is an Amsterdam-based sustainability studio. We design and implement sustainability strategies for products, processes and supply chains, without the extensive slide decks. A senior sustainability professional leads every project and brings in the right specialists based on the ask."
       },
       {
           "cat": "model",
