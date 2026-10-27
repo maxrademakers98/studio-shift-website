@@ -206,7 +206,7 @@ const CONTENT = {
       },
       {
           "cat": "model",
-          "q": "How do you work with freelancers?",
+          "q": "How does Studio SHIFT work with freelancers?",
           "a": "For every client challenge we first assess whether specialist support is needed. When it is, we bring in a carefully curated freelance team and guide it ourselves. Studio SHIFT joins the project directly, so quality, communication and delivery stay with us from first brief to final delivery. You get deep domain expertise <em>and</em> senior oversight, without the overhead of a large agency."
       },
       {
