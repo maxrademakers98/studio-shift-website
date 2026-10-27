@@ -242,7 +242,7 @@ const CONTENT = {
       {
           "cat": "law",
           "q": "Is compliance the goal?",
-          "a": "It is the floor, not the ceiling. We use legislation as the trigger to make your strategy and data better, so the work you do for CSRD also feeds your climate targets, supplier programme and product design instead of becoming a separate reporting exercise."
+          "a": "We use legislation as the trigger to make your strategy and data better, so the work you do for CSRD also feeds your climate targets, supplier programme and product design instead of becoming a separate reporting exercise."
       },
       {
           "cat": "stick",
