@@ -122,7 +122,7 @@ const CONTENT = {
   specialist6_skills: ["Human Rights", "CSRD"],
 
   specialist7_name: "Casper",
-  specialist7_skills: ["Packaging"],
+  specialist7_skills: ["Packaging", "PPWR"],
 
   specialist8_name: "Marilise",
   specialist8_skills: ["Circular Design", "Supply Chain Transparency"],
