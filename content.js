@@ -171,6 +171,106 @@ const CONTENT = {
   // ── FOOTER ────────────────────────────────────────
   footer_copy: "© 2026 Studio SHIFT · Amsterdam",
 
+  // ── FAQ ───────────────────────────────────────────
+  faq_eyebrow: "Questions & answers",
+  faq_heading: "How we work,<br>in plain <em>words</em>",
+  faq_sub:     "Our model, our offering, EU legislation, and what it takes to make sustainability stick inside your organisation.",
+  faq_note:    "General information, not legal advice. EU rules and timelines are changing, so we always check what applies to you.",
+  faq_categories: [
+      {
+          "key": "all",
+          "label": "All"
+      },
+      {
+          "key": "model",
+          "label": "Our model"
+      },
+      {
+          "key": "offering",
+          "label": "Our offering"
+      },
+      {
+          "key": "law",
+          "label": "EU legislation"
+      },
+      {
+          "key": "stick",
+          "label": "Making it stick"
+      }
+  ],
+  faq_items: [
+      {
+          "cat": "model",
+          "q": "What is Studio SHIFT?",
+          "a": "Studio SHIFT is an Amsterdam-based sustainability studio. We design and implement sustainability strategies for products, processes and supply chains, without the extensive slide decks. Two senior sustainability professionals lead every project and bring in the right specialists around them."
+      },
+      {
+          "cat": "model",
+          "q": "How does your model with freelancers work?",
+          "a": "For every client challenge we first assess whether specialist support is needed. When it is, we bring in a carefully curated freelance team and guide it ourselves. Studio SHIFT joins the project directly, so quality, communication and delivery stay with us from first brief to final delivery. You get deep domain expertise <em>and</em> senior oversight, without the overhead of a large agency."
+      },
+      {
+          "cat": "model",
+          "q": "Who are your specialists and how do you select them?",
+          "a": "Our network counts 25+ sustainability specialists, from circular design and packaging to human rights, EPR and renewable energy. Every one of them is hand-picked and vetted for real-world experience, not just credentials. We know exactly who we bring in and why they are right for your project. You can meet a few of them in <a href=\"#team\">The Collective</a>."
+      },
+      {
+          "cat": "model",
+          "q": "Why choose Studio SHIFT over a large consultancy?",
+          "a": "We run lean: no layers, no expensive offices. That means senior expertise at a competitive price, and advice that is built to be used rather than filed away. We work physically or remotely, and we stay involved until the work is operational."
+      },
+      {
+          "cat": "offering",
+          "q": "What is your core offering?",
+          "a": "Six topics, one disciplined way of working: <strong>Strategy Setting</strong>, <strong>Stakeholder Engagement</strong>, <strong>Climate Action</strong>, <strong>Supply Chain</strong>, <strong>Product Transformation</strong> and <strong>Data &amp; Reporting</strong>. Think double materiality assessments, carbon accounting and science-based targets, human rights due diligence, circular design, packaging, digital product passports, LCAs and CSRD reporting. See the details in <a href=\"#process\">What we do</a>."
+      },
+      {
+          "cat": "offering",
+          "q": "Where do we start?",
+          "a": "Wherever the need is greatest. Many clients begin with a baseline, a double materiality assessment or a regulatory scan, others with one concrete product, supplier or report. We keep the first step small, agree what good looks like, and build from there."
+      },
+      {
+          "cat": "law",
+          "q": "Which EU regulations are the hottest right now?",
+          "a": "The ones landing on our clients' desks most often:<ul><li><strong>CSRD &amp; ESRS</strong>: sustainability reporting, including double materiality, currently being simplified through the Omnibus package.</li><li><strong>CSDDD</strong>: human rights and environmental due diligence across your value chain.</li><li><strong>PPWR</strong>: the new Packaging and Packaging Waste Regulation, with recyclability, recycled content and reuse requirements.</li><li><strong>ESPR &amp; Digital Product Passport</strong>: ecodesign requirements and product-level data.</li><li><strong>Green claims rules</strong> (Empowering Consumers Directive): what you may and may not say about your products.</li><li><strong>EUDR</strong> (deforestation) and <strong>EPR</strong> schemes: traceability and producer responsibility.</li></ul>Scope and timelines are shifting, so the first question is always what actually applies to <em>you</em>."
+      },
+      {
+          "cat": "law",
+          "q": "How do you help us become compliant?",
+          "a": "We work in four steps: (1) establish which rules apply to your company and products, (2) assess where you stand today, (3) build the data, processes and ownership you need, and (4) deliver the reporting, documentation or claims. Our specialists cover CSRD, human rights due diligence, PPWR and EPR, and Studio SHIFT keeps it joined up, so you are not left with one workstream per regulation."
+      },
+      {
+          "cat": "law",
+          "q": "Is compliance the goal?",
+          "a": "It is the floor, not the ceiling. We use legislation as the trigger to make your strategy and data better, so the work you do for CSRD also feeds your climate targets, supplier programme and product design instead of becoming a separate reporting exercise."
+      },
+      {
+          "cat": "stick",
+          "q": "Why do sustainability strategies so often fail to stick?",
+          "a": "Rarely because the strategy is wrong. Usually nobody owns it, it is not connected to budgets and targets, the data is not reliable, and day-to-day teams such as procurement, design and operations were never involved. We have worked inside organisations like HEMA and DSG, so we know what it takes to make it stick."
+      },
+      {
+          "cat": "stick",
+          "q": "What does good governance for sustainability look like?",
+          "a": "Governance does not need to be heavy. At a minimum: a named owner at management level, clear decision rights, a cross-functional working group, a handful of KPIs that sit in the regular business and budget cycle, and a fixed reporting rhythm to leadership. We design this with you and make sure it fits the way your organisation really works."
+      },
+      {
+          "cat": "stick",
+          "q": "How do you embed sustainability in everyday processes?",
+          "a": "We work with the people who actually make the decisions: procurement, design, packaging, finance and operations. Together we turn targets into specifications, supplier requirements, data collection routines, scorecards and workshops that teams can run themselves. The same approach to governance, ownership and ways of working is built into each of our six topics."
+      },
+      {
+          "cat": "stick",
+          "q": "How long do you stay involved?",
+          "a": "Until it is operational. We do not strategise and step back. Some engagements are a focused project, others a longer partnership in which we coach your team, and we plan that handover from day one so you can carry on without us."
+      },
+      {
+          "cat": "stick",
+          "q": "How do we get started?",
+          "a": "<a href=\"#contact\">Send us a message</a>, whether you have a clear brief or just a sense of what you want to achieve. We will set up a first conversation and tell you honestly whether and how we can help."
+      }
+  ],
+
   // ── FREELANCERS PAGE ──────────────────────────────
   fl_hero_badge:          "Freelance with Studio SHIFT",
   fl_hero_h1:             "Join a team that<br>does <em>real</em> work.",

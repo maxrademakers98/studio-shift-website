@@ -581,6 +581,58 @@ nav.scrolled .nav-burger span { background: var(--navy); }
   .bio-body .specialist-tags { justify-content: center; }
 }
 
+/* ── FAQ ── */
+.faq { background: var(--white); padding: 100px 56px; }
+.faq-grid { display: grid; grid-template-columns: 340px 1fr; gap: 72px; align-items: start; }
+.faq-intro { position: sticky; top: 110px; }
+.faq-intro h2 {
+  font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+  font-size: clamp(32px, 3.6vw, 48px); letter-spacing: -.03em; line-height: 1.04;
+  color: var(--navy); margin-bottom: 18px;
+}
+.faq-intro h2 em { font-style: normal; color: var(--sky); }
+.faq-intro > p { font-size: 15px; line-height: 1.75; color: var(--grey); margin-bottom: 26px; }
+.faq-cats { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.faq-cat {
+  font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 600;
+  color: var(--navy); background: transparent; cursor: pointer;
+  border: 1.5px solid rgba(11,61,82,.18); border-radius: 100px; padding: 8px 16px;
+  transition: all .2s;
+}
+.faq-cat:hover { border-color: var(--navy); }
+.faq-cat.active { background: var(--navy); border-color: var(--navy); color: var(--white); }
+.faq-note { font-size: 12px; line-height: 1.6; color: var(--grey); opacity: .85; }
+.faq-list { border-top: 1px solid rgba(11,61,82,.12); }
+.faq-item { border-bottom: 1px solid rgba(11,61,82,.12); }
+.faq-item[hidden] { display: none; }
+.faq-item summary {
+  list-style: none; cursor: pointer; padding: 22px 0;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+  font-size: 18px; letter-spacing: -.01em; color: var(--navy);
+  transition: color .2s;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary:hover { color: var(--sky); }
+.faq-item summary::after {
+  content: '+'; flex: 0 0 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(0,180,216,.12); color: var(--sky);
+  font-size: 20px; font-weight: 400; transition: transform .25s, background .25s, color .25s;
+}
+.faq-item[open] summary::after { transform: rotate(45deg); background: var(--sky); color: var(--white); }
+.faq-answer { padding: 0 56px 26px 0; font-size: 15px; line-height: 1.75; color: var(--navy); opacity: .85; }
+.faq-answer a { color: var(--sky); font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(0,180,216,.4); }
+.faq-answer ul { margin: 12px 0 14px 0; padding-left: 20px; }
+.faq-answer li { margin-bottom: 8px; }
+@media (max-width: 960px) {
+  .faq { padding: 72px 24px; }
+  .faq-grid { grid-template-columns: 1fr; gap: 36px; }
+  .faq-intro { position: static; }
+  .faq-answer { padding-right: 0; }
+  .faq-item summary { font-size: 16px; }
+}
+
 /* ── CONTACT ── */
 .contact {
   background: var(--white); padding: 120px 56px;
@@ -802,6 +854,7 @@ function checkStagePass(){
   <ul>
     <li><a href="#process">What we do</a></li>
     <li><a href="#team">Meet the team</a></li>
+    <li><a href="#faq">FAQ</a></li>
     <li><a href="freelancers.html">For freelancers</a></li>
     <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
   </ul>
@@ -813,6 +866,7 @@ function checkStagePass(){
   <div class="nav-mobile-inner">
     <a href="#process" class="nav-mobile-link">What we do</a>
     <a href="#team" class="nav-mobile-link">Meet the team</a>
+    <a href="#faq" class="nav-mobile-link">FAQ</a>
     <a href="freelancers.html" class="nav-mobile-link">For freelancers</a>
     <a href="#contact" class="nav-mobile-link nav-mobile-cta">Let's Talk</a>
   </div>
@@ -1104,6 +1158,19 @@ function checkStagePass(){
 </section>
 
 <!-- CONTACT -->
+<section class="faq" id="faq">
+  <div class="faq-grid">
+    <div class="faq-intro reveal">
+      <div class="eyebrow" data-content="faq_eyebrow"></div>
+      <h2 data-content="faq_heading"></h2>
+      <p data-content="faq_sub"></p>
+      <div class="faq-cats" id="faqCats"></div>
+      <div class="faq-note" data-content="faq_note"></div>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
 <section class="contact" id="contact">
   <div class="contact-grid">
     <div class="contact-info reveal">
@@ -1156,6 +1223,7 @@ function checkStagePass(){
   <div class="footer-links">
     <a href="#process">What we do</a>
     <a href="#team">Meet the team</a>
+    <a href="#faq">FAQ</a>
     <a href="freelancers.html">For freelancers</a>
     <a href="#contact">Contact</a>
   </div>
@@ -1254,6 +1322,27 @@ document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
   document.getElementById('bioClose').addEventListener('click', close);
   document.getElementById('bioCta').addEventListener('click', close);
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && overlay.classList.contains('open')) close(); });
+})();
+
+// FAQ (rendered from content.js; filter by category)
+(function () {
+  if (typeof CONTENT === 'undefined' || !CONTENT.faq_items) return;
+  const list = document.getElementById('faqList');
+  const cats = document.getElementById('faqCats');
+  list.innerHTML = CONTENT.faq_items.map(i =>
+    `<details class="faq-item" data-cat="${i.cat}"><summary>${i.q}</summary><div class="faq-answer">${i.a}</div></details>`
+  ).join('');
+  cats.innerHTML = CONTENT.faq_categories.map((c, n) =>
+    `<button type="button" class="faq-cat${n === 0 ? ' active' : ''}" data-cat="${c.key}">${c.label}</button>`
+  ).join('');
+  cats.addEventListener('click', e => {
+    const b = e.target.closest('.faq-cat'); if (!b) return;
+    cats.querySelectorAll('.faq-cat').forEach(x => x.classList.toggle('active', x === b));
+    list.querySelectorAll('.faq-item').forEach(d => {
+      d.hidden = !(b.dataset.cat === 'all' || d.dataset.cat === b.dataset.cat);
+      if (d.hidden) d.open = false;
+    });
+  });
 })();
 
 // Contact form
