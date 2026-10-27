@@ -190,10 +190,6 @@ const CONTENT = {
           "label": "Our offering"
       },
       {
-          "key": "law",
-          "label": "EU legislation"
-      },
-      {
           "key": "stick",
           "label": "Making it stick"
       }
@@ -230,17 +226,17 @@ const CONTENT = {
           "a": "Wherever the need is greatest. Many clients begin with a baseline, a double materiality assessment or a regulatory scan, others with one concrete product, supplier or report. We keep the first step small, agree what good looks like, and build from there."
       },
       {
-          "cat": "law",
+          "cat": "offering",
           "q": "Which EU regulations are the hottest right now?",
           "a": "The ones landing on our clients' desks most often:<ul><li><strong>CSRD &amp; ESRS</strong>: sustainability reporting, including double materiality, currently being simplified through the Omnibus package.</li><li><strong>CSDDD</strong>: human rights and environmental due diligence across your value chain.</li><li><strong>PPWR</strong>: the new Packaging and Packaging Waste Regulation, with recyclability, recycled content and reuse requirements.</li><li><strong>ESPR &amp; Digital Product Passport</strong>: ecodesign requirements and product-level data.</li><li><strong>Green claims rules</strong> (Empowering Consumers Directive): what you may and may not say about your products.</li><li><strong>EUDR</strong> (deforestation) and <strong>EPR</strong> schemes: traceability and producer responsibility.</li></ul>Scope and timelines are shifting, so the first question is always what actually applies to <em>you</em>."
       },
       {
-          "cat": "law",
+          "cat": "offering",
           "q": "How do you help us become compliant?",
           "a": "We work in four steps: (1) establish which rules apply to your company and products, (2) assess where you stand today, (3) build the data, processes and ownership you need, and (4) deliver the reporting, documentation or claims. Our specialists cover CSRD, human rights due diligence, PPWR and EPR, and Studio SHIFT keeps it joined up, so you are not left with one workstream per regulation."
       },
       {
-          "cat": "law",
+          "cat": "offering",
           "q": "Is compliance the goal?",
           "a": "We use legislation as the trigger to make your strategy and data better, so the work you do for CSRD also feeds your climate targets, supplier programme and product design instead of becoming a separate reporting exercise."
       },
