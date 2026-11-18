@@ -169,7 +169,7 @@ const CONTENT = {
   contact_location: "Amsterdam, Netherlands",
 
   // ── FOOTER ────────────────────────────────────────
-  footer_copy: "© 2026 Studio SHIFT · Amsterdam",
+  footer_copy: "© 2026 Studio SHIFT · Amsterdam · KVK 42225087",
 
   // ── FAQ ───────────────────────────────────────────
   faq_eyebrow: "Questions & answers",
