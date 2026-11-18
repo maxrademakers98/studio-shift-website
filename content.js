@@ -218,7 +218,7 @@ const CONTENT = {
       {
           "cat": "offering",
           "q": "Which EU regulations are the most relevant right now?",
-          "a": "<ul><li><strong>CSRD &amp; ESRS</strong>: sustainability reporting, being simplified through the Omnibus.</li><li><strong>CSDDD</strong>: due diligence across your value chain.</li><li><strong>PPWR</strong>: new packaging requirements.</li><li><strong>ESPR &amp; Digital Product Passport</strong>: ecodesign and product data.</li><li><strong>Green claims rules</strong>: what you may say about your products.</li><li><strong>EUDR &amp; EPR</strong>: deforestation traceability and producer responsibility.</li></ul>Scope and timelines keep shifting, so we start by checking what applies to you."
+          "a": "<ul><li><strong>CSRD &amp; ESRS</strong>: sustainability reporting, being simplified through the Omnibus.</li><li><strong>CSDDD</strong>: due diligence across your value chain.</li><li><strong>PPWR</strong>: new packaging requirements.</li><li><strong>ESPR &amp; Digital Product Passport</strong>: ecodesign and product data.</li><li><strong>Empowering Consumers for the Green Transition Directive (ECGT)</strong>: what you may say about your products.</li><li><strong>EUDR &amp; EPR</strong>: deforestation traceability and producer responsibility.</li></ul>Scope and timelines keep shifting, so we start by checking what applies to you."
       },
       {
           "cat": "offering",
