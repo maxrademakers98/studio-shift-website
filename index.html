@@ -526,6 +526,113 @@ nav.scrolled .nav-burger span { background: var(--navy); }
 .specialist-tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
 .specialist-tags .team-tag { border-radius: 100px; font-size: 11px; padding: 4px 12px; }
 
+/* Specialist bio: hover hint + click-to-open modal */
+.specialist-card { cursor: pointer; border-radius: 16px; outline-offset: 6px; }
+.specialist-more {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 10px; font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px; font-weight: 500; letter-spacing: .04em; color: var(--sky);
+  opacity: 0; transform: translateY(-4px);
+  transition: opacity .2s ease, transform .2s ease;
+}
+.specialist-more i {
+  font-style: normal; width: 18px; height: 18px; border-radius: 50%;
+  background: var(--sky); color: var(--white);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 13px; line-height: 1;
+}
+.specialist-card:hover .specialist-more,
+.specialist-card:focus-visible .specialist-more { opacity: 1; transform: none; }
+@media (hover: none) { .specialist-more { opacity: 1; transform: none; } }
+
+.bio-overlay {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(11,61,82,.55); backdrop-filter: blur(6px);
+  display: flex; align-items: center; justify-content: center; padding: 20px;
+  opacity: 0; visibility: hidden; transition: opacity .25s ease, visibility .25s;
+}
+.bio-overlay.open { opacity: 1; visibility: visible; }
+.bio-modal {
+  position: relative; background: var(--white); border-radius: 24px;
+  width: 100%; max-width: 560px; padding: 36px;
+  display: flex; gap: 28px; align-items: flex-start;
+  box-shadow: 0 30px 80px rgba(11,61,82,.35);
+  transform: translateY(16px) scale(.97); transition: transform .3s cubic-bezier(.2,.8,.2,1);
+}
+.bio-overlay.open .bio-modal { transform: none; }
+.bio-modal .specialist-photo-ring { flex: 0 0 132px; margin: 0; }
+.bio-body { min-width: 0; }
+.bio-name {
+  font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+  font-size: 26px; letter-spacing: -.02em; color: var(--navy); margin-bottom: 10px;
+}
+.bio-body .specialist-tags { justify-content: flex-start; margin-bottom: 16px; }
+.bio-text { font-size: 15px; line-height: 1.65; color: var(--navy); opacity: .85; margin-bottom: 20px; }
+.bio-cta { display: inline-block; font-size: 14px; padding: 10px 20px; }
+.bio-close {
+  position: absolute; top: 14px; right: 14px; width: 36px; height: 36px;
+  border: none; border-radius: 50%; cursor: pointer;
+  background: rgba(11,61,82,.07); color: var(--navy); font-size: 20px; line-height: 1;
+  transition: background .2s;
+}
+.bio-close:hover { background: rgba(11,61,82,.14); }
+@media (max-width: 560px) {
+  .bio-modal { flex-direction: column; align-items: center; text-align: center; padding: 32px 24px 28px; }
+  .bio-body .specialist-tags { justify-content: center; }
+}
+
+/* ── FAQ ── */
+.faq { background: var(--white); padding: 100px 56px; }
+.faq-grid { display: grid; grid-template-columns: 340px 1fr; gap: 72px; align-items: start; }
+.faq-intro { position: sticky; top: 110px; }
+.faq-intro h2 {
+  font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+  font-size: clamp(32px, 3.6vw, 48px); letter-spacing: -.03em; line-height: 1.04;
+  color: var(--navy); margin-bottom: 18px;
+}
+.faq-intro h2 em { font-style: normal; color: var(--sky); }
+.faq-intro > p { font-size: 15px; line-height: 1.75; color: var(--grey); margin-bottom: 26px; }
+.faq-cats { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.faq-cat {
+  font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 600;
+  color: var(--navy); background: transparent; cursor: pointer;
+  border: 1.5px solid rgba(11,61,82,.18); border-radius: 100px; padding: 8px 16px;
+  transition: all .2s;
+}
+.faq-cat:hover { border-color: var(--navy); }
+.faq-cat.active { background: var(--navy); border-color: var(--navy); color: var(--white); }
+.faq-note { font-size: 12px; line-height: 1.6; color: var(--grey); opacity: .85; }
+.faq-list { border-top: 1px solid rgba(11,61,82,.12); }
+.faq-item { border-bottom: 1px solid rgba(11,61,82,.12); }
+.faq-item[hidden] { display: none; }
+.faq-item summary {
+  list-style: none; cursor: pointer; padding: 22px 0;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+  font-size: 18px; letter-spacing: -.01em; color: var(--navy);
+  transition: color .2s;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary:hover { color: var(--sky); }
+.faq-item summary::after {
+  content: '+'; flex: 0 0 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(0,180,216,.12); color: var(--sky);
+  font-size: 20px; font-weight: 400; transition: transform .25s, background .25s, color .25s;
+}
+.faq-item[open] summary::after { transform: rotate(45deg); background: var(--sky); color: var(--white); }
+.faq-answer { padding: 0 56px 26px 0; font-size: 15px; line-height: 1.75; color: var(--navy); opacity: .85; }
+.faq-answer a { color: var(--sky); font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(0,180,216,.4); }
+.faq-answer ul { margin: 12px 0 14px 0; padding-left: 20px; }
+.faq-answer li { margin-bottom: 8px; }
+@media (max-width: 960px) {
+  .faq { padding: 72px 24px; }
+  .faq-grid { grid-template-columns: 1fr; gap: 36px; }
+  .faq-intro { position: static; }
+  .faq-answer { padding-right: 0; }
+  .faq-item summary { font-size: 16px; }
+}
+
 /* ── CONTACT ── */
 .contact {
   background: var(--white); padding: 120px 56px;
@@ -717,6 +824,7 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
   <ul>
     <li><a href="#process">What we do</a></li>
     <li><a href="#team">Meet the team</a></li>
+    <li><a href="#faq">FAQ</a></li>
     <li><a href="freelancers.html">For freelancers</a></li>
     <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
   </ul>
@@ -728,6 +836,7 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
   <div class="nav-mobile-inner">
     <a href="#process" class="nav-mobile-link">What we do</a>
     <a href="#team" class="nav-mobile-link">Meet the team</a>
+    <a href="#faq" class="nav-mobile-link">FAQ</a>
     <a href="freelancers.html" class="nav-mobile-link">For freelancers</a>
     <a href="#contact" class="nav-mobile-link nav-mobile-cta">Let's Talk</a>
   </div>
@@ -1010,6 +1119,19 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
 </section>
 
 <!-- CONTACT -->
+<section class="faq" id="faq">
+  <div class="faq-grid">
+    <div class="faq-intro reveal">
+      <div class="eyebrow" data-content="faq_eyebrow"></div>
+      <h2 data-content="faq_heading"></h2>
+      <p data-content="faq_sub"></p>
+      <div class="faq-cats" id="faqCats"></div>
+      <div class="faq-note" data-content="faq_note"></div>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
 <section class="contact" id="contact">
   <div class="contact-grid">
     <div class="contact-info reveal">
@@ -1062,6 +1184,7 @@ footer p { font-size: 11px; color: rgba(255,255,255,.4); font-family: 'IBM Plex 
   <div class="footer-links">
     <a href="#process">What we do</a>
     <a href="#team">Meet the team</a>
+    <a href="#faq">FAQ</a>
     <a href="freelancers.html">For freelancers</a>
     <a href="#contact">Contact</a>
   </div>
@@ -1109,6 +1232,27 @@ const revealObs = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
 document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+// FAQ (rendered from content.js; filter by category)
+(function () {
+  if (typeof CONTENT === 'undefined' || !CONTENT.faq_items) return;
+  const list = document.getElementById('faqList');
+  const cats = document.getElementById('faqCats');
+  list.innerHTML = CONTENT.faq_items.map(i =>
+    `<details class="faq-item" data-cat="${i.cat}"><summary><span class="faq-q">${i.q}</span></summary><div class="faq-answer">${i.a}</div></details>`
+  ).join('');
+  cats.innerHTML = CONTENT.faq_categories.map((c, n) =>
+    `<button type="button" class="faq-cat${n === 0 ? ' active' : ''}" data-cat="${c.key}">${c.label}</button>`
+  ).join('');
+  cats.addEventListener('click', e => {
+    const b = e.target.closest('.faq-cat'); if (!b) return;
+    cats.querySelectorAll('.faq-cat').forEach(x => x.classList.toggle('active', x === b));
+    list.querySelectorAll('.faq-item').forEach(d => {
+      d.hidden = !(b.dataset.cat === 'all' || d.dataset.cat === b.dataset.cat);
+      if (d.hidden) d.open = false;
+    });
+  });
+})();
 
 // Contact form
 document.getElementById('contactForm').addEventListener('submit', function(e) {
