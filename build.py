@@ -134,6 +134,7 @@ def jsonld():
         "address": {"@type": "PostalAddress", "addressLocality": "Amsterdam", "addressCountry": "NL"},
         "areaServed": ["NL", "EU"],
         "identifier": {"@type": "PropertyValue", "propertyID": "KVK", "value": "42225087"},
+        "sameAs": ["https://www.linkedin.com/company/studio-shift-eu/"],
         "founder": people,
         "knowsAbout": ["CSRD", "ESRS", "CSDDD", "PPWR", "ESPR", "Digital Product Passport", "EUDR", "EPR",
                        "Double materiality assessment", "GHG carbon accounting", "Science Based Targets",
@@ -202,7 +203,8 @@ def llms():
         L += [f"### {plain(i['q'])}", plain(re.sub(r'</li>', '. ', i['a'])), ""]
     L += ["## Pages", "", f"- [Home]({SITE}/): services, team, specialists, FAQ, contact",
           f"- [For freelancers]({SITE}/freelancers.html): how specialists join the network", "",
-          "## Contact", "", "- hello@studioshift.eu", "- Amsterdam, Netherlands"]
+          "## Contact", "", "- hello@studioshift.eu", "- Amsterdam, Netherlands",
+          "- LinkedIn: https://www.linkedin.com/company/studio-shift-eu/"]
     return "\n".join(L) + "\n"
 
 
